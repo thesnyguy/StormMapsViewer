@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fda2dff439211b6931ca1068bdecd94c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fda2dff439211b6931ca1068bdecd94c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fda2dff439211b6931ca1068bdecd94c = L.map(
+                "map_fda2dff439211b6931ca1068bdecd94c",
+                {
+                    center: [38.0, -97.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_14bbd86f151bd998e2eb25f202007b42 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fda2dff439211b6931ca1068bdecd94c);
+        
+    
+            var feature_group_d8bbed80a5bbf86dd18bbfa044e485b0 = L.featureGroup(
+                {}
+            ).addTo(map_fda2dff439211b6931ca1068bdecd94c);
+        
+    
+            var marker_63d648a429b3d0a7320787a2d781df4d = L.marker(
+                [37.2, -76.12],
+                {}
+            ).addTo(feature_group_d8bbed80a5bbf86dd18bbfa044e485b0);
+        
+    
+        var popup_8fd711e0096c24626c252389546f8a2f = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_56bed1b77bac51ce5525fdd2b47013a9 = $(`<div id="html_56bed1b77bac51ce5525fdd2b47013a9" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 06-OCT-06 17:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 2<br><br>                <b>Begin Azimuth:</b> SW<br><br>                <b>Begin Location:</b> NEW POINT COMFORT<br><br>                <b>End Azimuth:</b> SW<br><br>                <b>End Location:</b> NEW POINT COMFORT<br><br>                <b>Episode Narrative:</b> A strong low pressure system off the North Carolina coast caused gale force winds across much of the Mid Atlantic coast and southern Chesapeake  Bay.<br><br>                <b>Event Narrative:</b> Two fisherman cast off from the Poquoson River in a 17-foot skiff in the late afternoon and were reported missing several hours later.<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_8fd711e0096c24626c252389546f8a2f.setContent(html_56bed1b77bac51ce5525fdd2b47013a9);
+            
+        
+
+        marker_63d648a429b3d0a7320787a2d781df4d.bindPopup(popup_8fd711e0096c24626c252389546f8a2f)
+        ;
+
+        
+    
+    
+            var marker_818c86c44bbcf29ad821a88db2fb334a = L.marker(
+                [42.37, -87.83],
+                {}
+            ).addTo(feature_group_d8bbed80a5bbf86dd18bbfa044e485b0);
+        
+    
+        var popup_5cabaf34d833720edb733740bb3ee3d9 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_a9f35a1c2af13db97d82980985bb1b63 = $(`<div id="html_a9f35a1c2af13db97d82980985bb1b63" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 07-JUN-07 13:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> N<br><br>                <b>Begin Location:</b> WAUKEGAN HARBOR<br><br>                <b>End Azimuth:</b> N<br><br>                <b>End Location:</b> WAUKEGAN HARBOR<br><br>                <b>Episode Narrative:</b> Gale force winds blew across southern Lake Michigan during the afternoon hours of June 7th.  A 19 year old man drown in choppy waters while trying to save a friend who was having trouble swimming near Waukegan.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_5cabaf34d833720edb733740bb3ee3d9.setContent(html_a9f35a1c2af13db97d82980985bb1b63);
+            
+        
+
+        marker_818c86c44bbcf29ad821a88db2fb334a.bindPopup(popup_5cabaf34d833720edb733740bb3ee3d9)
+        ;
+
+        
+    
+    
+            var marker_76f63171be8d907ed959c9f7e7b3a9a2 = L.marker(
+                [38.7598, -75.1369],
+                {}
+            ).addTo(feature_group_d8bbed80a5bbf86dd18bbfa044e485b0);
+        
+    
+        var popup_4e0a6cfce9a65d8ffb9fde484dbc00cc = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_eb79772c65e169d2ebb5265fea8b0e7b = $(`<div id="html_eb79772c65e169d2ebb5265fea8b0e7b" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 16-MAY-07 18:15:00<br><br>                                <b>Injuries:</b> 3<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> SE<br><br>                <b>Begin Location:</b> LEWES DE<br><br>                <b>End Azimuth:</b> SE<br><br>                <b>End Location:</b> LEWES DE<br><br>                <b>Episode Narrative:</b> Three men (20-year-old, 21-year-old and 25-year-old) were rescued from the frigid waters off of Cape Henlopen on the afternoon of the 16th after their kayaks overturned. All were treated for hypothermia and released. The men left the Capes Shore Beach between the state fishing pier and the Cape Shores pier at about 315 p.m. EDT on the 16th and were headed for Lewes. They were about 600 yards offshore, where the winds and waves increased. Winds were estimated at about 25 knots. A large wave hit the two-man kayak. It took on water and a panicked man leaned into the waves and overturned the kayak. They were unable to right it. They then took turns in and out of the remaining one-man kayak which after about 15 minutes also was flipped. They were spotted in the water by a Cape Henlopen State Park ranger. A Delaware State Police helicopter and a patrol boat of the State Division of Fish and Wildlife Enforcement assisted in the rescue. They were in the water for about 40 minutes and ocean water temperatures were in the mid 50s.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_4e0a6cfce9a65d8ffb9fde484dbc00cc.setContent(html_eb79772c65e169d2ebb5265fea8b0e7b);
+            
+        
+
+        marker_76f63171be8d907ed959c9f7e7b3a9a2.bindPopup(popup_4e0a6cfce9a65d8ffb9fde484dbc00cc)
+        ;
+
+        
+    
+    
+            var marker_5b4ebe77681dd7314fcb1e2a338e247e = L.marker(
+                [38.32, -76.45],
+                {}
+            ).addTo(feature_group_d8bbed80a5bbf86dd18bbfa044e485b0);
+        
+    
+        var popup_6f0dedc57a7a66a2220647fd9e7ad14e = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_e9b28da3c731fcda9db07118a95d0236 = $(`<div id="html_e9b28da3c731fcda9db07118a95d0236" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 15-MAR-07 15:30:00<br><br>                                <b>Injuries:</b> 5<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> N<br><br>                <b>Begin Location:</b> SOLOMONS ISLAND<br><br>                <b>End Azimuth:</b> N<br><br>                <b>End Location:</b> SOLOMONS ISLAND<br><br>                <b>Episode Narrative:</b> A cold front approaching the Maryland Chesapeake Bay on March 15th produced gusty winds.  Automated surface observations from Annapolis and Patuxent River on western shore of the Bay reported wind gusts between 20 and 25 knots.<br><br>                <b>Event Narrative:</b> Five Sailboats overturned off Solomons Island, MD., in Calvert County. Ten teenage sailing students fell into the 40-degree water. A few students were treated at the scene for hypothermia. Emergency response pulled everyone from the water within 10 minutes.<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_6f0dedc57a7a66a2220647fd9e7ad14e.setContent(html_e9b28da3c731fcda9db07118a95d0236);
+            
+        
+
+        marker_5b4ebe77681dd7314fcb1e2a338e247e.bindPopup(popup_6f0dedc57a7a66a2220647fd9e7ad14e)
+        ;
+
+        
+    
+    
+            var marker_0191a33f1e0c84f58d43754aa83d2094 = L.marker(
+                [39.8569, -74.2776],
+                {}
+            ).addTo(feature_group_d8bbed80a5bbf86dd18bbfa044e485b0);
+        
+    
+        var popup_9f6301680123a024de46d710b91964fe = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_726b3583b4cf9e219f2125c6d89d6792 = $(`<div id="html_726b3583b4cf9e219f2125c6d89d6792" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 04-JUL-07 19:20:00<br><br>                                <b>Injuries:</b> 7<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> NNW<br><br>                <b>Begin Location:</b> BARNEGAT INLET<br><br>                <b>End Azimuth:</b> NNW<br><br>                <b>End Location:</b> BARNEGAT INLET<br><br>                <b>Episode Narrative:</b> A 32-year-old woman drowned in Barnegat Bay after a boat she was riding in capsized at about 820 p.m. EDT. Winds were estimated to be gusting at 30 to 35 mph from the south at the time the boat capsized. The capsizing was made easier by two waves which struck the boat. All the other passengers on the boat, including a 11-month-old and three-year-old child survived.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_9f6301680123a024de46d710b91964fe.setContent(html_726b3583b4cf9e219f2125c6d89d6792);
+            
+        
+
+        marker_0191a33f1e0c84f58d43754aa83d2094.bindPopup(popup_9f6301680123a024de46d710b91964fe)
+        ;
+
+        
+    
+    
+            var marker_0943552c81775ae143ae2fa316a9ebc1 = L.marker(
+                [46.23, -124.03],
+                {}
+            ).addTo(feature_group_d8bbed80a5bbf86dd18bbfa044e485b0);
+        
+    
+        var popup_efa43bc351b599740b8876ef9116e938 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_a733112e365f7f73fa47441a58ff53d3 = $(`<div id="html_a733112e365f7f73fa47441a58ff53d3" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 29-SEP-07 11:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> N<br><br>                <b>Begin Location:</b> CAPE DISAPPOINTMENT<br><br>                <b>End Azimuth:</b> N<br><br>                <b>End Location:</b> CAPE DISAPPOINTMENT<br><br>                <b>Episode Narrative:</b> A Pacific storm brought strong winds to the coastal waters, which helped to increase swell conditions in the Columbia River bar. A man was thrown overboard in the strong winds and large swell.  The USCG conducted a search, but never found the individual.  He is presumed dead.<br><br>                <b>Event Narrative:</b> A man was thrown overboard near the Columbia River bar. There was a search conducted by the Coast Guard and assisted by the Columbia River Bar Pilots, but it was suspended after the man couldn't be found.<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_efa43bc351b599740b8876ef9116e938.setContent(html_a733112e365f7f73fa47441a58ff53d3);
+            
+        
+
+        marker_0943552c81775ae143ae2fa316a9ebc1.bindPopup(popup_efa43bc351b599740b8876ef9116e938)
+        ;
+
+        
+    
+    
+            var layer_control_7a434886e328bba4ec2909d4582b9878 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_14bbd86f151bd998e2eb25f202007b42,
+                },
+                overlays :  {
+                    "Marine Strong Wind" : feature_group_d8bbed80a5bbf86dd18bbfa044e485b0,
+                },
+            };
+            L.control.layers(
+                layer_control_7a434886e328bba4ec2909d4582b9878.base_layers,
+                layer_control_7a434886e328bba4ec2909d4582b9878.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_fda2dff439211b6931ca1068bdecd94c);
+        
+</script>
+</html>

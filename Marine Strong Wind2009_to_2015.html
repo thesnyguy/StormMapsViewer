@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f949370b101aa654e12886d1bbb92d3b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f949370b101aa654e12886d1bbb92d3b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f949370b101aa654e12886d1bbb92d3b = L.map(
+                "map_f949370b101aa654e12886d1bbb92d3b",
+                {
+                    center: [38.0, -97.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ac90dc31f13cd36ea65a95280d39c998 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f949370b101aa654e12886d1bbb92d3b);
+        
+    
+            var feature_group_8684faebffdac86c7a4ce70437ba1b6b = L.featureGroup(
+                {}
+            ).addTo(map_f949370b101aa654e12886d1bbb92d3b);
+        
+    
+            var marker_ed961b9fad8a86bb9ce15e570564bcff = L.marker(
+                [37.125, -122.3801],
+                {}
+            ).addTo(feature_group_8684faebffdac86c7a4ce70437ba1b6b);
+        
+    
+        var popup_e164f48fd723247461ae1f2c455a970c = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_74718cca0a8485bc597b35b4668bc26a = $(`<div id="html_74718cca0a8485bc597b35b4668bc26a" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 21-FEB-09 12:30:00<br><br>                                <b>Injuries:</b> 2<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> NW<br><br>                <b>Begin Location:</b> DAVENPORT<br><br>                <b>End Azimuth:</b> NW<br><br>                <b>End Location:</b> DAVENPORT<br><br>                <b>Episode Narrative:</b> Strong winds produced chaotic seas in the central California coastal waters.<br><br>                <b>Event Narrative:</b> A 36-foot boat capsized in rough seas resulting in two people rescued and the drowning of a male fisherman. Wave heights at nearby buoys were reported at three to three and a half meters.<br><br>                <b>Damage:</b> 20.00K<br><br>               </div>`)[0];
+                popup_e164f48fd723247461ae1f2c455a970c.setContent(html_74718cca0a8485bc597b35b4668bc26a);
+            
+        
+
+        marker_ed961b9fad8a86bb9ce15e570564bcff.bindPopup(popup_e164f48fd723247461ae1f2c455a970c)
+        ;
+
+        
+    
+    
+            var marker_1bd1532b24dccea5a63aae150e9a8a56 = L.marker(
+                [20.7809, -156.4659],
+                {}
+            ).addTo(feature_group_8684faebffdac86c7a4ce70437ba1b6b);
+        
+    
+        var popup_7e205977af21cedade2580a0e8a1f772 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_b1cd21137d3562bb27de42ada3cff6f0 = $(`<div id="html_b1cd21137d3562bb27de42ada3cff6f0" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 17-FEB-10 12:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> ESE<br><br>                <b>Begin Location:</b> MAALAEA<br><br>                <b>End Azimuth:</b> ESE<br><br>                <b>End Location:</b> MAALAEA<br><br>                <b>Episode Narrative:</b> Strong winds across the waters in Maalaea Bay in Maui caused difficulties for swimmers and surfers. County lifeguards were involved in assisting numerous beach-goers.  One individual perished (direct) in the water because of the strong wind.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_7e205977af21cedade2580a0e8a1f772.setContent(html_b1cd21137d3562bb27de42ada3cff6f0);
+            
+        
+
+        marker_1bd1532b24dccea5a63aae150e9a8a56.bindPopup(popup_7e205977af21cedade2580a0e8a1f772)
+        ;
+
+        
+    
+    
+            var marker_06ca7966c59ebb2426ba6713bacbcfde = L.marker(
+                [26.1839, -80.0952],
+                {}
+            ).addTo(feature_group_8684faebffdac86c7a4ce70437ba1b6b);
+        
+    
+        var popup_50825f3b2ffd25b101f11d87fd7961fb = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_7adccad91c50bfb6a77f0cfdd36b2277 = $(`<div id="html_7adccad91c50bfb6a77f0cfdd36b2277" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 20-JUL-10 09:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> NNE<br><br>                <b>Begin Location:</b> PORT EVERGLADES<br><br>                <b>End Azimuth:</b> NNE<br><br>                <b>End Location:</b> PORT EVERGLADES<br><br>                <b>Episode Narrative:</b> Persistent and strong east winds caused by high pressure north and east of the area produced gusty winds in excess of 30 mph over the Atlantic coastal waters. Wind gusts up to 44 MPH were noted on July 20th.<br><br>                <b>Event Narrative:</b> Strong onshore winds to 30 knots created rough seas over the Atlantic waters. A kayaker was capsized by a large wave just offshore Lauderdale-by-the-Sea around 630 PM EDT. The large wave tossed him from his craft and into the rough sea where he drowned. He was pronounced dead at Holy Cross Hospital.<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_50825f3b2ffd25b101f11d87fd7961fb.setContent(html_7adccad91c50bfb6a77f0cfdd36b2277);
+            
+        
+
+        marker_06ca7966c59ebb2426ba6713bacbcfde.bindPopup(popup_50825f3b2ffd25b101f11d87fd7961fb)
+        ;
+
+        
+    
+    
+            var marker_0896d929c934b86ae5ada90886e01175 = L.marker(
+                [39.3422, -75.432],
+                {}
+            ).addTo(feature_group_8684faebffdac86c7a4ce70437ba1b6b);
+        
+    
+        var popup_2a77cc255e8ceb82bd1057b74bdc20d0 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_07e8ed65fab92a536453e739f05efcc6 = $(`<div id="html_07e8ed65fab92a536453e739f05efcc6" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 29-OCT-11 08:00:00<br><br>                                <b>Injuries:</b> 3<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> N<br><br>                <b>Begin Location:</b> BOWERS BEACH DE<br><br>                <b>End Azimuth:</b> ENE<br><br>                <b>End Location:</b> BOWERS BEACH DE<br><br>                <b>Episode Narrative:</b> Strong northeast winds overspread Delaware Bay during the morning through the evening of the 29th. This produced gale force wind gusts on the bay. Off of the Woodland Beach Public Dock in Kent County, a boat capsized. Three hunters were rescued. While they were hospitalized, none of them were injured seriously. The peak wind gusts included 45 knots (52 mph) at Brandywine Shoal Light, 43 knots (50 mph) at Lewes in Sussex County and 42 knots (48 mph) at Ship John Shoal Light.  | |The gale force winds were caused by the pressure difference between the intensifying low pressure system to the south and east of Delaware and a high pressure system over New England. Once the low pressure system passed far enough east of Delaware during the evening of the 29th, the gale force wind gusts started to subside and ended overnight.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_2a77cc255e8ceb82bd1057b74bdc20d0.setContent(html_07e8ed65fab92a536453e739f05efcc6);
+            
+        
+
+        marker_0896d929c934b86ae5ada90886e01175.bindPopup(popup_2a77cc255e8ceb82bd1057b74bdc20d0)
+        ;
+
+        
+    
+    
+            var marker_87d6085e4f12d6ce588a306c56e179db = L.marker(
+                [37.7536, -122.5116],
+                {}
+            ).addTo(feature_group_8684faebffdac86c7a4ce70437ba1b6b);
+        
+    
+        var popup_e1aad8d3b30a0dca4a8e3b3e8e85f45b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_46f1b46222bcce109742ddd98b6265d2 = $(`<div id="html_46f1b46222bcce109742ddd98b6265d2" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 09-APR-11 14:15:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> NNW<br><br>                <b>Begin Location:</b> FORT FUNSTON<br><br>                <b>End Azimuth:</b> NNW<br><br>                <b>End Location:</b> FORT FUNSTON<br><br>                <b>Episode Narrative:</b> Strong winds and moderate seas produced hazardous conditions for small crafts operating in the surf zone.<br><br>                <b>Event Narrative:</b> Strong wind and chaotic seas caused a sailboat to capsize in the water near San Francisco's Ocean Beach. One man was pulled from the water around 4:00 p.m. and the other man aboard was not found and presumed dead.<br><br>                <b>Damage:</b> 25.00K<br><br>               </div>`)[0];
+                popup_e1aad8d3b30a0dca4a8e3b3e8e85f45b.setContent(html_46f1b46222bcce109742ddd98b6265d2);
+            
+        
+
+        marker_87d6085e4f12d6ce588a306c56e179db.bindPopup(popup_e1aad8d3b30a0dca4a8e3b3e8e85f45b)
+        ;
+
+        
+    
+    
+            var marker_dbb21ee8bebc928e4fb1bca6299026e4 = L.marker(
+                [43.046, -87.879],
+                {}
+            ).addTo(feature_group_8684faebffdac86c7a4ce70437ba1b6b);
+        
+    
+        var popup_493c3f8b3e77c731c53a184fe78c26f6 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_3a3adc7e4d7d941de186224a5468dd8d = $(`<div id="html_3a3adc7e4d7d941de186224a5468dd8d" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 31-MAY-11 13:45:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> SE<br><br>                <b>Begin Location:</b> NORTH POINT LTHOUSE<br><br>                <b>End Azimuth:</b> SE<br><br>                <b>End Location:</b> NORTH POINT LTHOUSE<br><br>                <b>Episode Narrative:</b> A strong cold front moved through the near shore areas during the afternoon of May 31st and generated severe storms with gusty winds over portions of the near-shore waters of Lake Michigan.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_493c3f8b3e77c731c53a184fe78c26f6.setContent(html_3a3adc7e4d7d941de186224a5468dd8d);
+            
+        
+
+        marker_dbb21ee8bebc928e4fb1bca6299026e4.bindPopup(popup_493c3f8b3e77c731c53a184fe78c26f6)
+        ;
+
+        
+    
+    
+            var marker_6478744d7b1c43ad5203e56b84a3c057 = L.marker(
+                [43.046, -87.879],
+                {}
+            ).addTo(feature_group_8684faebffdac86c7a4ce70437ba1b6b);
+        
+    
+        var popup_768bd3cef20309a5ee40b3a5a45496c0 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_c15d8fb591a49b72b8b7a0346f05d22c = $(`<div id="html_c15d8fb591a49b72b8b7a0346f05d22c" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 19-OCT-11 19:00:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> SE<br><br>                <b>Begin Location:</b> NORTH POINT LTHOUSE<br><br>                <b>End Azimuth:</b> SE<br><br>                <b>End Location:</b> NORTH POINT LTHOUSE<br><br>                <b>Episode Narrative:</b> Rapidly developing low pressure moved across western Ohio and southeast Lower Michigan during the overnight period of October 19th and morning of October 20th.  An associated strong pressure gradient and lingering unstable conditions over Lake Michigan allowed strong gusty north to northeast winds to mix down to the lake surface.  The lake surface temperature at this time was estimated to be in the 54 to 58 degree range.  Wind gusts reached 50 to 70 mph along the lake shore.  The strong winds caused high waves of 12 to 16 feet.  The strong winds and high waves caused extensive damage to boats in the South Shore Yacht Club, mainly due to an eroding and failing breakwall protecting the southern part of Milwaukee Harbor.  Three boats were totally destroyed at the yacht club.  Four others were washed ashore and were able to be salvaged.  Two of the destroyed boats were sunk.  One person at the Club, while trying to secure a boat with a rope line, was tossed about on the boat due to wave action and injured (directly-related).<br><br>                <b>Event Narrative:</b> Measured at MLWW3 marine observation platform.<br><br>                <b>Damage:</b> 300.00K<br><br>               </div>`)[0];
+                popup_768bd3cef20309a5ee40b3a5a45496c0.setContent(html_c15d8fb591a49b72b8b7a0346f05d22c);
+            
+        
+
+        marker_6478744d7b1c43ad5203e56b84a3c057.bindPopup(popup_768bd3cef20309a5ee40b3a5a45496c0)
+        ;
+
+        
+    
+    
+            var marker_4a0ccf75d14f81f3ab780b57cfe8b65b = L.marker(
+                [41.696, -86.9939],
+                {}
+            ).addTo(feature_group_8684faebffdac86c7a4ce70437ba1b6b);
+        
+    
+        var popup_a957e964591dbab286c5507a9ecad19f = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_7a9a9f633cc8c5eeb09c318fc1e6fdf2 = $(`<div id="html_7a9a9f633cc8c5eeb09c318fc1e6fdf2" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 18-JUN-12 12:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> WSW<br><br>                <b>Begin Location:</b> MICHIGAN CITY<br><br>                <b>End Azimuth:</b> WSW<br><br>                <b>End Location:</b> MICHIGAN CITY<br><br>                <b>Episode Narrative:</b> Strong winds to around 30 knots developed over southern Lake Michigan in response to an area of low pressure moving across the lake.<br><br>                <b>Event Narrative:</b> A man and a female companion rowed a small inflatable boat approximately a quarter mile from the Lake View Beach shore.  The pair went too far out into the lake and were unable to row back against the strong winds.  The man tried to swim and pull the boat back to shore but became fatigued.  While trying to reenter the boat, the boat capsized and blew away.  Winds were reported to be around 30 knots with waves around 3 feet.  Neither person was wearing a life jacket.  The female was able to make it back to shore; however, the man went missing and drowned.  His body was recovered on June 23rd.<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_a957e964591dbab286c5507a9ecad19f.setContent(html_7a9a9f633cc8c5eeb09c318fc1e6fdf2);
+            
+        
+
+        marker_4a0ccf75d14f81f3ab780b57cfe8b65b.bindPopup(popup_a957e964591dbab286c5507a9ecad19f)
+        ;
+
+        
+    
+    
+            var marker_9bef2860dbf89a13ac1f205790d6b1f4 = L.marker(
+                [43.751, -87.6948],
+                {}
+            ).addTo(feature_group_8684faebffdac86c7a4ce70437ba1b6b);
+        
+    
+        var popup_0be42b877367e34e826c7819328ba884 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_7c8ada0fc9beeb38e9e63b1c8ce5ffc9 = $(`<div id="html_7c8ada0fc9beeb38e9e63b1c8ce5ffc9" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 10-AUG-12 11:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 2<br><br>                <b>Begin Azimuth:</b> E<br><br>                <b>Begin Location:</b> SHEBOYGAN<br><br>                <b>End Azimuth:</b> E<br><br>                <b>End Location:</b> SHEBOYGAN<br><br>                <b>Episode Narrative:</b> A tight pressure gradient over Lake Michigan due to strengthening low pressure moving through the Ohio Valley and central Great Lakes was responsible for gusty northeast winds and resultant high waves at Sheboygan Harbor.  Wave heights reached as high as 14 feet at the southern Lake Michigan buoy.  Winds gusted as high as 36 knots at the Sheboygan C-Man station in the early afternoon on August 10th.  The two victims were swept into Lake Michigan by high waves crashing onto the Sheboygan harbor north break wall.  The two were trying to recover fishing equipment which had fallen into the lake the day before.  A third person was also washed into the lake by the high waves, but survived due to holding onto a nearby ladder.  The first victim's body was located the next day, Saturday, August 11th.  The second victim was found the following day, on Sunday, August 12th.<br><br>                <b>Event Narrative:</b> Sustained winds of 32 knots gusting to 34-36 knots caused high waves on the Sheboygan harbor break wall.<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_0be42b877367e34e826c7819328ba884.setContent(html_7c8ada0fc9beeb38e9e63b1c8ce5ffc9);
+            
+        
+
+        marker_9bef2860dbf89a13ac1f205790d6b1f4.bindPopup(popup_0be42b877367e34e826c7819328ba884)
+        ;
+
+        
+    
+    
+            var marker_42992ac8a50fef6c2e6fb93b992c01b4 = L.marker(
+                [43.3908, -87.8608],
+                {}
+            ).addTo(feature_group_8684faebffdac86c7a4ce70437ba1b6b);
+        
+    
+        var popup_ca173fece42d066dea346c3d92d3f1a9 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_1406c192f7d705f32ac748556af3e8ec = $(`<div id="html_1406c192f7d705f32ac748556af3e8ec" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 10-MAR-12 10:30:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> NNE<br><br>                <b>Begin Location:</b> PORT WASHINGTON<br><br>                <b>End Azimuth:</b> NNE<br><br>                <b>End Location:</b> PORT WASHINGTON<br><br>                <b>Episode Narrative:</b> An experienced kayaker battered by buffeting winds and high waves was thrown from his kayak and drowned on Lake Michigan (directly-related fatality), just northeast of the Port Washington marina.  Strong low pressure moving across southern Canada created a tight pressure gradient over Lake Michigan.  This tight pressure gradient helped cause strong, gusty south winds over the near shore waters of Lake Michigan.  Sustained winds at the Port Washington GLOS observing station were 10 to 20 knots with frequent gusts of 20 to 30 knots.  This Port Washington observing station is partially shielded by nearby terrain so does not alway reflect actual wind speed velocities.  Farther north, the Sheboygan C-MAN station maintained by GLOS recorded much stronger winds at the time of the incident, with gusts of 35 to 40 knots.<br><br>                <b>Event Narrative:</b> See episode narrative.<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_ca173fece42d066dea346c3d92d3f1a9.setContent(html_1406c192f7d705f32ac748556af3e8ec);
+            
+        
+
+        marker_42992ac8a50fef6c2e6fb93b992c01b4.bindPopup(popup_ca173fece42d066dea346c3d92d3f1a9)
+        ;
+
+        
+    
+    
+            var marker_2e3757c2284b0097b161c1aea3539e4c = L.marker(
+                [43.3559, -124.3446],
+                {}
+            ).addTo(feature_group_8684faebffdac86c7a4ce70437ba1b6b);
+        
+    
+        var popup_5793d0725db8e9522bb0f3df8e891a87 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_df5d4c662317545a68dcf2874e7e8477 = $(`<div id="html_df5d4c662317545a68dcf2874e7e8477" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 07-OCT-13 05:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> W<br><br>                <b>Begin Location:</b> COOS BAY<br><br>                <b>End Azimuth:</b> W<br><br>                <b>End Location:</b> COOS BAY<br><br>                <b>Episode Narrative:</b> A 30-foot fishing vessel (Ruth) was operating near the Coos Bay north jetty when it was struck by a sneaker wave. The boat was swept into the jetty. Two passengers climbed onto the jetty, but a third passenger, a 50 year old female, was washed overboard and out to sea. She was missing for a while, but later her body was recovered by the Coast guard after a search operation.<br><br>                <b>Event Narrative:</b> A 30-foot fishing vessel (Ruth) was operating near the Coos Bay north jetty when it was struck by a sneaker wave. The boat was swept into the jetty. Two passengers climbed onto the jetty, but a third passenger, a 50 year old female, was washed overboard and out to sea. She was missing for a while, but later her body was recovered by the Coast guard after a search operation.<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_5793d0725db8e9522bb0f3df8e891a87.setContent(html_df5d4c662317545a68dcf2874e7e8477);
+            
+        
+
+        marker_2e3757c2284b0097b161c1aea3539e4c.bindPopup(popup_5793d0725db8e9522bb0f3df8e891a87)
+        ;
+
+        
+    
+    
+            var marker_0caeeb36ee81351d05a9cc5c3b41714b = L.marker(
+                [37.837, -122.3756],
+                {}
+            ).addTo(feature_group_8684faebffdac86c7a4ce70437ba1b6b);
+        
+    
+        var popup_8423320b6118c01a4f7e2e4adead4d27 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_9ae017e71288b64b0a655fbb0bfe3b89 = $(`<div id="html_9ae017e71288b64b0a655fbb0bfe3b89" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 09-MAY-13 13:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> SE<br><br>                <b>Begin Location:</b> ANGEL ISLAND<br><br>                <b>End Azimuth:</b> SE<br><br>                <b>End Location:</b> ANGEL ISLAND<br><br>                <b>Episode Narrative:</b> Gusty Southwest Winds lead to the capsizing of an America's Cup Yacht in San Francisco Bay during training runs.<br><br>                <b>Event Narrative:</b> Southwest winds caused a 72 foot long America's Cup Yacht to capsize during training runs in San Francisco Bay. 12 people were onboard the yacht when it capsized and had to be rescued. There was one fatality.<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_8423320b6118c01a4f7e2e4adead4d27.setContent(html_9ae017e71288b64b0a655fbb0bfe3b89);
+            
+        
+
+        marker_0caeeb36ee81351d05a9cc5c3b41714b.bindPopup(popup_8423320b6118c01a4f7e2e4adead4d27)
+        ;
+
+        
+    
+    
+            var marker_4ea828ab927e07f03cad07d5906a9de9 = L.marker(
+                [27.1656, -80.1563],
+                {}
+            ).addTo(feature_group_8684faebffdac86c7a4ce70437ba1b6b);
+        
+    
+        var popup_d8769adb1641acbc202b8d1d31dacc7b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_7aba3d64b02ca72639776697eb630402 = $(`<div id="html_7aba3d64b02ca72639776697eb630402" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 19-JAN-13 12:45:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> ESE<br><br>                <b>Begin Location:</b> STUART<br><br>                <b>End Azimuth:</b> ESE<br><br>                <b>End Location:</b> STUART<br><br>                <b>Episode Narrative:</b> Strong winds produced high seas near and offshore St. Lucie Inlet. A fishing vessel capsized due to the rough conditions and four men were ejected from the boat. One man drowned and three were rescued.<br><br>                <b>Event Narrative:</b> Strong onshore (gradient) winds produced 6-8 foot seas near and offshore St. Lucie Inlet. A 23-foot commercial fishing boat was returning to port due to the rough conditions and capsized in the St. Lucie Inlet. A large wave pushed the boat forward and it then nose-dived into the back of another wave, ejecting four men from the vessel as it capsized. One man drowned and the other three were rescued by another commerical fisherman as they were hanging onto the overturned vessel.<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_d8769adb1641acbc202b8d1d31dacc7b.setContent(html_7aba3d64b02ca72639776697eb630402);
+            
+        
+
+        marker_4ea828ab927e07f03cad07d5906a9de9.bindPopup(popup_d8769adb1641acbc202b8d1d31dacc7b)
+        ;
+
+        
+    
+    
+            var marker_0e37ccadd334a5e0289b2c4ec811bd71 = L.marker(
+                [47.5646, -122.4217],
+                {}
+            ).addTo(feature_group_8684faebffdac86c7a4ce70437ba1b6b);
+        
+    
+        var popup_c84c0fe88c65c28b08a8820a67cb4668 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_5f4e78e5ea16b38e92a26b644ac5f6ea = $(`<div id="html_5f4e78e5ea16b38e92a26b644ac5f6ea" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 15-NOV-13 14:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> ESE<br><br>                <b>Begin Location:</b> BAINBRIDGE ISLAND<br><br>                <b>End Azimuth:</b> ESE<br><br>                <b>End Location:</b> BAINBRIDGE ISLAND<br><br>                <b>Episode Narrative:</b> A Ballard Marine Construction Boat, an approximately 25 foot commericial aluminum boat, conducting underwater surveys off Alki Point capsized around 2 pm on Friday. 4 people were on board the boat, 3 were rescued, 1 was found in the wheelhouse of the boat and he eventually died.<br><br>                <b>Event Narrative:</b> A Ballard Marine Construction Boat, an approximately 25 foot commericial aluminum boat, conducting underwater surveys off Alki Point capsized around 2 pm on Friday. 4 people were on board the boat, 3 were rescued, 1 was found in the wheelhouse of the boat and he eventually died.<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_c84c0fe88c65c28b08a8820a67cb4668.setContent(html_5f4e78e5ea16b38e92a26b644ac5f6ea);
+            
+        
+
+        marker_0e37ccadd334a5e0289b2c4ec811bd71.bindPopup(popup_c84c0fe88c65c28b08a8820a67cb4668)
+        ;
+
+        
+    
+    
+            var marker_00c7b817f40e1ff21d85040aedcb0385 = L.marker(
+                [34.0362, -118.8987],
+                {}
+            ).addTo(feature_group_8684faebffdac86c7a4ce70437ba1b6b);
+        
+    
+        var popup_a4c7f3b3b2992b86fb8fc17d6fb15c7e = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_3281b97e1f77b7dcac74c3647247252e = $(`<div id="html_3281b97e1f77b7dcac74c3647247252e" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 16-NOV-14 06:00:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> NNE<br><br>                <b>Begin Location:</b> SANTA MONICA BASIN BUOY (46025)<br><br>                <b>End Azimuth:</b> NNE<br><br>                <b>End Location:</b> SANTA MONICA BASIN BUOY (46025)<br><br>                <b>Episode Narrative:</b> Strong and gusty Santa Ana winds impacted the coastal waters off the coast of Ventura county. In one incident, a 15 foot boat was capsized by the strong northeasterly winds. In another incident, a kayaker was blown about 600 yards offshore by the winds.<br><br>                <b>Event Narrative:</b> Strong Santa Ana winds impacted the coastal waters just off the Santa Monica Mountains. The north to northeast winds blew a kayaker 600 yards offshore. The kayaker was rescued by the fire department.<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_a4c7f3b3b2992b86fb8fc17d6fb15c7e.setContent(html_3281b97e1f77b7dcac74c3647247252e);
+            
+        
+
+        marker_00c7b817f40e1ff21d85040aedcb0385.bindPopup(popup_a4c7f3b3b2992b86fb8fc17d6fb15c7e)
+        ;
+
+        
+    
+    
+            var marker_1d3670d740cb816aaf603849141de68c = L.marker(
+                [34.1319, -119.1963],
+                {}
+            ).addTo(feature_group_8684faebffdac86c7a4ce70437ba1b6b);
+        
+    
+        var popup_ba6aedc9b61adc01e520f31764e0538f = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_0c10edd4a263e826f6e7074e1299ee05 = $(`<div id="html_0c10edd4a263e826f6e7074e1299ee05" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 16-NOV-14 07:00:00<br><br>                                <b>Injuries:</b> 2<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> ESE<br><br>                <b>Begin Location:</b> EAST SANTA BARBARA BUOY (46053)<br><br>                <b>End Azimuth:</b> ESE<br><br>                <b>End Location:</b> EAST SANTA BARBARA BUOY (46053)<br><br>                <b>Episode Narrative:</b> Strong and gusty Santa Ana winds impacted the coastal waters off the coast of Ventura county. In one incident, a 15 foot boat was capsized by the strong northeasterly winds. In another incident, a kayaker was blown about 600 yards offshore by the winds.<br><br>                <b>Event Narrative:</b> Strong Santa Ana winds impacted the coastal waters just off the Ventura County coast. Near Ormond Beach, the strong northeast winds capsized a 15 foot long boat. Two people were rescued and treated for hypothermia.<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_ba6aedc9b61adc01e520f31764e0538f.setContent(html_0c10edd4a263e826f6e7074e1299ee05);
+            
+        
+
+        marker_1d3670d740cb816aaf603849141de68c.bindPopup(popup_ba6aedc9b61adc01e520f31764e0538f)
+        ;
+
+        
+    
+    
+            var marker_6f1f4a423c688c276ee90f0d43b9103a = L.marker(
+                [47.5742, -90.8351],
+                {}
+            ).addTo(feature_group_8684faebffdac86c7a4ce70437ba1b6b);
+        
+    
+        var popup_51271f2ce142e72a2e0383ebdfdd021b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_c3b522f26051ad99c1c77e2faec046c1 = $(`<div id="html_c3b522f26051ad99c1c77e2faec046c1" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 23-DEC-14 15:10:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 2<br><br>                <b>Begin Azimuth:</b> WSW<br><br>                <b>Begin Location:</b> LUTSEN<br><br>                <b>End Azimuth:</b> WSW<br><br>                <b>End Location:</b> LUTSEN<br><br>                <b>Episode Narrative:</b> Waves as high as 6 feet washed a man into the lake as he was sitting on a rock along the shore of Lake Superior at Bluefin Bay Resort. He was wearing swimming trunks as he had just exited a nearby sauna. Another man who was trying to reach out to the victim from a rock slipped into the lake and was washed away by the high waves.  Both men drowned. Winds measured by the Grand Marais ASOS were northeast from about 10 to 15 miles an hour since midnight but were decreasing to under 10 mph at the time of the drownings.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_51271f2ce142e72a2e0383ebdfdd021b.setContent(html_c3b522f26051ad99c1c77e2faec046c1);
+            
+        
+
+        marker_6f1f4a423c688c276ee90f0d43b9103a.bindPopup(popup_51271f2ce142e72a2e0383ebdfdd021b)
+        ;
+
+        
+    
+    
+            var marker_4287ffb9a356d0cc67ef45db5265cec7 = L.marker(
+                [38.3073, -123.0501],
+                {}
+            ).addTo(feature_group_8684faebffdac86c7a4ce70437ba1b6b);
+        
+    
+        var popup_3de300b0f4d0643809358959ce6befe5 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_9cd5345b7942123de739fff2730822ef = $(`<div id="html_9cd5345b7942123de739fff2730822ef" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 01-NOV-14 08:00:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 4<br><br>                <b>Begin Azimuth:</b> SSW<br><br>                <b>Begin Location:</b> BODEGA BAY<br><br>                <b>End Azimuth:</b> SSW<br><br>                <b>End Location:</b> BODEGA BAY<br><br>                <b>Episode Narrative:</b> Long period swell produced high surf and dangerous ocean conditions. A boat capsized and several fatalities occurred.<br><br>                <b>Event Narrative:</b> High surf and potentially a rouge wave occurred in Bodega Bay, capsizing a 32 foot long vessel after an early morning crabbing trip on the opening day of recreational crab season. Five people on the boat were thrown into the water, none of them were wearing life jackets. Four of the people died in the water and one was able to swim to shore and was rescued later by a helicopter crew. The incident was not directly caused by local wind conditions, but distant wind in a strong Pacific Storm created the swell conditions that caused this incident.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_3de300b0f4d0643809358959ce6befe5.setContent(html_9cd5345b7942123de739fff2730822ef);
+            
+        
+
+        marker_4287ffb9a356d0cc67ef45db5265cec7.bindPopup(popup_3de300b0f4d0643809358959ce6befe5)
+        ;
+
+        
+    
+    
+            var marker_a70c18ecc6f0baf6bee1e14d72943b12 = L.marker(
+                [48.3602, -122.6654],
+                {}
+            ).addTo(feature_group_8684faebffdac86c7a4ce70437ba1b6b);
+        
+    
+        var popup_1b84df3bde897937c9588eda782770ea = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_b55d2aaaee6f382260e345d2df994d77 = $(`<div id="html_b55d2aaaee6f382260e345d2df994d77" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Marine Strong Wind<br><br>                <b>Date: </b> 31-MAY-14 20:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 2<br><br>                <b>Begin Azimuth:</b> NW<br><br>                <b>Begin Location:</b> NAS WHIDBEY IS<br><br>                <b>End Azimuth:</b> NW<br><br>                <b>End Location:</b> NAS WHIDBEY IS<br><br>                <b>Episode Narrative:</b> Two enlisted men from Texas and California were not equipped for cold and windy waters when they went fishing from kayaks and drowned not far from the Whidbey Island Naval Air Station.<br><br>                <b>Event Narrative:</b> Two enlisted men from Texas and California were not equipped for cold and windy waters when they went fishing from kayaks and drowned not far from the Whidbey Island Naval Air Station.  The men were in 10-foot, open, lake-style kayaks, one wearing jeans and the other shorts. They wore recreational life vests.   The cause of death was salt water drowning with hypothermia.<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_1b84df3bde897937c9588eda782770ea.setContent(html_b55d2aaaee6f382260e345d2df994d77);
+            
+        
+
+        marker_a70c18ecc6f0baf6bee1e14d72943b12.bindPopup(popup_1b84df3bde897937c9588eda782770ea)
+        ;
+
+        
+    
+    
+            var layer_control_2a243af7d6a50b6c876d1810426b85ea = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_ac90dc31f13cd36ea65a95280d39c998,
+                },
+                overlays :  {
+                    "Marine Strong Wind" : feature_group_8684faebffdac86c7a4ce70437ba1b6b,
+                },
+            };
+            L.control.layers(
+                layer_control_2a243af7d6a50b6c876d1810426b85ea.base_layers,
+                layer_control_2a243af7d6a50b6c876d1810426b85ea.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_f949370b101aa654e12886d1bbb92d3b);
+        
+</script>
+</html>

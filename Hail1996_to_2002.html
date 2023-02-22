@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_70694a7ca377bb844f5a5308d6ef345b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_70694a7ca377bb844f5a5308d6ef345b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_70694a7ca377bb844f5a5308d6ef345b = L.map(
+                "map_70694a7ca377bb844f5a5308d6ef345b",
+                {
+                    center: [38.0, -97.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0fcd3e9c9706af9176e720573e7f8862 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_70694a7ca377bb844f5a5308d6ef345b);
+        
+    
+            var feature_group_80e265050edd76a254f27a32d4a2c20f = L.featureGroup(
+                {}
+            ).addTo(map_70694a7ca377bb844f5a5308d6ef345b);
+        
+    
+            var marker_12ac15b72748d7a62794910cceef2f31 = L.marker(
+                [43.07, -92.7],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_d072a544c7dda4e642542be81f696f9d = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_835440cfddf536aad275db4811cfbb23 = $(`<div id="html_835440cfddf536aad275db4811cfbb23" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 17-MAY-96 23:57:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> CHARLES CITY<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> CHARLES CITY<br><br>                <b>Episode Narrative:</b> As the storms moved through the Charles City area, they became very serious.  Hail the size of soft balls pelted the city.  One woman was injured as the was closing the window of her house.  The hail stones broke the window cutting her.  Her wounds required two stitches.  There were other reports around town of hail stones breaking through roofs.  Considerable damage was reported around town ranging from broken windshields to roof damage.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> .6M<br><br>               </div>`)[0];
+                popup_d072a544c7dda4e642542be81f696f9d.setContent(html_835440cfddf536aad275db4811cfbb23);
+            
+        
+
+        marker_12ac15b72748d7a62794910cceef2f31.bindPopup(popup_d072a544c7dda4e642542be81f696f9d)
+        ;
+
+        
+    
+    
+            var marker_1141f9d9034d4677d0ec2f2aa80f6e1f = L.marker(
+                [44.1, -103.52],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_c8785a548bdf3267f8ed1aa8968a43be = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_8f6fc0adf8eab2d991011dd4e45b16b6 = $(`<div id="html_8f6fc0adf8eab2d991011dd4e45b16b6" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 13-JUN-96 13:35:00<br><br>                                <b>Injuries:</b> 5<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> PLACERVILLE<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> PLACERVILLE<br><br>                <b>Episode Narrative:</b> Several car windows broken at a campground near Placerville. Several hikers at Placerville received minor injuries from hail.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 1K<br><br>               </div>`)[0];
+                popup_c8785a548bdf3267f8ed1aa8968a43be.setContent(html_8f6fc0adf8eab2d991011dd4e45b16b6);
+            
+        
+
+        marker_1141f9d9034d4677d0ec2f2aa80f6e1f.bindPopup(popup_c8785a548bdf3267f8ed1aa8968a43be)
+        ;
+
+        
+    
+    
+            var marker_80d112d1f8f350971127a084270ec853 = L.marker(
+                [32.25, -101.42],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_44985c93159a3eb44b93c017b4826e4b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_ef6c3c9caa53556efcc2b7585c939019 = $(`<div id="html_ef6c3c9caa53556efcc2b7585c939019" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 10-MAY-96 17:45:00<br><br>                                <b>Injuries:</b> 48<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> E<br><br>                <b>Begin Location:</b> BIG SPRING<br><br>                <b>End Azimuth:</b> E<br><br>                <b>End Location:</b> BIG SPRING<br><br>                <b>Episode Narrative:</b> A left-split storm moved to the NNE from Glasscock County and produced one inch hail in the Elbow community.  The storm reorganized with the storm-relative inflow favoring the north side of the storm.  As the storm moved into the Big Spring area the it became a left-split supercell with the velocity display from the KMAF WSR-88D showing a well-developed anti-cyclonically rotating mesocyclone.  The storm moved over the eastern half of the city from the south.  In southern Big Spring baseball size hail fell while over the northeastern and eastern parts of the city softball size hail was reported.  Graduation ceremony was ready to commence when softball hail struck Howard College.  Skylights on the coliseum roof were shattered sending glass falling onto the floor that would have been filled with candidates just a few minutes later.  The largest hail was reported at the intersection of I-20 and Business I-20 as the storm exited the city to the northeast.  A Boy Scout caravan of 5 vehicles was pummelled by 5 inch diameter hail.  The hail knocked out every window in every vehicle.Injuries from the storm included many cuts from broken glass and from direct strikes by jagged hailstones.  One hailstone broke the side window of a car and continued with enough force to break a woman's arm inside the car.   About 2000 residential roofs were replaced with many of these roofs less than a year old due to the April 3, 1995 hail storm.  The Big Spring storm then moved northeast to the Vincent community where softball hail was once again reported.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 30M<br><br>               </div>`)[0];
+                popup_44985c93159a3eb44b93c017b4826e4b.setContent(html_ef6c3c9caa53556efcc2b7585c939019);
+            
+        
+
+        marker_80d112d1f8f350971127a084270ec853.bindPopup(popup_44985c93159a3eb44b93c017b4826e4b)
+        ;
+
+        
+    
+    
+            var marker_9673e96f3f5d820f78f4aab479e6f188 = L.marker(
+                [39.03, -104.48],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_0869b05ee3646ab58529ef7cf09b8425 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_aa068d48d2b34b14ed077e346720c16a = $(`<div id="html_aa068d48d2b34b14ed077e346720c16a" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 23-JUL-96 17:15:00<br><br>                                <b>Injuries:</b> 2<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> PEYTON<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> PEYTON<br><br>                <b>Episode Narrative:</b> Baseball-sized hail in Peyton, injured two people and caused widespread damage to 125 homes.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> .3M<br><br>               </div>`)[0];
+                popup_0869b05ee3646ab58529ef7cf09b8425.setContent(html_aa068d48d2b34b14ed077e346720c16a);
+            
+        
+
+        marker_9673e96f3f5d820f78f4aab479e6f188.bindPopup(popup_0869b05ee3646ab58529ef7cf09b8425)
+        ;
+
+        
+    
+    
+            var marker_00d8a6c7dce9dc5c6a5abb6a0f1e633d = L.marker(
+                [32.97, -102.83],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_4ed50cfed9dede6a3314e19dac572755 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_def94114c7b62985de46ab740cb559eb = $(`<div id="html_def94114c7b62985de46ab740cb559eb" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 02-JUN-96 20:40:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> E<br><br>                <b>Begin Location:</b> DENVER CITY<br><br>                <b>End Azimuth:</b> E<br><br>                <b>End Location:</b> DENVER CITY<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 2.5M<br><br>               </div>`)[0];
+                popup_4ed50cfed9dede6a3314e19dac572755.setContent(html_def94114c7b62985de46ab740cb559eb);
+            
+        
+
+        marker_00d8a6c7dce9dc5c6a5abb6a0f1e633d.bindPopup(popup_4ed50cfed9dede6a3314e19dac572755)
+        ;
+
+        
+    
+    
+            var marker_7fbfed7a8b88f873d402c1ed6c63a72d = L.marker(
+                [43.5, -91.47],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_f20ad6d1bb8eec74ab571678185f19d6 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_fa4928ad473f9b947f5f31a7a7656f62 = $(`<div id="html_fa4928ad473f9b947f5f31a7a7656f62" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 18-MAY-96 01:30:00<br><br>                                <b>Injuries:</b> 2<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> EITZEN<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> EITZEN<br><br>                <b>Episode Narrative:</b> Baseball size hail damaged crops and injured farmers in the area.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 1M<br><br>               </div>`)[0];
+                popup_f20ad6d1bb8eec74ab571678185f19d6.setContent(html_fa4928ad473f9b947f5f31a7a7656f62);
+            
+        
+
+        marker_7fbfed7a8b88f873d402c1ed6c63a72d.bindPopup(popup_f20ad6d1bb8eec74ab571678185f19d6)
+        ;
+
+        
+    
+    
+            var marker_df47a2a3f99e61eadf81388559707265 = L.marker(
+                [46.67, -103.17],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_e21b1d4d10184d6d27790cb61e6a41a8 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_dfe42b523335c4f4021426b75afde2ee = $(`<div id="html_dfe42b523335c4f4021426b75afde2ee" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 28-JUN-96 15:45:00<br><br>                                <b>Injuries:</b> 3<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> SE<br><br>                <b>Begin Location:</b> MEDORA<br><br>                <b>End Azimuth:</b> SE<br><br>                <b>End Location:</b> MEDORA<br><br>                <b>Episode Narrative:</b> The sudden hail storm injured a few park hikers, mostly with bruises. Winds of 70-80 mph were also reported. Damage estimated.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 25K<br><br>               </div>`)[0];
+                popup_e21b1d4d10184d6d27790cb61e6a41a8.setContent(html_dfe42b523335c4f4021426b75afde2ee);
+            
+        
+
+        marker_df47a2a3f99e61eadf81388559707265.bindPopup(popup_e21b1d4d10184d6d27790cb61e6a41a8)
+        ;
+
+        
+    
+    
+            var marker_9e91db2970f7d6922d63ef421f14ddf6 = L.marker(
+                [43.88, -103.47],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_17d1834d8d699e09e280e749ea6bb287 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_4bad80968f91ddf5bf7b4afb9000c312 = $(`<div id="html_4bad80968f91ddf5bf7b4afb9000c312" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 20-JUL-96 20:55:00<br><br>                                <b>Injuries:</b> 15<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> MOUNT RUSHMORE<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> MOUNT RUSHMORE<br><br>                <b>Episode Narrative:</b> 300 to 500 people caught in hail storm. Over 100 vehicles damaged.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> .15M<br><br>               </div>`)[0];
+                popup_17d1834d8d699e09e280e749ea6bb287.setContent(html_4bad80968f91ddf5bf7b4afb9000c312);
+            
+        
+
+        marker_9e91db2970f7d6922d63ef421f14ddf6.bindPopup(popup_17d1834d8d699e09e280e749ea6bb287)
+        ;
+
+        
+    
+    
+            var marker_e641c9f3a6a34af4056a00cb695d2f49 = L.marker(
+                [41.87, -84.23],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_eb364873e6b80f8ea9205dd31480273a = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_a7742871917e401b4d7187b3e94ea9a0 = $(`<div id="html_a7742871917e401b4d7187b3e94ea9a0" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 12-APR-96 15:22:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> CLAYTON<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> CLAYTON<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 1M<br><br>               </div>`)[0];
+                popup_eb364873e6b80f8ea9205dd31480273a.setContent(html_a7742871917e401b4d7187b3e94ea9a0);
+            
+        
+
+        marker_e641c9f3a6a34af4056a00cb695d2f49.bindPopup(popup_eb364873e6b80f8ea9205dd31480273a)
+        ;
+
+        
+    
+    
+            var marker_e9810828a547ba7a84efb4fccb80e221 = L.marker(
+                [27.55, -99.47],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_d2adfbd3d7bf3298e1634ac3f5ce5be9 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_1f84f10c390015ae4d55316d950cdb8a = $(`<div id="html_1f84f10c390015ae4d55316d950cdb8a" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 27-SEP-96 17:20:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> LAREDO<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> LAREDO<br><br>                <b>Episode Narrative:</b> Skywarn spotter reported golfball size hail. One person was killed, while taking refuge beneath a tree, by a large felled tree branch.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_d2adfbd3d7bf3298e1634ac3f5ce5be9.setContent(html_1f84f10c390015ae4d55316d950cdb8a);
+            
+        
+
+        marker_e9810828a547ba7a84efb4fccb80e221.bindPopup(popup_d2adfbd3d7bf3298e1634ac3f5ce5be9)
+        ;
+
+        
+    
+    
+            var marker_b762fa891df38e3ae66acb70d3db6fcf = L.marker(
+                [34.05, -95.0],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_3aefd8977180578b80b3f0f08666cc03 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_7c70bcd95ce4a80db099fdb341cce8d1 = $(`<div id="html_7c70bcd95ce4a80db099fdb341cce8d1" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 19-APR-96 19:24:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> WRIGHT CITY<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> WRIGHT CITY<br><br>                <b>Episode Narrative:</b> One man suffered from a broken toe as a hail stone fell on his foot.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_3aefd8977180578b80b3f0f08666cc03.setContent(html_7c70bcd95ce4a80db099fdb341cce8d1);
+            
+        
+
+        marker_b762fa891df38e3ae66acb70d3db6fcf.bindPopup(popup_3aefd8977180578b80b3f0f08666cc03)
+        ;
+
+        
+    
+    
+            var marker_de371c4ce6961d8772e828129d35eeb8 = L.marker(
+                [47.4, -105.57],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_d7098574201b94a7421f6838a9f85c55 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_ec22dea3ec74ee8c40cfb05209ef4d5e = $(`<div id="html_ec22dea3ec74ee8c40cfb05209ef4d5e" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 19-JUL-96 23:45:00<br><br>                                <b>Injuries:</b> 2<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> SE<br><br>                <b>Begin Location:</b> CIRCLE<br><br>                <b>End Azimuth:</b> SE<br><br>                <b>End Location:</b> CIRCLE<br><br>                <b>Episode Narrative:</b> STRONG THUNDERSTORM WINDS AND ONE INCH HAIL BATTERED A FARM SOUTHEAST OF CIRCLE.  A LARGE PICTURE WINDOW WAS SHATTERED AND WHEAT WAS FLATTENED, 100% WHEAT LOSS WAS REPORTED IN SOME AREAS AROUND BROCKWAY AND CIRCLE.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 30K<br><br>               </div>`)[0];
+                popup_d7098574201b94a7421f6838a9f85c55.setContent(html_ec22dea3ec74ee8c40cfb05209ef4d5e);
+            
+        
+
+        marker_de371c4ce6961d8772e828129d35eeb8.bindPopup(popup_d7098574201b94a7421f6838a9f85c55)
+        ;
+
+        
+    
+    
+            var marker_0dc2ee7e11df695da4bc73fbca637979 = L.marker(
+                [27.92, -81.78],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_4060c48bf17752c7c163615dda5980d3 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_b5f4bb26aecfb78756524cfc84758ca0 = $(`<div id="html_b5f4bb26aecfb78756524cfc84758ca0" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 30-MAR-96 15:15:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> NE<br><br>                <b>Begin Location:</b> BARTOW<br><br>                <b>End Azimuth:</b> NE<br><br>                <b>End Location:</b> BARTOW<br><br>                <b>Episode Narrative:</b> Baseball sized hail was reported by the fixed base operator and security personnel at the Bartow Municipal Airport.  The hail was reported to have covered the ground up to a foot deep in some drifts.Wind blown hail shattered the west window of the control tower which caused a minor injury to one of the tower personnel seeking cover.Several vehicles suffered paint and glass damage from the baseball sized hail at and in the vicinity of the Bartow Municipal Airport.Several trees and plants were stripped of leaves and branches from the baseball sized hail in the vicinity of the airport.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> .4M<br><br>               </div>`)[0];
+                popup_4060c48bf17752c7c163615dda5980d3.setContent(html_b5f4bb26aecfb78756524cfc84758ca0);
+            
+        
+
+        marker_0dc2ee7e11df695da4bc73fbca637979.bindPopup(popup_4060c48bf17752c7c163615dda5980d3)
+        ;
+
+        
+    
+    
+            var marker_9541b9af599420f7a53bbe5cbccbb544 = L.marker(
+                [29.62, -103.53],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_8e94eb8e45959091e230bcecdc71829e = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_065d789542f8a8197ccef61a109740d2 = $(`<div id="html_065d789542f8a8197ccef61a109740d2" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 15-JUN-97 18:50:00<br><br>                                <b>Injuries:</b> 2<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> N<br><br>                <b>Begin Location:</b> STUDY BUTTE<br><br>                <b>End Azimuth:</b> N<br><br>                <b>End Location:</b> STUDY BUTTE<br><br>                <b>Episode Narrative:</b> A strong thunderstorm in southern Presidio County moved into southwestern Brewster County and became a supercell.  This storm had a continuous track of damaging winds and hail for 33 miles.  This track could have been longer, but in this desolate area, no other reports were available.  Although there was F1 scale damage, there were no confirmed tornado sightings.  Most of the significant damage was thought to have come from Rear-flank downdrafts, due to the location to the proximity of the large hail.  The storm was moving to the ESE at 45-50 mph, so forward-flank downdrafts could have caused some of the damage as well due to the summation of outflow speed and translational speed.  Along Highway 118 the fringe-to-fringe damage path was 8 miles wide--also suggesting large-scale outflow was a contributor to the damage.An unobstructed view from the northeast allowed people in the Midland/Odessa area to see the upper half of the storm from about 200 miles away just before sunset.  The storm tower showed strong signs of rotation (in the form of large bands) even from this distance.<br><br>                <b>Event Narrative:</b> North of where the RFD winds caused damage, hail up to softball size smashed car windshields and pummelled a couple of houses.  One gentleman, who was attempting to close a window, was injured when hail broke the window and caused several facial lacerations.  He was taken  by private vehicle to the Alpine Hospital.  A second man suffered minor cuts on his legs.<br><br>                <b>Damage:</b> 10K<br><br>               </div>`)[0];
+                popup_8e94eb8e45959091e230bcecdc71829e.setContent(html_065d789542f8a8197ccef61a109740d2);
+            
+        
+
+        marker_9541b9af599420f7a53bbe5cbccbb544.bindPopup(popup_8e94eb8e45959091e230bcecdc71829e)
+        ;
+
+        
+    
+    
+            var marker_69e229c827bff00377af379531fd39a7 = L.marker(
+                [47.45, -98.12],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_b45a43c4365a48f5466bd2c1c87b44ff = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_9b99e9dd9cef7fcaf4504f570f0a3959 = $(`<div id="html_9b99e9dd9cef7fcaf4504f570f0a3959" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 02-AUG-97 21:04:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> COOPERSTOWN<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> COOPERSTOWN<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> The hail began near Jessie, cut a 3 by 12 mile long swath of damage, and ended 3 miles south of Cooperstown.  The hail lasted for 15 minutes in Cooperstown, breaking windows, and damaging homes and businesses.  One car dealership sustained $400,000 worth of damages.  20,000 acres of crops were destroyed, the equivalent of 20 farms.  A 15 year-old girl, driving in the storm, suffered minor cuts due to flying glass.  One hailstone recovered near Cooperstown measured 4 by 7 inches.<br><br>                <b>Damage:</b> 5M<br><br>               </div>`)[0];
+                popup_b45a43c4365a48f5466bd2c1c87b44ff.setContent(html_9b99e9dd9cef7fcaf4504f570f0a3959);
+            
+        
+
+        marker_69e229c827bff00377af379531fd39a7.bindPopup(popup_b45a43c4365a48f5466bd2c1c87b44ff)
+        ;
+
+        
+    
+    
+            var marker_258a464f1f2e21340aeac381443fae43 = L.marker(
+                [36.87, -76.27],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_e3046731b81644072e65cd564f2a80e9 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_0ba62ec0e10b4ae96b11dd4accb28f72 = $(`<div id="html_0ba62ec0e10b4ae96b11dd4accb28f72" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 01-MAY-97 16:30:00<br><br>                                <b>Injuries:</b> 2<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> NORFOLK<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> NORFOLK<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> Hail caused widespread damage to homes, businesses and vehicles.<br><br>                <b>Damage:</b> 10M<br><br>               </div>`)[0];
+                popup_e3046731b81644072e65cd564f2a80e9.setContent(html_0ba62ec0e10b4ae96b11dd4accb28f72);
+            
+        
+
+        marker_258a464f1f2e21340aeac381443fae43.bindPopup(popup_e3046731b81644072e65cd564f2a80e9)
+        ;
+
+        
+    
+    
+            var marker_7ca94f9931706d30a1d25dae6be783a6 = L.marker(
+                [34.97, -84.07],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_969ee5750b583547ea43ffb5c62bf1e1 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_728b054e7835ecfc4f60bde9cce66e67 = $(`<div id="html_728b054e7835ecfc4f60bde9cce66e67" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 07-MAY-98 14:55:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> IVY LOG<br><br>                <b>End Azimuth:</b> NE<br><br>                <b>End Location:</b> BLAIRSVILLE<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 50K<br><br>               </div>`)[0];
+                popup_969ee5750b583547ea43ffb5c62bf1e1.setContent(html_728b054e7835ecfc4f60bde9cce66e67);
+            
+        
+
+        marker_7ca94f9931706d30a1d25dae6be783a6.bindPopup(popup_969ee5750b583547ea43ffb5c62bf1e1)
+        ;
+
+        
+    
+    
+            var marker_c066cf94d450c2e41493546499c1b955 = L.marker(
+                [40.58, -73.98],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_604150df965a9320d6f11865051be803 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_547739e7dfd34b47fa17fcdb24114c42 = $(`<div id="html_547739e7dfd34b47fa17fcdb24114c42" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 07-SEP-98 13:45:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> CONEY IS<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> CONEY IS<br><br>                <b>Episode Narrative:</b> An intense line of severe thunderstorms oriented from north to south developed during Labor Day afternoon ahead of a strong approaching cold front.  As the storms moved east at 40 to 50 mph, they produced high winds, large hail, and an isolated tornado.  Wind gusts from 60 to 80 mph downed many trees and power lines throughout the area.  The cost estimates of damage included above are preliminary figures submitted by the Nassau County Office of Emergency Management.In Richmond County, the following peak wind gusts were reported:  80 mph at Great Kills, the Verranzano Bridge, and in Richmond.  High winds downed trees and caused a building to collapse in Richmond.  One tree fell on and injured a man in Richmond.In New York County (Manhattan), high winds caused a building to collapse.In the Bronx, high winds downed a tree that fell on 3 people resulting in 1 death and 2 injuries in the courtyard of the Edenwald Houses at 1135 East 229th Street.In Kings County (Brooklyn), high winds downed and uprooted several large trees.  One tree fell on and injured a person at East 229th Street.  Five to 6-foot diameter trees were uprooted east of Coney Island in the Gerritsen Beach Section, where 3 funnel clouds were also sighted and a firefighter was injured from large hail.  Large trees also fell on and damaged cars in Bensonhurst.In Queens County, a peak wind gust of 62 mph was measured at both LaGuardia Airport and at JFK Airport.In Nassau County, the following peak wind gusts were reported:  75 mph in Farmingdale, 60 mph in Port Washington and Mineola and 58 mph at Farmingdale Republic Airport.  High winds downed large tree limbs at Rockville Center, Baldwin, and Oceanside and downed trees in Long Beach, Massapequa, and Valley Stream.  One-inch diameter hail dented cars and covered the ground in Farmingdale.In Suffolk County, high winds overturned many boats in the Great South Bay, downed large trees in West Babylon and Rocky Point and downed large tree limbs in Wading River.  One person died when a thunderstorm wind gust capsized a 19 foot sail boat in Great South Bay near Copiague.  A Centerport woman, 36, and her daughter, 3, were injured when a tree fell on them in the parking lot of the Ground Round Restaurant and CVS on Fort Salonga Road.   The following peak wind gusts were reported:  72 mph in Babylon and 65 mph in Fire Island.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_604150df965a9320d6f11865051be803.setContent(html_547739e7dfd34b47fa17fcdb24114c42);
+            
+        
+
+        marker_c066cf94d450c2e41493546499c1b955.bindPopup(popup_604150df965a9320d6f11865051be803)
+        ;
+
+        
+    
+    
+            var marker_d579756f994f941ae79dd1f2014fdfb0 = L.marker(
+                [42.9, -78.65],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_a9dea824d247cc4246dca30dbbbb341e = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_8ae1352add95ba653e55d780a61763ad = $(`<div id="html_8ae1352add95ba653e55d780a61763ad" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 31-MAY-98 15:45:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> LANCASTER<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> LANCASTER<br><br>                <b>Episode Narrative:</b> A second round of storms for the day moved across the region during the evening hours. Again the thunderstorms produced high winds, large hail and torrential rains. Trees and power lines were downed across western New York. In the Rochester area, the power company reported 30 poles snapped by the winds and 40,000 customers without power. A woman was injured in Depew, Erie county, when a falling tree broke her leg and pelvis. Lightning hit a car travelling on the New York State Thruway--travelled through the car to a door handle--burning the arm of 16 year old female passenger. Lightning throughout the area shattered trees and set a number of fires. At Locust Hill Country Club, the nationally televised Ladies Pro Golf Association tournament was delayed four times by the storms.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 15K<br><br>               </div>`)[0];
+                popup_a9dea824d247cc4246dca30dbbbb341e.setContent(html_8ae1352add95ba653e55d780a61763ad);
+            
+        
+
+        marker_d579756f994f941ae79dd1f2014fdfb0.bindPopup(popup_a9dea824d247cc4246dca30dbbbb341e)
+        ;
+
+        
+    
+    
+            var marker_68c9238f37b431a76324ebc6b68f2bb2 = L.marker(
+                [39.47, -76.83],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_b23d0d6331aebdf14e08495e13013481 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_cb4543e9e34fd699c12106b276e0d857 = $(`<div id="html_cb4543e9e34fd699c12106b276e0d857" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 26-JUN-98 16:30:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> REISTERSTOWN<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> REISTERSTOWN<br><br>                <b>Episode Narrative:</b> A weak upper-level disturbance, combined with a surface trough, triggered a hot, humid, unstable air mass lying across much of Maryland.  Strong to severe thunderstorms developed rapidly in northern Maryland and tracked east-southeast into east-central and lower southern Maryland during the early evening.  The main culprits for damage were gusty winds and lightning, through a few occurrences of large hail were noted.Initial thunderstorms produced large hail in central Baltimore and northern Carroll Cos during the mid afternoon.  The real action began during the early evening commuting hours, when a severe thunderstorm knocked down numerous trees and large limbs on an east-southeast trek from Reisterstown to Essex.  The same cell produced wind-driven hail which broke windows of several automobiles in Reisterstown.  The flying glass shards injured one occupant of a vehicle; the shards had to be removed from his scalp.  Other wind damage was noted across southern Carroll Co and central Montgomery Co.The final round of storms fired during the mid-evening, producing damaging wind gusts (mainly trees and power lines), first in northern and eastern Anne Arundel Co.  Other storms developed over lower southern Maryland, producing tree and wire damage in St Mary's and Calvert Cos.Lightning was a major factor with the storms.  A lightning death occurred in southwest Baltimore City at 1730EST when two youngsters were running home to escape the storm.  They made it to the shelter of a large tree, which was struck.  The attendant current burned over half of the deceased's (a nine-year old girl) body.   Her 8 year-old friend survived with lesser burns.  Farther south, a small house fire was ignited by a lightning strike in Arnold.  Power outages of at least 33,000 Southern Maryland Electric Co. customers were directly attributed to a lightning strike at a supply station in St Mary's Co.  In all, at least 50,000 Maryland residents west of the Chesapeake Bay lost electricity during the outbreak of storms.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 25K<br><br>               </div>`)[0];
+                popup_b23d0d6331aebdf14e08495e13013481.setContent(html_cb4543e9e34fd699c12106b276e0d857);
+            
+        
+
+        marker_68c9238f37b431a76324ebc6b68f2bb2.bindPopup(popup_b23d0d6331aebdf14e08495e13013481)
+        ;
+
+        
+    
+    
+            var marker_c364a8d08c9061d112c10e226fc84b44 = L.marker(
+                [40.25, -103.62],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_c22ac83a297ed9d88f0aae6cb0b83a8a = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_ae14106be11398bc8581ee2d1905ba1f = $(`<div id="html_ae14106be11398bc8581ee2d1905ba1f" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 22-MAY-98 15:35:00<br><br>                                <b>Injuries:</b> 2<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> BRUSH<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> BRUSH<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> Large hail pummelled the towns of Greeley, Brush and Fort Morgan.  In Brush, some roofs collapsed under the deluge and one roof was blown off.  Two people received minor injuries.  One woman was injured, while in her home, when large hail broke through the window.  Hundreds of cars were also damaged and some were stuck in the hail, up to 18 inches deep, until snowplows could clear the roads off.  Crops were shredded during the hailstorm and fields flooded.  Approximately 140,000 acres of cropland in and around Brush were devastated.  Damage estimates to homes and vehicle in the Greeley, Brush and Fort Morgan areas was estimated at $2.2 million.  In addition, crop losses from the storm were expected to exceed $1.0 million.<br><br>                <b>Damage:</b> 2.2M<br><br>               </div>`)[0];
+                popup_c22ac83a297ed9d88f0aae6cb0b83a8a.setContent(html_ae14106be11398bc8581ee2d1905ba1f);
+            
+        
+
+        marker_c364a8d08c9061d112c10e226fc84b44.bindPopup(popup_c22ac83a297ed9d88f0aae6cb0b83a8a)
+        ;
+
+        
+    
+    
+            var marker_a72600a0dff6b0eae4eb00635ed20aa9 = L.marker(
+                [46.63, -99.13],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_fa6f48c6f534c8eb057b1966387a1dc6 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_534afc5853a36420fed63ab6c6d20784 = $(`<div id="html_534afc5853a36420fed63ab6c6d20784" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 24-JUN-98 18:45:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> GACKLE<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> GACKLE<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> One person was hit on the head while trying to get horses into the barn. Other damage occurred to neon signs, skylights, cars and windows.<br><br>                <b>Damage:</b> 20K<br><br>               </div>`)[0];
+                popup_fa6f48c6f534c8eb057b1966387a1dc6.setContent(html_534afc5853a36420fed63ab6c6d20784);
+            
+        
+
+        marker_a72600a0dff6b0eae4eb00635ed20aa9.bindPopup(popup_fa6f48c6f534c8eb057b1966387a1dc6)
+        ;
+
+        
+    
+    
+            var marker_166a32af6e13f06a1b10fa7ac01260ec = L.marker(
+                [36.7, -97.08],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_28624803ec2ce1cea79e3acbea0173b9 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_52cae96aefeb0b206c94f97a1bbbc227 = $(`<div id="html_52cae96aefeb0b206c94f97a1bbbc227" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 08-JUN-98 16:20:00<br><br>                                <b>Injuries:</b> 2<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> PONCA CITY<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> PONCA CITY<br><br>                <b>Episode Narrative:</b> Summary of events of June 8, 1998:Severe thunderstorms developed and moved across much of Oklahoma during the afternoon and evening of the 8th, producing hail as large as softballs, wind gusts to 70 mph, and 3 tornadoes.  The tornadoes were spawned by a single storm between 6 and 715 pm CST in Pottawatomie and Seminole Counties. The first tornado (an F1) touched down 3.5 miles west-southwest of Maud in Pottawatomie County, moved east into Seminole County, lifting about 11 miles west-southwest of Wewoka. The second tornado (rated F2) touched down 2.5 miles southwest of Wewoka in Seminole County, moved east through Wewoka, and crossed into Hughes County.  Meanwhile, the third tornado (also an F2) developed about 4.5 miles west-southwest of Yeager in Hughes County. These two tornadoes then merged about 3.5 miles southwest of Yeager and continued east until they lifted 4 miles east of Yeager.   This tornadic thunderstorm also produced hail as large as softballs southwest of Seminole in Seminole County. Baseball sized hail was reported with a different storm in Oklahoma City in Oklahoma County.  Widespread hail and wind damage occurred in Ponca City in Kay County and in Norman in Cleveland County.Wind gusts were estimated as high as 70 mph near Wellston and Warwick in Lincoln County. Significant thunderstorm wind damage occurred throughout Lincoln County, in Purcell in McClain County, and near Calumet and El Reno in Canadian County.See preceding individual Storm Data entries for further details and additional reports.<br><br>                <b>Event Narrative:</b> A man and an elderly woman were injured when they were caught outside in the hailstorm.  The woman was taken to a local hospital and treated for cuts and bruises from the hail and a fractured hip.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_28624803ec2ce1cea79e3acbea0173b9.setContent(html_52cae96aefeb0b206c94f97a1bbbc227);
+            
+        
+
+        marker_166a32af6e13f06a1b10fa7ac01260ec.bindPopup(popup_28624803ec2ce1cea79e3acbea0173b9)
+        ;
+
+        
+    
+    
+            var marker_9ac718f1393d181d35661f9ba3fb935f = L.marker(
+                [44.72, -102.05],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_00e9d3296e74aa052b22fa66d16a1bf2 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_a52e4e24e6e9c8d88fa9544b6ba68e23 = $(`<div id="html_a52e4e24e6e9c8d88fa9544b6ba68e23" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 26-JUN-98 16:15:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> N<br><br>                <b>Begin Location:</b> HOWES<br><br>                <b>End Azimuth:</b> N<br><br>                <b>End Location:</b> HOWES<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> A motorist was injured by broken glass and hail.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_00e9d3296e74aa052b22fa66d16a1bf2.setContent(html_a52e4e24e6e9c8d88fa9544b6ba68e23);
+            
+        
+
+        marker_9ac718f1393d181d35661f9ba3fb935f.bindPopup(popup_00e9d3296e74aa052b22fa66d16a1bf2)
+        ;
+
+        
+    
+    
+            var marker_6947c350b0daab361de0df3ec495ef34 = L.marker(
+                [32.8, -98.1],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_04dce36aca85cb0a927a2a15f4cee5b4 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_bce984e6e4b405f9cc6422fe71619593 = $(`<div id="html_bce984e6e4b405f9cc6422fe71619593" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 08-MAY-98 20:10:00<br><br>                                <b>Injuries:</b> 5<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> MINERAL WELLS<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> MINERAL WELLS<br><br>                <b>Episode Narrative:</b> A significant severe weather episode occurred across north Texas during the evening hours of May 8th.  Severe thunderstorms developed between Abilene and Childress along a dryline late in the afternoon and moved east into north Texas.  The most severe weather occurred along a corridor roughly along and 40 miles to the south of US 380 from west of Throckmorton in Throckmorton County eastward to Greenville in Hunt County.  Occasionally propagating in a train echo fashion, these storms were efficient hail and wind producers.  Wise County was hardest hit by severe weather on the 8th, with wind, hail, and one confirmed tornado destroying 15 houses and damaging 178 others.  Widespread damage to automobiles and trees also were reported.  In Denton County, thunderstorm winds blew down powerlines across Interstate 35-E near Lake Dallas, closing both northbound and southbound lanes of traffic.  In the ensuing traffic jam, motorists were stranded in their vehicles as another severe thunderstorm moved across the area.  In all, damage from this severe weather episode was estimated at between $30 and $40 million, with damage in Wise County estimated at $5 million and $3 to $5 million in Denton County.<br><br>                <b>Event Narrative:</b> Dozens of people were reported injured by large hail at the Palo Pinto County Livestock Association Rodeo.  Palo Pinto County EMTs treated five individuals at the scene, but none of the injured required hospitalization.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_04dce36aca85cb0a927a2a15f4cee5b4.setContent(html_bce984e6e4b405f9cc6422fe71619593);
+            
+        
+
+        marker_6947c350b0daab361de0df3ec495ef34.bindPopup(popup_04dce36aca85cb0a927a2a15f4cee5b4)
+        ;
+
+        
+    
+    
+            var marker_cf7bfe8049d342b8eaa6e0cf6d1b986a = L.marker(
+                [28.7, -81.3],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_6879d616e09ae800f0dba89d46d91f90 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_a472d8f06d96ae14c85781059d0084a5 = $(`<div id="html_a472d8f06d96ae14c85781059d0084a5" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 05-MAY-98 13:16:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> WINTER SPGS<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> WINTER SPGS<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> One inch hail fell in Maitland injuring a woman. One inch hail also fell in Apopka.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_6879d616e09ae800f0dba89d46d91f90.setContent(html_a472d8f06d96ae14c85781059d0084a5);
+            
+        
+
+        marker_cf7bfe8049d342b8eaa6e0cf6d1b986a.bindPopup(popup_6879d616e09ae800f0dba89d46d91f90)
+        ;
+
+        
+    
+    
+            var marker_4fe038107b35ae5c6476dff1dde713cb = L.marker(
+                [30.78, -92.42],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_561272894247afdd5ba7df9c8f4afb01 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_1df21ab900fff30e64f0b311237b5339 = $(`<div id="html_1df21ab900fff30e64f0b311237b5339" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 19-FEB-98 17:55:00<br><br>                                <b>Injuries:</b> 2<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> PINE PRAIRIE<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> PINE PRAIRIE<br><br>                <b>Episode Narrative:</b> Local residents commented they had never seen so much hail in their life. Hail was at least a couple of inches deep, making it look like it snowed. Area roadways were hazardous until the hail melted. A single car accident was directly attributed to the icy roads. Two people were slightly injured in the accident.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 20K<br><br>               </div>`)[0];
+                popup_561272894247afdd5ba7df9c8f4afb01.setContent(html_1df21ab900fff30e64f0b311237b5339);
+            
+        
+
+        marker_4fe038107b35ae5c6476dff1dde713cb.bindPopup(popup_561272894247afdd5ba7df9c8f4afb01)
+        ;
+
+        
+    
+    
+            var marker_a48af7b8194f7156776f26680168c10f = L.marker(
+                [42.27, -94.55],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_78af2ed49788baf44eb060e8806a8234 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_720aac46a252c248250b2e17b97ad7e4 = $(`<div id="html_720aac46a252c248250b2e17b97ad7e4" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 30-MAY-98 11:38:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> LOHRVILLE<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> LOHRVILLE<br><br>                <b>Episode Narrative:</b> A very unstable airmass was over Iowa.  In spite of the instability, the atmosphere was capped by very warm air aloft.  Temperatures at the 700 mb level were between 12 degrees C and 14 degrees C.  As a result, thunderstorms had a difficult time forming.  The atmosphere was primed with CAPE values in the 4000 to 6000 J/kg range by late morning.  Helicity values were near 300 M2/S2.  One cell was able to break the cap and became severe.  It was a prolific hail producer as well as spawning several tornadoes.  Hail reports indicated frequent baseball size hail with a few reports to softball size and larger.  The largest report was an incredible 5 inch diameter stone north of Gilbert in Story County.  The damage caused was incredible.  In some town, every north facing window was broken out by the hail.  On one building, the hail was so large that it broke the stone tile roof in the building, smashing it into pieces.  Property damage was extensive in a swath from Sac County through Marshall County.  Total property damage was estimated to be well in excess of $5,000,000.  In Calhoun County, the town of Lohrville was hard hit by baseball size hail.  Damage in the town was estimated at $1 million as the hail knocked out windows in almost all of the 225 buildings in town.  One injury was reported in Lohrville as a woman was treated for an eye injury as shards of glass flew into her eye from a car windshield broken by the hail.  Crop damage was difficult to assess, but was extensive.  Thousands of acres of crops were shredded by the hail.  In Webster County, estimates of crop damage indicated 24,000+ acres had total crop loss and 20,000+ acres suffered 30-50% loss.  Crop loss in the county was expected to be over $14 million.  In addition to the crop loss, property loss was estimated at between $2 and $4 million.  Many emergency managers described the hail event as the worst in 25 years in some areas to the worst they have ever seen in others.  To give some idea of the severity, the hail was large enough to shatter tile roofs.  Scenes of broken tiles falling off of houses were common.  The hail also took a toll on wildlife.  Numerous Pheasants, rabbits, and other small animals were killed by the hail, not to mention the smashed birds eggs.  The thunderstorm cell itself was a classic cell on WSR-88D radar.  It contained a clear hook echo and bounded weak echo region.  In spite of the structure looking text book perfect, the cell had a hard time producing a tornado.  Several brief touchdowns were reported from northwest of Boone to the vicinity of Boone.  The cell became better organized as it moved into central Iowa.  A tornado touched down in Story County and moved into Marshall County.  This tornado was fairly small and had a very intermittent track.  Storm chasers indicated that the tornado lifted several times during its life.  Damage was limited as the tornado tracked totally across open country and caused only crop damage for the most part.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 1M<br><br>               </div>`)[0];
+                popup_78af2ed49788baf44eb060e8806a8234.setContent(html_720aac46a252c248250b2e17b97ad7e4);
+            
+        
+
+        marker_a48af7b8194f7156776f26680168c10f.bindPopup(popup_78af2ed49788baf44eb060e8806a8234)
+        ;
+
+        
+    
+    
+            var marker_edf5ee5b48a78d4a0dd505ef12cc972b = L.marker(
+                [29.88, -97.67],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_7e0a26486f96276a10cfaacaba6ce60e = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_ec8ef43309c2f6fa178d58e842e57162 = $(`<div id="html_ec8ef43309c2f6fa178d58e842e57162" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 05-JUN-98 15:48:00<br><br>                                <b>Injuries:</b> 9<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> LOCKHART<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> LOCKHART<br><br>                <b>Episode Narrative:</b> The two tornadoes were preceded by large hail that shattered numerous windows in the Lockhart area and also destroyed corn crops in and around Lockhart.  The first tornado developed about 5 miles south of Lockhart.  It wasmall and very short-lived tornado was spotted by an off-duty police officer.  It touched down in open country with no damage indicated. The second small tornado was spotted along SH86, around 9 miles southeast of Lockhart,  as it moved briefly northeastward.  This tornado, slightly stronger and longer-lived than the previous, uprooted numerous trees and snapped others at their bases.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 20K<br><br>               </div>`)[0];
+                popup_7e0a26486f96276a10cfaacaba6ce60e.setContent(html_ec8ef43309c2f6fa178d58e842e57162);
+            
+        
+
+        marker_edf5ee5b48a78d4a0dd505ef12cc972b.bindPopup(popup_7e0a26486f96276a10cfaacaba6ce60e)
+        ;
+
+        
+    
+    
+            var marker_bfe5a92a25c65f5e6bbbc80a18eba42a = L.marker(
+                [44.17, -89.28],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_dbfbb2b367a757d0322c1e41902adf59 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_9d8d60908c5fd2d7221f7724daf51e9f = $(`<div id="html_9d8d60908c5fd2d7221f7724daf51e9f" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 29-MAR-98 11:10:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> SW<br><br>                <b>Begin Location:</b> WILD ROSE<br><br>                <b>End Azimuth:</b> SW<br><br>                <b>End Location:</b> WILD ROSE<br><br>                <b>Episode Narrative:</b> Two prolific hail-producing thunderstorms dropped hail as large as baseballs and grapefruits across parts of central and east-central Wisconsin during the late morning and afternoon of March 29.  It was the worst hailstorm ever, in terms of damage, to strike the Appleton area.  A car dealership in Appleton reported damage to over 1000 cars on the lot.  Insurance companies reported over 3000 vehicle claims from policy holders.  One insurance company reported damage to more than 100 insured homes.  Total damage to property from the storms in Waushara, Winnebago, Outagamie, Brown and Calumet counties topped $10 million.  Due to the time of year, cash crop damage was minimal.  An elderly women near Wild Rose (Waushara co.) was injured by golfball-size hail when she was caught outside as the storm struck.  A women was injured near Oconto (Oconto co.) when a hailstone hit her shoulder.Lightning struck a couple in Shawano (Shawano co.) while they were in their back yard, tending to their garden.  The male sustained burns to 70 percent of his body.  His wife was about 15 feet away from him and was knocked down by the bolt.  She was not injured.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_dbfbb2b367a757d0322c1e41902adf59.setContent(html_9d8d60908c5fd2d7221f7724daf51e9f);
+            
+        
+
+        marker_bfe5a92a25c65f5e6bbbc80a18eba42a.bindPopup(popup_dbfbb2b367a757d0322c1e41902adf59)
+        ;
+
+        
+    
+    
+            var marker_94caf3894c3263c3a9942026d5eaea83 = L.marker(
+                [44.67, -103.87],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_0a215f14f4c97abf43639236e69218f5 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_2db67af6a28c32c8ad93e4af4094b20c = $(`<div id="html_2db67af6a28c32c8ad93e4af4094b20c" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 05-JUL-98 21:00:00<br><br>                                <b>Injuries:</b> 3<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> BELLE FOURCHE<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> BELLE FOURCHE<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> NEARLY EVERY HOME, BUSINESS AND VECHICLE IN THE CITY WAS BADLY DAMAGED.<br><br>                <b>Damage:</b> 3M<br><br>               </div>`)[0];
+                popup_0a215f14f4c97abf43639236e69218f5.setContent(html_2db67af6a28c32c8ad93e4af4094b20c);
+            
+        
+
+        marker_94caf3894c3263c3a9942026d5eaea83.bindPopup(popup_0a215f14f4c97abf43639236e69218f5)
+        ;
+
+        
+    
+    
+            var marker_4d9e30d3cc11d126517136bf34d9bbc6 = L.marker(
+                [33.98, -98.5],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_5bda3cfeda05569858827c78fe02f4e5 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_5817dc4211892e7c00474db7b737ecad = $(`<div id="html_5817dc4211892e7c00474db7b737ecad" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 09-JUN-98 16:00:00<br><br>                                <b>Injuries:</b> 2<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> SHEPPARD AFB<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> SHEPPARD AFB<br><br>                <b>Episode Narrative:</b> Summary of events of June 9, 1998:Severe thunderstorms moved from west Texas into north Texas during the afternoon of the 9th, producing large hail and damaging thunderstorm winds. The largest hail (up to the size of baseballs) was reported north of Electra in Wichita County. The strongest winds were estimated at 90 mph south of Holliday in Archer County. A particularly severe thunderstorm affected Sheppard Air Force Base in Wichita County, causing extensive damage to many of the buildings and an aircraft. Two soldiers were also injured by large hail.See preceding individual Storm Data entries for further details and additional reports.<br><br>                <b>Event Narrative:</b> Hail larger than golf balls, combined with severe thunderstorm winds up to 79 mph, caused extensive damage and 2 injuries at Sheppard Air Force Base.  The 2 injuries occurred when some soldiers were caught outside in the hailstorm.  48 (out of a squadron of 200) T-37 training jets were damaged by 2-inch hail.  The winds blew the protective covers from the planes and the hail then knocked holes in the wings and broke the planes' windshields.  Over 100 cars on the base were damaged. A window was knocked out of the air traffic control tower.  One house sustained heavy damage when all of its west-facing shutters were destroyed and  3 skylights and 2 windows were broken.  Numerous trees were snapped by the severe winds.<br><br>                <b>Damage:</b> 1M<br><br>               </div>`)[0];
+                popup_5bda3cfeda05569858827c78fe02f4e5.setContent(html_5817dc4211892e7c00474db7b737ecad);
+            
+        
+
+        marker_4d9e30d3cc11d126517136bf34d9bbc6.bindPopup(popup_5bda3cfeda05569858827c78fe02f4e5)
+        ;
+
+        
+    
+    
+            var marker_a3c651e8e838030629bf17fc08d9d81e = L.marker(
+                [32.92, -107.72],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_de4955d66c459028a4788c2ec4454d08 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_b0a9c97243bd5c98f9dfb31f3f5bd0bf = $(`<div id="html_b0a9c97243bd5c98f9dfb31f3f5bd0bf" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 04-AUG-98 12:43:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> KINGSTON<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> KINGSTON<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_de4955d66c459028a4788c2ec4454d08.setContent(html_b0a9c97243bd5c98f9dfb31f3f5bd0bf);
+            
+        
+
+        marker_a3c651e8e838030629bf17fc08d9d81e.bindPopup(popup_de4955d66c459028a4788c2ec4454d08)
+        ;
+
+        
+    
+    
+            var marker_d0e2c4937d312baa3efa7374fe78485e = L.marker(
+                [44.9, -87.88],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_2e9ad9578ab4571665eef986fa685b92 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_0903ca06b3e95ff5708b0770f6a17246 = $(`<div id="html_0903ca06b3e95ff5708b0770f6a17246" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 29-MAR-98 15:15:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> N<br><br>                <b>Begin Location:</b> OCONTO<br><br>                <b>End Azimuth:</b> N<br><br>                <b>End Location:</b> OCONTO<br><br>                <b>Episode Narrative:</b> Two prolific hail-producing thunderstorms dropped hail as large as baseballs and grapefruits across parts of central and east-central Wisconsin during the late morning and afternoon of March 29.  It was the worst hailstorm ever, in terms of damage, to strike the Appleton area.  A car dealership in Appleton reported damage to over 1000 cars on the lot.  Insurance companies reported over 3000 vehicle claims from policy holders.  One insurance company reported damage to more than 100 insured homes.  Total damage to property from the storms in Waushara, Winnebago, Outagamie, Brown and Calumet counties topped $10 million.  Due to the time of year, cash crop damage was minimal.  An elderly women near Wild Rose (Waushara co.) was injured by golfball-size hail when she was caught outside as the storm struck.  A women was injured near Oconto (Oconto co.) when a hailstone hit her shoulder.Lightning struck a couple in Shawano (Shawano co.) while they were in their back yard, tending to their garden.  The male sustained burns to 70 percent of his body.  His wife was about 15 feet away from him and was knocked down by the bolt.  She was not injured.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_2e9ad9578ab4571665eef986fa685b92.setContent(html_0903ca06b3e95ff5708b0770f6a17246);
+            
+        
+
+        marker_d0e2c4937d312baa3efa7374fe78485e.bindPopup(popup_2e9ad9578ab4571665eef986fa685b92)
+        ;
+
+        
+    
+    
+            var marker_d3cccedbf707375ca5b441ccfbee8a3c = L.marker(
+                [40.67, -116.75],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_e09ea7039c5e9249827c6190954f31a5 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_92a6a0c2483f83ea51bb74eb8d4953c4 = $(`<div id="html_92a6a0c2483f83ea51bb74eb8d4953c4" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 23-JUN-98 17:00:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> ARGENTA SIDING<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> ARGENTA SIDING<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> A severe thunderstorm dropped dime size hail on Interstate 80 at the Argenta exit east of Battle Mountain. The hail accumulated to a depth of several inches causing an injury accident.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_e09ea7039c5e9249827c6190954f31a5.setContent(html_92a6a0c2483f83ea51bb74eb8d4953c4);
+            
+        
+
+        marker_d3cccedbf707375ca5b441ccfbee8a3c.bindPopup(popup_e09ea7039c5e9249827c6190954f31a5)
+        ;
+
+        
+    
+    
+            var marker_3b6e11d1ef4396f73c8180ede1752f13 = L.marker(
+                [36.78, -120.07],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_6b44883f77108924c8b8cb12e78ad0ed = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_9b21d530d677d1f777aad838bb27702f = $(`<div id="html_9b21d530d677d1f777aad838bb27702f" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 13-MAR-98 13:00:00<br><br>                                <b>Injuries:</b> 4<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> N<br><br>                <b>Begin Location:</b> KERMAN<br><br>                <b>End Azimuth:</b> N<br><br>                <b>End Location:</b> KERMAN<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> A severe thunderstorm moved north toward Madera County depositing hail to a depth of 2" on the ground at points north and northeast of Kerman.  The accompnaying deluge of rain led to multiple crashes on area highways sending 4 people to area hospitals beginning around 1400 PST in the Fresno area.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_6b44883f77108924c8b8cb12e78ad0ed.setContent(html_9b21d530d677d1f777aad838bb27702f);
+            
+        
+
+        marker_3b6e11d1ef4396f73c8180ede1752f13.bindPopup(popup_6b44883f77108924c8b8cb12e78ad0ed)
+        ;
+
+        
+    
+    
+            var marker_367e119f403e7e30d5f12e95cde8f07d = L.marker(
+                [34.22, -81.87],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_dfb8299a966f4c988f59d94b98f6ea3d = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_7cf5b2c7af44043b9d89fc55243fcf00 = $(`<div id="html_7cf5b2c7af44043b9d89fc55243fcf00" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 24-APR-99 15:37:00<br><br>                                <b>Injuries:</b> 2<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> NNW<br><br>                <b>Begin Location:</b> SALUDA<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> RIDGE SPG<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> A supercell storm moved se through Saluda county and produced hail to baseball size along its entire path.  Damage was done to homes, buildings, farm equipment, vehicles, and crops.  The damage path was about three miles wide.  Two people were injured by the hail when they were caught outside in the middle of plowing their fields.<br><br>                <b>Damage:</b> 2M<br><br>               </div>`)[0];
+                popup_dfb8299a966f4c988f59d94b98f6ea3d.setContent(html_7cf5b2c7af44043b9d89fc55243fcf00);
+            
+        
+
+        marker_367e119f403e7e30d5f12e95cde8f07d.bindPopup(popup_dfb8299a966f4c988f59d94b98f6ea3d)
+        ;
+
+        
+    
+    
+            var marker_c19fbdcd4b41bd12c1a199d95b33d1da = L.marker(
+                [37.5, -97.5],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_8dc0e93ca2b8917ae1b56122b273a298 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_b3bf35a3427e52c50a905063f4f3c7dd = $(`<div id="html_b3bf35a3427e52c50a905063f4f3c7dd" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 07-SEP-99 15:14:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> CLEARWATER<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> CLEARWATER<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> Quarter to tennisball-sized hail pummeled Clearwater, breaking windows and inflicting widespread damage to roofs and vehicles. One tennisball-sized hailstone struck a man in the head rendering him unconscious.<br><br>                <b>Damage:</b> 500K<br><br>               </div>`)[0];
+                popup_8dc0e93ca2b8917ae1b56122b273a298.setContent(html_b3bf35a3427e52c50a905063f4f3c7dd);
+            
+        
+
+        marker_c19fbdcd4b41bd12c1a199d95b33d1da.bindPopup(popup_8dc0e93ca2b8917ae1b56122b273a298)
+        ;
+
+        
+    
+    
+            var marker_b1eae9754648f354af2a53a9452e812a = L.marker(
+                [44.3, -103.42],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_be32e0e790f8943ff2bfe4ddce183129 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_be2a9c5fd16c986b38e8888ced1d74c4 = $(`<div id="html_be2a9c5fd16c986b38e8888ced1d74c4" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 21-MAY-99 13:30:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> TILFORD<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> TILFORD<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> 1" to 1.5" hail...up to 6 inches deep on Interstate 90.  A 5 car pile up left one person injured after several vehicles slid through the hail.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_be32e0e790f8943ff2bfe4ddce183129.setContent(html_be2a9c5fd16c986b38e8888ced1d74c4);
+            
+        
+
+        marker_b1eae9754648f354af2a53a9452e812a.bindPopup(popup_be32e0e790f8943ff2bfe4ddce183129)
+        ;
+
+        
+    
+    
+            var marker_36c8e3b123fcf20683fd0b54f812fb37 = L.marker(
+                [42.42, -77.07],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_27f492bbf767bfcf7be4412a43cd7fce = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_adf818fb4142bbd039adf52d65545b89 = $(`<div id="html_adf818fb4142bbd039adf52d65545b89" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 30-JUL-99 14:10:00<br><br>                                <b>Injuries:</b> 3<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> TYRONE<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> TYRONE<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> Three children suffered head injuries from being struck several times by hail averaging the size of golfballs.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_27f492bbf767bfcf7be4412a43cd7fce.setContent(html_adf818fb4142bbd039adf52d65545b89);
+            
+        
+
+        marker_36c8e3b123fcf20683fd0b54f812fb37.bindPopup(popup_27f492bbf767bfcf7be4412a43cd7fce)
+        ;
+
+        
+    
+    
+            var marker_53a9bb257fecb44f4e5f3dd82d2ff0de = L.marker(
+                [43.6, -83.88],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_8ef3a3b5ead92b7326fe130618292d8e = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_cba6494a3568f08d560c9dfe15d975ce = $(`<div id="html_cba6494a3568f08d560c9dfe15d975ce" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 24-JUL-99 14:19:00<br><br>                                <b>Injuries:</b> 2<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> BAY CITY<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> BAY CITY<br><br>                <b>Episode Narrative:</b> An upper level disturbance crossed the Great Lakes region from northwest to southeast, igniting thunderstorms along its path.  The thunderstorms evolved into a squall line as they moved across southeast Michigan.  Instability was high on this warm and humid summer day, allowing many of the storms to become severe.Unlike the previous day, severe reports were almost evenly split between large hail and damaging wind.  Most of the damaging wind gusts took down trees, tree limbs, utility poles, and power lines.  However, the marine community felt the brunt of the severe thunderstorm winds in two separate incidents.  A large number of sailboats were returning to the Bay City Yacht Club after a competition on Saginaw Bay, when the line of storms struck.  As many as a dozen boats were capsized, with two sailboats demasted.  On Lake St Clair, wind gusts capsized one sailboat, and caused a cabin cruiser to run aground.The largest hail of the day, golfball sized, was reported in Kawkawlin, Bay City, Zilwaukee, and Southfield.  In Bay City, the large hail fell on the exposed mariners (see above), causing welts and bruises to at least two.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_8ef3a3b5ead92b7326fe130618292d8e.setContent(html_cba6494a3568f08d560c9dfe15d975ce);
+            
+        
+
+        marker_53a9bb257fecb44f4e5f3dd82d2ff0de.bindPopup(popup_8ef3a3b5ead92b7326fe130618292d8e)
+        ;
+
+        
+    
+    
+            var marker_66b18ceb6f7653654e4f4f7782950330 = L.marker(
+                [39.27, -104.58],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_de5526ead91e7d0e9c7827caabc69d0c = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_a58da564166cb8ae7c471aef4035ebc9 = $(`<div id="html_a58da564166cb8ae7c471aef4035ebc9" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 11-JUN-99 14:40:00<br><br>                                <b>Injuries:</b> 3<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> SE<br><br>                <b>Begin Location:</b> FRANKTOWN<br><br>                <b>End Azimuth:</b> SE<br><br>                <b>End Location:</b> FRANKTOWN<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> Large hail, up to golfball size and accumulating several inches deep, caused a large section of a corrugated metal roof of a greenhouse complex to collapse.    About a third of the roof covering the 30,000 square foot building collapsed.  Thirty five workers were trapped in the debris, 3 people were treated for minor injuries.  Hail piled up 1-2 feet deep blocked the roadways, slowing down emergency vehicles.   Damage to the building was estimated to be around $3.0 million.<br><br>                <b>Damage:</b> 3M<br><br>               </div>`)[0];
+                popup_de5526ead91e7d0e9c7827caabc69d0c.setContent(html_a58da564166cb8ae7c471aef4035ebc9);
+            
+        
+
+        marker_66b18ceb6f7653654e4f4f7782950330.bindPopup(popup_de5526ead91e7d0e9c7827caabc69d0c)
+        ;
+
+        
+    
+    
+            var marker_46cfa63a30ab079bf74b86839f0c5d43 = L.marker(
+                [34.65, -112.35],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_59d1ff356c3e8381a153d70198bd713b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_9ce47e896af0d62d8327ae10a82399ac = $(`<div id="html_9ce47e896af0d62d8327ae10a82399ac" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 15-SEP-99 17:00:00<br><br>                                <b>Injuries:</b> 2<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> NE<br><br>                <b>Begin Location:</b> PRESCOTT<br><br>                <b>End Azimuth:</b> NE<br><br>                <b>End Location:</b> PRESCOTT<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 18M<br><br>               </div>`)[0];
+                popup_59d1ff356c3e8381a153d70198bd713b.setContent(html_9ce47e896af0d62d8327ae10a82399ac);
+            
+        
+
+        marker_46cfa63a30ab079bf74b86839f0c5d43.bindPopup(popup_59d1ff356c3e8381a153d70198bd713b)
+        ;
+
+        
+    
+    
+            var marker_c83c2ea4fc63b01151855c63f26593f3 = L.marker(
+                [35.48, -94.23],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_c8ad07e7562147cbd7ce4511fc9efb86 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_a84f6b2c90a80d2d85627f1cbde4db0b = $(`<div id="html_a84f6b2c90a80d2d85627f1cbde4db0b" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 05-MAR-99 16:35:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> ALMA<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> ALMA<br><br>                <b>Episode Narrative:</b> Summary of events for March 5 1999:An approaching cold front and an upper level disturbance kicked off several severe thunderstorms in northwest Arkansas on March 5.  The largest severe thunderstorm developed in Sequoyah County Oklahoma and then strengthened as it moved across Crawford and Franklin Counties along Interstate 40.  Along the way, this storm produced giant hail as large as baseballs and softballs.  This storm demonstrated strong rotation, producing a brief tornado touchdown just west of Alma and considerable damage from softball-sized hail in Alma.  A second weaker, though severe, thunderstorm formed over southern Crawford County and followed the same path as the first storm.  Finally, a severe thunderstorm moved out of northeast Oklahoma and clipped northwest Benton County, producing marginally severe hail.<br><br>                <b>Event Narrative:</b> There were several reports of extremely large hail from Alma. The largest report was of giant softball-sized hail, while there were also reports of quarter and golfball-sized hail just north of Alma.Such enormous hail caused widespread damage in Alma.  Many cars sustained windshield and body damage.  Just one auto body shop reported that it had written estimates from hail damage totaling $140,000.  Many roofs also sustained major damage.  At the Eagle Crest Golf Course, the hail left small craters on the greens, closing the course for several days while the crater marks were filled.  A photo in the Alma Journal newspaper showed a softball-sized pock mark on the golf greens.A child was treated for injuries at a local hospital after being struck by the hail.<br><br>                <b>Damage:</b> 800K<br><br>               </div>`)[0];
+                popup_c8ad07e7562147cbd7ce4511fc9efb86.setContent(html_a84f6b2c90a80d2d85627f1cbde4db0b);
+            
+        
+
+        marker_c83c2ea4fc63b01151855c63f26593f3.bindPopup(popup_c8ad07e7562147cbd7ce4511fc9efb86)
+        ;
+
+        
+    
+    
+            var marker_aa8b4db75c1bf19ce0615222223dac4b = L.marker(
+                [35.9, -84.88],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_91c6c852a330f300e10119e97326cfb8 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_831ba14c2191488ade51e94c6b61b872 = $(`<div id="html_831ba14c2191488ade51e94c6b61b872" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 13-MAY-99 14:36:00<br><br>                                <b>Injuries:</b> 4<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> CRAB ORCHARD<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> CRAB ORCHARD<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> EMA reported marble to golf ball size hail covering the ground at a 3 inch depth on I-40. Over a half dozen wreckers were sent to clear the accidents on the interstate. Traffic was backed up for 12 miles to the Roane county line.  There were 4 injuries. Snow plows were used to clear the hail off the interstate. At a Godsey residence on Hwy 70 E in Crab Orchard, hailstones measured 7 inches deep in his garden.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_91c6c852a330f300e10119e97326cfb8.setContent(html_831ba14c2191488ade51e94c6b61b872);
+            
+        
+
+        marker_aa8b4db75c1bf19ce0615222223dac4b.bindPopup(popup_91c6c852a330f300e10119e97326cfb8)
+        ;
+
+        
+    
+    
+            var marker_09fd10f82e933c5d27d5cc03e589e2a0 = L.marker(
+                [41.87, -103.65],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_718fa3e5fdaecd476dfc2c93b1cf40b6 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_b0c2bde019045d4cbecb2886b8d71ae7 = $(`<div id="html_b0c2bde019045d4cbecb2886b8d71ae7" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 27-JUN-99 16:17:00<br><br>                                <b>Injuries:</b> 25<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> SCOTTSBLUFF<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> SCOTTSBLUFF<br><br>                <b>Episode Narrative:</b> A large severe thunderstorm with very large hail caused extensive damage to crops and property over much of Scotts Bluff county in western Nebraska.  Hardest hit was the city of Scottsbluff, where the largest hail was reported.  25 injuries were reported, mainly due to shattered glass while insideautomobiles.  The Scottsbluff zoo reported injuries to many animals, particularly birds.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 55M<br><br>               </div>`)[0];
+                popup_718fa3e5fdaecd476dfc2c93b1cf40b6.setContent(html_b0c2bde019045d4cbecb2886b8d71ae7);
+            
+        
+
+        marker_09fd10f82e933c5d27d5cc03e589e2a0.bindPopup(popup_718fa3e5fdaecd476dfc2c93b1cf40b6)
+        ;
+
+        
+    
+    
+            var marker_bdd49723d8c6315372d43749c23cb232 = L.marker(
+                [44.3, -121.62],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_cb07962977dad5bab943412ecd809e66 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_23a8595aab0c4abacc55c94e9ff86e90 = $(`<div id="html_23a8595aab0c4abacc55c94e9ff86e90" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 10-AUG-99 19:20:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> W<br><br>                <b>Begin Location:</b> SISTERS<br><br>                <b>End Azimuth:</b> W<br><br>                <b>End Location:</b> SISTERS<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_cb07962977dad5bab943412ecd809e66.setContent(html_23a8595aab0c4abacc55c94e9ff86e90);
+            
+        
+
+        marker_bdd49723d8c6315372d43749c23cb232.bindPopup(popup_cb07962977dad5bab943412ecd809e66)
+        ;
+
+        
+    
+    
+            var marker_c6cae19e73b034298b386819a991df1c = L.marker(
+                [30.88, -102.43],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_a6cd872f8202b5cc4223b8fc7e5105b7 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_de0f33ae8259a33d26b717de698a300c = $(`<div id="html_de0f33ae8259a33d26b717de698a300c" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 09-MAY-99 16:05:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> W<br><br>                <b>Begin Location:</b> BAKERSFIELD<br><br>                <b>End Azimuth:</b> W<br><br>                <b>End Location:</b> BAKERSFIELD<br><br>                <b>Episode Narrative:</b> This storm formed in northern Pecos County and started to move to the northeast.  As the storm neared the Pecos River it took a severe right turn (about 90 degrees) and moved to the southeast for the remainder of the afternoon and evening.  This storm appeared to have been an HP Supercell from about 430-630 pm while in eastern Pecos County.  The storm then became part of a linear cluster after passing south of I-10, then this cluster faded and another brief supercell remained in northern Terrell County.<br><br>                <b>Event Narrative:</b> Reported by people that saw the tornado. One person was operating a hail cannon (used to break up large hail stones).  This person was pounded by the tennis ball size hail and received minor injuries.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_a6cd872f8202b5cc4223b8fc7e5105b7.setContent(html_de0f33ae8259a33d26b717de698a300c);
+            
+        
+
+        marker_c6cae19e73b034298b386819a991df1c.bindPopup(popup_a6cd872f8202b5cc4223b8fc7e5105b7)
+        ;
+
+        
+    
+    
+            var marker_bca85a8d0733944a91052e8c5497222b = L.marker(
+                [36.93333, -120.06667],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_6153d4a5951507af056610bae4b10fbe = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_99ff1c2585294d2bdc691cd6b6ba9318 = $(`<div id="html_99ff1c2585294d2bdc691cd6b6ba9318" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 27-FEB-00 14:17:00<br><br>                                <b>Injuries:</b> 4<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> S<br><br>                <b>Begin Location:</b> MADERA<br><br>                <b>End Azimuth:</b> S<br><br>                <b>End Location:</b> MADERA<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> Hail from the day's severe weather activity lead to a multiple-car accident on heavily travelled State Highway 99 on the northbound on-ramp from Avenue 12 in Madera County.<br><br>                <b>Damage:</b> 30K<br><br>               </div>`)[0];
+                popup_6153d4a5951507af056610bae4b10fbe.setContent(html_99ff1c2585294d2bdc691cd6b6ba9318);
+            
+        
+
+        marker_bca85a8d0733944a91052e8c5497222b.bindPopup(popup_6153d4a5951507af056610bae4b10fbe)
+        ;
+
+        
+    
+    
+            var marker_2ce5e92785c2279cb18eb033a25c2077 = L.marker(
+                [33.73333, -117.81667],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_d0c99e0612a3af02bd1c9c5e5344c822 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_2f9d3caee6abc54d6994a57ba234108b = $(`<div id="html_2f9d3caee6abc54d6994a57ba234108b" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 06-MAR-00 02:38:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> TUSTIN<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> TUSTIN<br><br>                <b>Episode Narrative:</b> Hail ranging in diameter from the size of chick peas to golf balls, covered the ground to a depth of several inches. The Costa Mesa Freeway was closed for about 30 minutes. One motorist died when he lost control of his vehicle and was broadsided by semi-tractor trailer.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 75K<br><br>               </div>`)[0];
+                popup_d0c99e0612a3af02bd1c9c5e5344c822.setContent(html_2f9d3caee6abc54d6994a57ba234108b);
+            
+        
+
+        marker_2ce5e92785c2279cb18eb033a25c2077.bindPopup(popup_d0c99e0612a3af02bd1c9c5e5344c822)
+        ;
+
+        
+    
+    
+            var marker_0db0936b0cce3b75c556058e31d90b61 = L.marker(
+                [32.8, -97.4],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_67f4e40fc0b9e0bfe9530a2a4392ea88 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_1ab8acf179fd401e07392fc68747c2f6 = $(`<div id="html_1ab8acf179fd401e07392fc68747c2f6" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 28-MAR-00 18:12:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> LAKE WORTH VLG<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> LAKE WORTH VLG<br><br>                <b>Episode Narrative:</b> Tarrant County Thunderstorm Narrative				The first tornado damage was reported near Castleberry High School, about four miles west of downtown Fort Worth (618 PM). Additional roof and tree damage occurred in Monticello neighborhood of River Oaks. A number of businesses were then damaged or destroyed near the intersection of Camp Bowie and West Seventh (620 PM). Tornado moved east along West Seventh Street, striking the Montgomery Ward building and the adjacent Linwood neighborhood, doing extensive damage to older homes (622 PM). The tornado then did extensive damage to the six story Cash America building, nearly destroying it. Further significant damage was then done to the Mallick Tower building and Calvary Cathedral Building (624 PM). The tornado weakened as it entered downtown, but wind borne debris broke thousands of windows in buildings and high rises (626 PM). Particularly hard hit was the Bank One Building, which had 80% (3,000) of its windows broken, and the Union Pacific Resources Building (1,300 of 5,000 windows broken). Numerous other structures were affected to a lesser degree. Automobiles in streets and parking lots were also damaged. The tornado then dissipated as it moved east of downtown, although scattered minor damage occurred to roofs, trees, fences, and billboards about 3 miles east of the city near I-30 and Brentwood Stair. 	Two people were killed as a direct result of the tornado. A man (age 52) was killed while trying to reach shelter after warning others of the tornado, while a homeless man (age 67) was killed by a wall that collapsed on him. Some 80 other people were injured, but only six required hospitalization. Hail did extensive damage to roofs and autos mainly in Lake Worth and Saginaw. 	Initial tornado damage in Arlington occurred at a restaurant on South Cooper street. The tornado moved east and gained strength, doing F3 damage near Bardin and Matlock (707 PM), south of I-20. The tornado then struck the northern part of Arlington Airport (F2). The tornado paralled I-20, crossing the Interstate about one mile west of Highway 360, overturning at least one 18-wheeler (F1)(712 PM). The tornado then began moving northeast, ending with F2 damage to subdivision just northeast of Grand Prairie airport (near Arkansas and Parkside)(720 PM). In spite of the damage, there were no deaths or serious injuries in Arlington or Grand Prairie.	One commercial building was destroyed in Arlington, and 22 others damaged. Residential building damage (Tarrant county) was as follows:	Location          Destroyed          Major Damage          Minor Damage	Azle                 0                     0                              13 (hail)	Lake Worth     0                       0                              118 (hail)	River Oaks      0                      3                              51	Fort Worth      28                    48                            136	Arlington          67                   146                          458	Grand Prairie  6                      9                              32	Total               101                  206                          808<br><br>                <b>Event Narrative:</b> Male (age 19) struck by softball size hail at Lake Worth while trying to move new car. Died following day (29th) from associated head injuries.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_67f4e40fc0b9e0bfe9530a2a4392ea88.setContent(html_1ab8acf179fd401e07392fc68747c2f6);
+            
+        
+
+        marker_0db0936b0cce3b75c556058e31d90b61.bindPopup(popup_67f4e40fc0b9e0bfe9530a2a4392ea88)
+        ;
+
+        
+    
+    
+            var marker_2f093bb66aca7cbc19e855aec9388108 = L.marker(
+                [43.25, -75.45],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_9825f880abd65d2145e0e3c039e728a1 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_3ca05d24837e7ac7aaaccfd45064a879 = $(`<div id="html_3ca05d24837e7ac7aaaccfd45064a879" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 10-MAY-00 10:50:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> RIDGE MILLS<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> RIDGE MILLS<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> One person sustained minor injuries when he was hit in the head by large hail while running for shelter.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_9825f880abd65d2145e0e3c039e728a1.setContent(html_3ca05d24837e7ac7aaaccfd45064a879);
+            
+        
+
+        marker_2f093bb66aca7cbc19e855aec9388108.bindPopup(popup_9825f880abd65d2145e0e3c039e728a1)
+        ;
+
+        
+    
+    
+            var marker_cb65729e74b6319a7d5057695302ae2f = L.marker(
+                [41.23333, -103.66667],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_b5e3d636d390fa5a0e7cf33a63abdd18 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_387409d7ae00b58a6a6146e86438d302 = $(`<div id="html_387409d7ae00b58a6a6146e86438d302" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 07-MAY-00 14:30:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> KIMBALL<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> KIMBALL<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> Large hail damaged much of Kimball, NE, with 40 to 50 percent of the city reporting excessive damage.<br><br>                <b>Damage:</b> 5M<br><br>               </div>`)[0];
+                popup_b5e3d636d390fa5a0e7cf33a63abdd18.setContent(html_387409d7ae00b58a6a6146e86438d302);
+            
+        
+
+        marker_cb65729e74b6319a7d5057695302ae2f.bindPopup(popup_b5e3d636d390fa5a0e7cf33a63abdd18)
+        ;
+
+        
+    
+    
+            var marker_ba67e724983da8afaba8e633588bc923 = L.marker(
+                [43.41667, -106.28333],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_79a1494a07cf464ed0c0c5a0708c65d8 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_d169bfd34ee53dda8cfcd6993a7cd66a = $(`<div id="html_d169bfd34ee53dda8cfcd6993a7cd66a" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 20-JUL-00 19:40:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> MIDWEST<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> MIDWEST<br><br>                <b>Episode Narrative:</b> Extensive damage to homes and vehicles.  At least 90 sparrows killed.  Unofficial reports of some softball size hail.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 108K<br><br>               </div>`)[0];
+                popup_79a1494a07cf464ed0c0c5a0708c65d8.setContent(html_d169bfd34ee53dda8cfcd6993a7cd66a);
+            
+        
+
+        marker_ba67e724983da8afaba8e633588bc923.bindPopup(popup_79a1494a07cf464ed0c0c5a0708c65d8)
+        ;
+
+        
+    
+    
+            var marker_1df5bf0ac982c1b59b4ddc12ba7e0ec6 = L.marker(
+                [38.36667, -98.76667],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_475d3508973b5986de36d014c883add9 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_33f39412b418e965e458ff5546cdff55 = $(`<div id="html_33f39412b418e965e458ff5546cdff55" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 29-JUN-00 21:00:00<br><br>                                <b>Injuries:</b> 5<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> GREAT BEND<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> GREAT BEND<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> The baseball-sized hail caused widespread damage to approximately 8,000 residences, 400 businesses and  2,500 vehicles. Damage included smashed windows, roofs, siding and air conditioners. Among the vehicles damaged were those of the Barton County Sheriff's Department in which nearly all of the windows were smashed. Crop damage was major to alfalfa, sorghum, corn and soybeans with 18 to 20 percent of these crops destroyed. All reported injuries were minor. Area newspapers contributed to this report.<br><br>                <b>Damage:</b> 20M<br><br>               </div>`)[0];
+                popup_475d3508973b5986de36d014c883add9.setContent(html_33f39412b418e965e458ff5546cdff55);
+            
+        
+
+        marker_1df5bf0ac982c1b59b4ddc12ba7e0ec6.bindPopup(popup_475d3508973b5986de36d014c883add9)
+        ;
+
+        
+    
+    
+            var marker_0451833926a0130a43bd7a435e807d5c = L.marker(
+                [44.0, -87.98333],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_9f25b72764ed1867c5c7c3b33a53e13e = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_3f467bb95fe06c1fee421283648c4f38 = $(`<div id="html_3f467bb95fe06c1fee421283648c4f38" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 12-MAY-00 10:47:00<br><br>                                <b>Injuries:</b> 30<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> W<br><br>                <b>Begin Location:</b> ST NAZIANZ<br><br>                <b>End Azimuth:</b> W<br><br>                <b>End Location:</b> ST NAZIANZ<br><br>                <b>Episode Narrative:</b> During the mid and late morning of May 12, a high precipitation supercell thunderstorm developed in west-central Wisconsin and tracked east across the state for over two and a half hours.  The storm produced a prolific path of large hail, a brief tornado, and a significant wet microburst across central and east central Wisconsin.  The storm was one of the most damaging thunderstorms in Wisconsin history, producing well over $100 million in damage.The thunderstorm developed north of a warm front, which was located across the Wisconsin/Illinois border.  The setup was favorable for what is known as "elevated" convection; that is, the source of the instability was aloft, and not surface-based.  Elevated convection often produces large hail, and the May 12 storm was no exception.As the storm moved into central Wisconsin, numerous reports of large hail were received from Waushara and Winnebago counties.  Baseball size hail was observed with the storm in Waushara county, two miles east of Coloma and in Dakota.  Hail damaged many of the roofs of the more than 1,000 homes in Omro (Winnebago co.) alone.As the storm intensified, it produced extensive damage across Calumet and Manitowoc counties as microburst winds developed.  Wind-driven hail shredded west-facing sides of homes and businesses that were caught in the path of the storm.The worst damage in Calumet county was in and around Chilton, where 2 inch hail and hurricane-force wind gusts (estimated near 80 mph) knocked holes in siding and tore the walls and roofs from some buildings.  Over 1000 homes were damaged in the city of Chilton.  Two hundred more sustained damage in the township of Charlestown.A brief tornado occurred as the storm entered Manitowoc county, but did no damage.  At about 1150 a.m. CDT, microburst winds near 100 mph and 2 inch hail combined to produce very serious damage in St. Nazianz.  Most of the homes in a mobile home park in St. Nazianz were overturned or knocked off their foundation by the straight-line wind.  Thirty people were injured in Manitowoc county, most in St. Nazianz.    In Manitowoc county, over 100 homes were destroyed by the combination of wind and hail.  Many more were damaged.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 46M<br><br>               </div>`)[0];
+                popup_9f25b72764ed1867c5c7c3b33a53e13e.setContent(html_3f467bb95fe06c1fee421283648c4f38);
+            
+        
+
+        marker_0451833926a0130a43bd7a435e807d5c.bindPopup(popup_9f25b72764ed1867c5c7c3b33a53e13e)
+        ;
+
+        
+    
+    
+            var marker_f8b5ab282a64fa19d15b4c2f1c98b305 = L.marker(
+                [47.61667, -103.28333],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_955f9881e610e88570c29c9112aee089 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_f94703bcf2f059541ff93e8688b99c0e = $(`<div id="html_f94703bcf2f059541ff93e8688b99c0e" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 06-JUL-00 18:05:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> S<br><br>                <b>Begin Location:</b> WATFORD CITY<br><br>                <b>End Azimuth:</b> S<br><br>                <b>End Location:</b> WATFORD CITY<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> One person injured at a horse ranch at the north unit of the Theodore Roosevelt National Park.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_955f9881e610e88570c29c9112aee089.setContent(html_f94703bcf2f059541ff93e8688b99c0e);
+            
+        
+
+        marker_f8b5ab282a64fa19d15b4c2f1c98b305.bindPopup(popup_955f9881e610e88570c29c9112aee089)
+        ;
+
+        
+    
+    
+            var marker_ff476e0f0962dfd394f283b916f5ca44 = L.marker(
+                [34.13333, -79.83333],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_8367088eba43c6a13c93154754b8c22c = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_f5ddcf14cb603134aabeadb78458976a = $(`<div id="html_f5ddcf14cb603134aabeadb78458976a" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 25-MAY-00 20:04:00<br><br>                                <b>Injuries:</b> 2<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> SW<br><br>                <b>Begin Location:</b> FLORENCE<br><br>                <b>End Azimuth:</b> SW<br><br>                <b>End Location:</b> FLORENCE<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> A severe thunderstorm developed west of the city of Florence and moved east. The damage began on the southwest side of the city with reports (including ham radio, media, and spotters) of large hail and wind gusts estimated over 80 mph.  The largest hail size was estimated at 4 1/2 inches, which caused extensive damage over $6 million to more than 2000 homes, mainly roof and siding damage.The hail and wind blew out many windows,  injuring one person with flying glass. The storm knocked out power to over 20,000 residences. Damage to vehicles was even more costly. Several automobile dealerships sustained major damage to nearly every car in their lots...totaling around 1000 vehicles. One man was injured in his vehicle when a hailstone crashed through his windshield, causing facial lacerations. In addition, the storm produced flash flooding, with many streets rendered temporarily impassable.  A National Weather Service damage assessment reported dozens of trees damaged and snapped...was concluded to be due to straight-line winds and hail, not a tornado.  An automated weather observation station at the Florence airport,  just east of the city, recorded a peak wind of 59 mph.<br><br>                <b>Damage:</b> 30M<br><br>               </div>`)[0];
+                popup_8367088eba43c6a13c93154754b8c22c.setContent(html_f5ddcf14cb603134aabeadb78458976a);
+            
+        
+
+        marker_ff476e0f0962dfd394f283b916f5ca44.bindPopup(popup_8367088eba43c6a13c93154754b8c22c)
+        ;
+
+        
+    
+    
+            var marker_6034535de204adbfeaa5812f5a6be2db = L.marker(
+                [43.96667, -89.13333],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_441ecd5d5514047c45b580408511665d = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_12743d409b1171c5a05c44ca6bcce833 = $(`<div id="html_12743d409b1171c5a05c44ca6bcce833" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 12-MAY-00 09:48:00<br><br>                                <b>Injuries:</b> 4<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> W<br><br>                <b>Begin Location:</b> BERLIN<br><br>                <b>End Azimuth:</b> W<br><br>                <b>End Location:</b> BERLIN<br><br>                <b>Episode Narrative:</b> Probably the costliest southern Wisconsin hailstorm in the past 100 years struck the northern parts of Marquette and Green Lake Counties during the mid to late morning hours. This was the third round of severe thunderstorms to strike southern Wisconsin due to the same basic weather pattern.  Hailstones the size of baseballs (up to 3 inches in diameter) pounded the northern 3 mile stretch of these two counties, resulting in substantial damage to hundreds of homes (roofs and siding) and hundreds of vehicles.  Two people in Marquette County and 4 people in Green Lake County were injured by the large hailstones and needed medical treatment. The hailstones left impact marks on sidewalks in the Crystal Lake area of north-central Marched County. In Green Lake County crop damage was also noted.  Downburst winds of 60 to 70 mph also accompanied the hail, resulting in many trees being pushed over. Interestingly, this severe hailstorm occurred north of a warm front, with air temperatures only in the 60s. The warm front moved north to a Wisconsin Dells to Sheboygan line while a frontal "triple-point" formed near the Dells due to a cool front pushing in from the west. The thunderstorm which first produced hail in Sauk County while moving northeast, gradually turned more to the right (east), as it entered Marquette, Green Lake, and Waushara Counties, and transformed into a high-precipitation supercell. Eventually this supercell did spawn a tornado in Manitowoc County, and 100 mph straight-line winds in Calumet and Manitowoc Counties.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 1.5M<br><br>               </div>`)[0];
+                popup_441ecd5d5514047c45b580408511665d.setContent(html_12743d409b1171c5a05c44ca6bcce833);
+            
+        
+
+        marker_6034535de204adbfeaa5812f5a6be2db.bindPopup(popup_441ecd5d5514047c45b580408511665d)
+        ;
+
+        
+    
+    
+            var marker_a20af30a466de3ed5702453700b25e24 = L.marker(
+                [43.96667, -89.43333],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_50f2ca00b67c99a98ebb4ab9ad64386f = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_881914aaad7b95186f8793e9bbf09f91 = $(`<div id="html_881914aaad7b95186f8793e9bbf09f91" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 12-MAY-00 09:30:00<br><br>                                <b>Injuries:</b> 2<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> NNE<br><br>                <b>Begin Location:</b> WESTFIELD<br><br>                <b>End Azimuth:</b> NNE<br><br>                <b>End Location:</b> WESTFIELD<br><br>                <b>Episode Narrative:</b> Probably the costliest southern Wisconsin hailstorm in the past 100 years struck the northern parts of Marquette and Green Lake Counties during the mid to late morning hours. This was the third round of severe thunderstorms to strike southern Wisconsin due to the same basic weather pattern.  Hailstones the size of baseballs (up to 3 inches in diameter) pounded the northern 3 mile stretch of these two counties, resulting in substantial damage to hundreds of homes (roofs and siding) and hundreds of vehicles.  Two people in Marquette County and 4 people in Green Lake County were injured by the large hailstones and needed medical treatment. The hailstones left impact marks on sidewalks in the Crystal Lake area of north-central Marched County. In Green Lake County crop damage was also noted.  Downburst winds of 60 to 70 mph also accompanied the hail, resulting in many trees being pushed over. Interestingly, this severe hailstorm occurred north of a warm front, with air temperatures only in the 60s. The warm front moved north to a Wisconsin Dells to Sheboygan line while a frontal "triple-point" formed near the Dells due to a cool front pushing in from the west. The thunderstorm which first produced hail in Sauk County while moving northeast, gradually turned more to the right (east), as it entered Marquette, Green Lake, and Waushara Counties, and transformed into a high-precipitation supercell. Eventually this supercell did spawn a tornado in Manitowoc County, and 100 mph straight-line winds in Calumet and Manitowoc Counties.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 1M<br><br>               </div>`)[0];
+                popup_50f2ca00b67c99a98ebb4ab9ad64386f.setContent(html_881914aaad7b95186f8793e9bbf09f91);
+            
+        
+
+        marker_a20af30a466de3ed5702453700b25e24.bindPopup(popup_50f2ca00b67c99a98ebb4ab9ad64386f)
+        ;
+
+        
+    
+    
+            var marker_94c42526ebdf917ea403777cb9f9e180 = L.marker(
+                [44.53333, -87.5],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_1c09304996f58f402b2bff6090ce3016 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_ae33008132440d9a04fe22d41812cc46 = $(`<div id="html_ae33008132440d9a04fe22d41812cc46" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 13-JUL-00 15:35:00<br><br>                                <b>Injuries:</b> 2<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> ALASKA<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> ALASKA<br><br>                <b>Episode Narrative:</b> Sunny skies and lingering low level moisture allowed the atmosphere to destabilize.  Weak surface troughs combined with upper support to initiate storms.  The storms downed trees and power lines and dropped large hail as they moved through northeast Wisconsin.  Two people were injured by quarter size hail at a golf course in Alaska (Kewaunee co.).  A tornado briefly touched down northeast of Forestville (Door co.) with one of the storms.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_1c09304996f58f402b2bff6090ce3016.setContent(html_ae33008132440d9a04fe22d41812cc46);
+            
+        
+
+        marker_94c42526ebdf917ea403777cb9f9e180.bindPopup(popup_1c09304996f58f402b2bff6090ce3016)
+        ;
+
+        
+    
+    
+            var marker_0c7cdf74f241c87deb5fa7a542a131b0 = L.marker(
+                [40.71667, -81.51667],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_b3f9d0d228559c31d1658c9e0d17da26 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_745c87cf958b6f53435f1de60017ac5b = $(`<div id="html_745c87cf958b6f53435f1de60017ac5b" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 09-APR-01 16:00:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> NAVARRE<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> NAVARRE<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> Dime size hail hit a person in the head and caused a laceration.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_b3f9d0d228559c31d1658c9e0d17da26.setContent(html_745c87cf958b6f53435f1de60017ac5b);
+            
+        
+
+        marker_0c7cdf74f241c87deb5fa7a542a131b0.bindPopup(popup_b3f9d0d228559c31d1658c9e0d17da26)
+        ;
+
+        
+    
+    
+            var marker_92e33404be3895db209a575f7eae110a = L.marker(
+                [41.26667, -96.0],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_07d6e5a454e5a6f34b8ff89e70647c1f = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_ac55e53b9b6681738a861126d6701d47 = $(`<div id="html_ac55e53b9b6681738a861126d6701d47" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 10-APR-01 10:40:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> OMAHA<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> OMAHA<br><br>                <b>Episode Narrative:</b> A 5 to 15 minute hail storm hit the Omaha, Council Bluffs and Bellevue area causing extensive auto and roof damage.  The hail covered the ground to several inches in some locations with most stones in the 1/2 to 1 1/2 inch range, although some were larger.   From central into downtown Omaha, as the hail fell the visibility was lowered to near zero and the hail drifted like snow and shovels were used to clear some sidewalks.  An elderly Omaha woman was injured with some cuts and bruises from the hail when she was caught outside.  According to State Farm Insurance agents, the storm was the costliest hailstorm in the Omaha area at least since the late 1980's and possibly ever.  State Farm estimated that there would be 100,000 claims in the Omaha Metro area.  Most of the larger hail spared the northwest sections of the Metro area.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 300M<br><br>               </div>`)[0];
+                popup_07d6e5a454e5a6f34b8ff89e70647c1f.setContent(html_ac55e53b9b6681738a861126d6701d47);
+            
+        
+
+        marker_92e33404be3895db209a575f7eae110a.bindPopup(popup_07d6e5a454e5a6f34b8ff89e70647c1f)
+        ;
+
+        
+    
+    
+            var marker_feb1c9b204547bd9cb6525db5dac31a7 = L.marker(
+                [40.78333, -99.58333],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_cccd5cca1fb033a225adf1572eb2e002 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_f4b514031c7235dc2403ed68d1490c0a = $(`<div id="html_f4b514031c7235dc2403ed68d1490c0a" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 10-APR-01 07:25:00<br><br>                                <b>Injuries:</b> 3<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> E<br><br>                <b>Begin Location:</b> LEXINGTON<br><br>                <b>End Azimuth:</b> E<br><br>                <b>End Location:</b> LEXINGTON<br><br>                <b>Episode Narrative:</b> A quick moving thunderstorm complex developed shortly after 8 am CDT and rapidly intensified as it moved east.  Hail the size of quarters and wind gusts in excess of 60 mph were common.  Power poles were snapped in eastern Dawson county.  Snow plows were used to remove hail from Interstate 80 near Overton.  A one car accident on hail covered Interstate 80, injured 3 people and may have been weather related.  A shed was heavily damaged near Gibbon and numerous other reports of minor damage were noted.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 15K<br><br>               </div>`)[0];
+                popup_cccd5cca1fb033a225adf1572eb2e002.setContent(html_f4b514031c7235dc2403ed68d1490c0a);
+            
+        
+
+        marker_feb1c9b204547bd9cb6525db5dac31a7.bindPopup(popup_cccd5cca1fb033a225adf1572eb2e002)
+        ;
+
+        
+    
+    
+            var marker_fc1b7d95f4605de45a1d3d75d02af2ac = L.marker(
+                [43.38333, -95.13333],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_c3c62376b13981fa458921f711c60429 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_a11175eaedb17f9c30cdb0d52ce495ec = $(`<div id="html_a11175eaedb17f9c30cdb0d52ce495ec" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 12-JUN-01 19:50:00<br><br>                                <b>Injuries:</b> 2<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> OKOBOJI<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> OKOBOJI<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> Large hail injured 2 people, and caused damage to vehicles and buildings.<br><br>                <b>Damage:</b> .1M<br><br>               </div>`)[0];
+                popup_c3c62376b13981fa458921f711c60429.setContent(html_a11175eaedb17f9c30cdb0d52ce495ec);
+            
+        
+
+        marker_fc1b7d95f4605de45a1d3d75d02af2ac.bindPopup(popup_c3c62376b13981fa458921f711c60429)
+        ;
+
+        
+    
+    
+            var marker_5e463ec0f8af0a0e61da0b2b331e3a5e = L.marker(
+                [47.91667, -97.05],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_c48562228caf35f1a1087ebbf247bc4c = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_4026da81901c3694fc9eff01d4f7cd0f = $(`<div id="html_4026da81901c3694fc9eff01d4f7cd0f" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 15-MAY-01 14:05:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> GRAND FORKS<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> GRAND FORKS<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> A male was hit in the head by a hailstone and required four stitches.  Many homes and cars were damaged by the large hail, especially south of 32nd avenue south.<br><br>                <b>Damage:</b> 10M<br><br>               </div>`)[0];
+                popup_c48562228caf35f1a1087ebbf247bc4c.setContent(html_4026da81901c3694fc9eff01d4f7cd0f);
+            
+        
+
+        marker_5e463ec0f8af0a0e61da0b2b331e3a5e.bindPopup(popup_c48562228caf35f1a1087ebbf247bc4c)
+        ;
+
+        
+    
+    
+            var marker_feaae2da519055044892c04aea5cac74 = L.marker(
+                [39.75, -104.6],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_627c5f305b6b3598893ca9a6282f1df7 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_878f2da45bc5af27a6a7aed52418e6ba = $(`<div id="html_878f2da45bc5af27a6a7aed52418e6ba" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 20-JUN-01 19:29:00<br><br>                                <b>Injuries:</b> 5<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> WATKINS<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> WATKINS<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> Large hail, damaging winds and very heavy rain pummeled a mobile home park in Watkins.  In the park, 52 mobile homes, 14 recreational vehicles, 3 homes and a commercial building were damaged.  Siding was riddled with holes and windows were broken.  Vehicles sustained extensive body damage and the car windows were shattered.  A handful of people were treated for minor cuts and bruises.  Strong winds also flipped a tractor trailer along Interstate 70 near Watkins.  At least 30 private planes at Front Range Airport were totalled.  The radome protecting the National Weather Service doppler radar, which was tracking the storm, also sustained damage.  The storm caused power outages which affected about 1,200 residents.  Excluding the damage done at Denver International Airport, damage estimates totalled $49 million, making it the costliest storm in the last 3 years, and 10th costliest since 1984.<br><br>                <b>Damage:</b> 49M<br><br>               </div>`)[0];
+                popup_627c5f305b6b3598893ca9a6282f1df7.setContent(html_878f2da45bc5af27a6a7aed52418e6ba);
+            
+        
+
+        marker_feaae2da519055044892c04aea5cac74.bindPopup(popup_627c5f305b6b3598893ca9a6282f1df7)
+        ;
+
+        
+    
+    
+            var marker_9bb1fdf5523a722324252179c2159d9c = L.marker(
+                [44.61667, -103.86667],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_dabfd8cc33a492c3f1dc9491c64e2c31 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_851e774c8024b63c4cdf0cc4d9a13e44 = $(`<div id="html_851e774c8024b63c4cdf0cc4d9a13e44" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 23-JUL-01 21:30:00<br><br>                                <b>Injuries:</b> 2<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> S<br><br>                <b>Begin Location:</b> BELLE FOURCHE<br><br>                <b>End Azimuth:</b> S<br><br>                <b>End Location:</b> BELLE FOURCHE<br><br>                <b>Episode Narrative:</b> A strong thunderstorm moved from the southwest to the northeast across southwestern Butte County. This storm exhibited very subtle bowing, but otherwise there was little to note about it's structure. Damage from this storm was limited to a residential mobile and modular home area perched on a broad hill. The homes were situated on 1 acre lots, so they were not densely packed.The damage primarily consisted of rolled and broken mobile homes. The damage area was limited to an area less than one mile in diameter. Five mobile homes were rolled and destroyed. Four mobile and modular homes sustained major roof damage. The mobile homes that were destroyed were scattered between homes which were completely undamaged. Examination of destroyed homes indicated that they were not tied down or had inadequate or no skirting at all. Homes that had plywood skirting and were tied down weathered the storm. Debris patterns provided evidence of diffluent winds, suggesting straight-line downburst winds. Five people recieved minor injuries from side being inside rolled mobile homes. Two injuries were the result of wind driven hail after escaping a destroyed mobile home.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 0<br><br>               </div>`)[0];
+                popup_dabfd8cc33a492c3f1dc9491c64e2c31.setContent(html_851e774c8024b63c4cdf0cc4d9a13e44);
+            
+        
+
+        marker_9bb1fdf5523a722324252179c2159d9c.bindPopup(popup_dabfd8cc33a492c3f1dc9491c64e2c31)
+        ;
+
+        
+    
+    
+            var marker_6fff3fb03228b80157da608c85a0c133 = L.marker(
+                [44.58333, -104.7],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_7533ce80ce1d6994451f249a8e5235cb = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_92a9c44d35b8f58f65380630bf083ec3 = $(`<div id="html_92a9c44d35b8f58f65380630bf083ec3" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 08-JUL-01 14:30:00<br><br>                                <b>Injuries:</b> 4<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> DEVILS TOWER<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> DEVILS TOWER<br><br>                <b>Episode Narrative:</b> A thunderstorm moved across Crook County producing very large hail. Hail ranging in size from pennies to tennis balls pelted Devil's Tower for 40 minutes. Four injuries (direct) were climbers on Devil's Tower who where hit by hail. Two injuries (direct) were the result of a lightning strike. The injuries were not life threatening, and it is not known if medical attention was administered. Damage to several cars was reported as "significant".<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 10K<br><br>               </div>`)[0];
+                popup_7533ce80ce1d6994451f249a8e5235cb.setContent(html_92a9c44d35b8f58f65380630bf083ec3);
+            
+        
+
+        marker_6fff3fb03228b80157da608c85a0c133.bindPopup(popup_7533ce80ce1d6994451f249a8e5235cb)
+        ;
+
+        
+    
+    
+            var marker_5a3c45d7eb40e4c442e6ccdf581385bd = L.marker(
+                [41.86667, -103.65],
+                {}
+            ).addTo(feature_group_80e265050edd76a254f27a32d4a2c20f);
+        
+    
+        var popup_893255dd87e0a33e4b235629eda13cff = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_152fc21f54a81710f8893f78556402ad = $(`<div id="html_152fc21f54a81710f8893f78556402ad" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Hail<br><br>                <b>Date: </b> 04-JUL-01 17:41:00<br><br>                                <b>Injuries:</b> 12<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> SCOTTSBLUFF<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> SCOTTSBLUFF<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> Large hail fell over parts of Scottsbluff, NE, damaging many cars and buildings as well as causing some minor injuries from broken glass.<br><br>                <b>Damage:</b> 50M<br><br>               </div>`)[0];
+                popup_893255dd87e0a33e4b235629eda13cff.setContent(html_152fc21f54a81710f8893f78556402ad);
+            
+        
+
+        marker_5a3c45d7eb40e4c442e6ccdf581385bd.bindPopup(popup_893255dd87e0a33e4b235629eda13cff)
+        ;
+
+        
+    
+    
+            var layer_control_de8e2dec450629b124b491e3f9887d3e = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_0fcd3e9c9706af9176e720573e7f8862,
+                },
+                overlays :  {
+                    "Hail" : feature_group_80e265050edd76a254f27a32d4a2c20f,
+                },
+            };
+            L.control.layers(
+                layer_control_de8e2dec450629b124b491e3f9887d3e.base_layers,
+                layer_control_de8e2dec450629b124b491e3f9887d3e.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_70694a7ca377bb844f5a5308d6ef345b);
+        
+</script>
+</html>

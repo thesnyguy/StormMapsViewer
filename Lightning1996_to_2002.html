@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ce05fdce0f23d618ead19f66e1da95b9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ce05fdce0f23d618ead19f66e1da95b9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ce05fdce0f23d618ead19f66e1da95b9 = L.map(
+                "map_ce05fdce0f23d618ead19f66e1da95b9",
+                {
+                    center: [38.0, -97.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_76090290f38081576ca1e4352c4944d5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ce05fdce0f23d618ead19f66e1da95b9);
+        
+    
+            var feature_group_f57453ae950f4644f991343a96c475ae = L.featureGroup(
+                {}
+            ).addTo(map_ce05fdce0f23d618ead19f66e1da95b9);
+        
+    
+            var marker_c800b06d174cca1501e88ca668cb51af = L.marker(
+                [39.53333, -83.71667],
+                {}
+            ).addTo(feature_group_f57453ae950f4644f991343a96c475ae);
+        
+    
+        var popup_70e6611660efd6a8abe241e42ac0bbb9 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_c6da76d46d8912745785375261f845d0 = $(`<div id="html_c6da76d46d8912745785375261f845d0" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Lightning<br><br>                <b>Date: </b> 09-APR-01 17:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> PIQUA<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> PIQUA<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> Lightning struck a man near a tree at a city park.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_70e6611660efd6a8abe241e42ac0bbb9.setContent(html_c6da76d46d8912745785375261f845d0);
+            
+        
+
+        marker_c800b06d174cca1501e88ca668cb51af.bindPopup(popup_70e6611660efd6a8abe241e42ac0bbb9)
+        ;
+
+        
+    
+    
+            var marker_0d6573b00dbcfe13784e03d88cdc382a = L.marker(
+                [35.3, -99.65],
+                {}
+            ).addTo(feature_group_f57453ae950f4644f991343a96c475ae);
+        
+    
+        var popup_60ae38da6abe619bbdd9810dedf4470a = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_c49d885b7ef8b9c9656758cb46efb5f5 = $(`<div id="html_c49d885b7ef8b9c9656758cb46efb5f5" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Lightning<br><br>                <b>Date: </b> 17-MAY-01 15:00:00<br><br>                                <b>Injuries:</b> 3<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> PONCA CITY<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> PONCA CITY<br><br>                <b>Episode Narrative:</b> Isolated severe thunderstorms developed first across north central Oklahoma on the afternoon of the 17th, then by evening thunderstorms moved out of the Texas panhandle and formed into a severe line of thunderstorms and moved east overnight. Widespread damage was sustained to southern Oklahoma, south of Interstate 40.<br><br>                <b>Event Narrative:</b> Two 911 dispatchers and a civilian were struck by lightning. A house was also struck by lightning causing a large fire.<br><br>                <b>Damage:</b> 25K<br><br>               </div>`)[0];
+                popup_60ae38da6abe619bbdd9810dedf4470a.setContent(html_c49d885b7ef8b9c9656758cb46efb5f5);
+            
+        
+
+        marker_0d6573b00dbcfe13784e03d88cdc382a.bindPopup(popup_60ae38da6abe619bbdd9810dedf4470a)
+        ;
+
+        
+    
+    
+            var marker_c96f54b242ffdfb89d678021637a1c95 = L.marker(
+                [38.78333, -104.78333],
+                {}
+            ).addTo(feature_group_f57453ae950f4644f991343a96c475ae);
+        
+    
+        var popup_2770349e89b24f19d2009e07b016455b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_b8ac670cc1d55cf77b9cea12dba075bd = $(`<div id="html_b8ac670cc1d55cf77b9cea12dba075bd" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Lightning<br><br>                <b>Date: </b> 30-MAY-01 13:30:00<br><br>                                <b>Injuries:</b> 3<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> FT CARSON<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> FT CARSON<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> Four soldiers on Fort Carson were struck by lightning.  Three were taken to area hospitals, treated and released.  The other remained in a coma for three weeks, and died of his injuries on June 20th.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_2770349e89b24f19d2009e07b016455b.setContent(html_b8ac670cc1d55cf77b9cea12dba075bd);
+            
+        
+
+        marker_c96f54b242ffdfb89d678021637a1c95.bindPopup(popup_2770349e89b24f19d2009e07b016455b)
+        ;
+
+        
+    
+    
+            var marker_2b740c27e830cf23dbba9588d48c1e3c = L.marker(
+                [32.61667, -83.6],
+                {}
+            ).addTo(feature_group_f57453ae950f4644f991343a96c475ae);
+        
+    
+        var popup_7847ae033b5e6cd17d48604b8e0ac49a = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_2faa2d4a2b8ff560c468e5ae0b866672 = $(`<div id="html_2faa2d4a2b8ff560c468e5ae0b866672" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Lightning<br><br>                <b>Date: </b> 31-MAY-01 20:27:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> DOUGLASVILLE<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> DOUGLASVILLE<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> The Douglas county 911 center reported that a woman was struck by lightning.  The extent of injury was not provided.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_7847ae033b5e6cd17d48604b8e0ac49a.setContent(html_2faa2d4a2b8ff560c468e5ae0b866672);
+            
+        
+
+        marker_2b740c27e830cf23dbba9588d48c1e3c.bindPopup(popup_7847ae033b5e6cd17d48604b8e0ac49a)
+        ;
+
+        
+    
+    
+            var marker_49dd26bf82557a0e06dd7cf6fe90adc8 = L.marker(
+                [34.36667, -85.16667],
+                {}
+            ).addTo(feature_group_f57453ae950f4644f991343a96c475ae);
+        
+    
+        var popup_8da0ae1fe8c5bc733089acc804624e14 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_e8a1e9d6bfe93afeb3416c54af9edc97 = $(`<div id="html_e8a1e9d6bfe93afeb3416c54af9edc97" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Lightning<br><br>                <b>Date: </b> 24-MAY-01 16:10:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> ROME<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> ROME<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> The Rome News Tribune reported that a man was struck by lightning and injured.  This information was confirmed by the Floyd county 911 center at the time of the event.  The man was sitting in a wooden swing on the front porch at his residence.  The lightning struck a nearby tree a few feet from the porch and then arced over to the roof of the house.  The man sustained burns to his legs, but was not injured seriously.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_8da0ae1fe8c5bc733089acc804624e14.setContent(html_e8a1e9d6bfe93afeb3416c54af9edc97);
+            
+        
+
+        marker_49dd26bf82557a0e06dd7cf6fe90adc8.bindPopup(popup_8da0ae1fe8c5bc733089acc804624e14)
+        ;
+
+        
+    
+    
+            var marker_f6eeaeef40ee6aca7260c7bae317e1ed = L.marker(
+                [39.65, -78.66667],
+                {}
+            ).addTo(feature_group_f57453ae950f4644f991343a96c475ae);
+        
+    
+        var popup_d9197154781f38645a5eb71f21f0c0bb = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_b82d9f1ef3071d4d8558c368d89a143b = $(`<div id="html_b82d9f1ef3071d4d8558c368d89a143b" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Lightning<br><br>                <b>Date: </b> 30-JUN-01 16:15:00<br><br>                                <b>Injuries:</b> 2<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> SW<br><br>                <b>Begin Location:</b> OXON HILL<br><br>                <b>End Azimuth:</b> SW<br><br>                <b>End Location:</b> OXON HILL<br><br>                <b>Episode Narrative:</b> Scattered thunderstorms with damaging wind and dangerous lightning moved across central Maryland between 4 and 6 PM EDT on the 30th.  In Prince George's County, two men were hospitalized after being struck by lightning while on a private dock in Fort Washington.  They had just come ashore and were securing their boat as the storm hit.  Both men, ages 35 and 21, were knocked on their back by the bolt and were momentarily paralyzed.  There were holes in their clothing where the electricity passed through.  They both had reddish streaks resembling sunburn stretching from their left armpit to their right leg.  They were treated for 2nd degree burns at a local hospital.  One of the victims had been struck by lightning once before in 8th grade while camping.  In Anne Arundel County, numerous trees were downed by high wind.  Poplar trees were downed by Annapolis Mall and power outages were reported.  A wind gust of 60 MPH was estimated in Annapolis where pea sized hail fell.  A wind gust of 45 MPH was reported in Rivera Beach where pea sized hail was also spotted.  Thomas Point Lighthouse on the Chesapeake Bay recorded a wind gust of 44 MPH.<br><br>                <b>Event Narrative:</b> Two men were struck by lightning while on a boat dock.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_d9197154781f38645a5eb71f21f0c0bb.setContent(html_b82d9f1ef3071d4d8558c368d89a143b);
+            
+        
+
+        marker_f6eeaeef40ee6aca7260c7bae317e1ed.bindPopup(popup_d9197154781f38645a5eb71f21f0c0bb)
+        ;
+
+        
+    
+    
+            var marker_44d3494445bb961646ee547ec83a4b08 = L.marker(
+                [39.18333, -76.63333],
+                {}
+            ).addTo(feature_group_f57453ae950f4644f991343a96c475ae);
+        
+    
+        var popup_53fa6060f7daf201512acebfdf0df2c9 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_b9901a12119e268839be9863871798d4 = $(`<div id="html_b9901a12119e268839be9863871798d4" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Lightning<br><br>                <b>Date: </b> 30-AUG-01 17:30:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> BOWIE<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> BOWIE<br><br>                <b>Episode Narrative:</b> Thunderstorms with very heavy rainfall, frequent lightning, and damaging winds moved through Central Maryland during the afternoon and early evening of the 30th.  In Howard County, the Patapsco River overflowed sending water rushing down onto Route 1 in Elkridge.  The highway remained closed for several hours and some cars became stalled in the high water.  A total of 3.4 inches of rain was recorded in Elkridge and 2.53 inches of this total fell in one hour.  Marble to quarter sized hail was reported in Columbia.  In Prince George's County, a 16-year-old boy was struck by lightning in the Bowie area.  He was treated for non-life threatening injuries.  A home in Bowie on Pond Meadow Lane caught fire after being hit by lightning.  In Calvert County, two homes were hit by lightning in Dunkirk and a corn field was flattened.  Up to 3 inches of rain reportedly fell in only one hour.  In Charles County, flooding was reported in Hughesville.  Trees and power lines were downed countywide.  In Anne Arundel County, storms with heavy downpours sat over the northern portion of the county during the afternoon and caused extensive flooding.  Several roads were closed after creeks and streams overflowed.  The southbound lanes of Ritchie Highway were closed after Cypress Creek overflowed.  Flooding was also reported on Fort Smallwood Road, Rock Hill Road, and Forest Drive.  Seven basements were flooded.  An observer in Riviera Beach recorded 2 inches of rainfall in only 30 minutes.  An observer in Annapolis reported 0.70 inches of rain in only 10 minutes.  By early evening, these storms affected the entire county and contained frequent lightning and damaging winds.  Officials reported 15 downed trees and power lines in the Linthicum area.  Nine buildings were struck by lightning.  One bolt started a two alarm fire at a home in Pasedena which resulted in $80,000 damage.  Lightning also caused damage at Baltimore/Washington International Airport.  A series of strikes over a 10 minute period burned two holes in Runway 1028 and damaged the airport's main radar tower.  Rainfall totals included 5.53 inches in Riviera Beach, 4.24 inches at Baltimore/Washington International Airport, 3.44 inches in Millersville, and 3.00 inches in Odenton.  Around 20,000 customers lost power across the county as a direct result of the storms.<br><br>                <b>Event Narrative:</b> A 16-year-old boy was injured by lightning.  A house caught fire after being hit by lightning.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_53fa6060f7daf201512acebfdf0df2c9.setContent(html_b9901a12119e268839be9863871798d4);
+            
+        
+
+        marker_44d3494445bb961646ee547ec83a4b08.bindPopup(popup_53fa6060f7daf201512acebfdf0df2c9)
+        ;
+
+        
+    
+    
+            var layer_control_05f5cd6278747b69c3862244981fd429 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_76090290f38081576ca1e4352c4944d5,
+                },
+                overlays :  {
+                    "Lightning" : feature_group_f57453ae950f4644f991343a96c475ae,
+                },
+            };
+            L.control.layers(
+                layer_control_05f5cd6278747b69c3862244981fd429.base_layers,
+                layer_control_05f5cd6278747b69c3862244981fd429.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_ce05fdce0f23d618ead19f66e1da95b9);
+        
+</script>
+</html>

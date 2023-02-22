@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_488760f19b492e325e2ffc4556bd938a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_488760f19b492e325e2ffc4556bd938a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_488760f19b492e325e2ffc4556bd938a = L.map(
+                "map_488760f19b492e325e2ffc4556bd938a",
+                {
+                    center: [38.0, -97.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a6ebae9f53f508f359f649e7c68fcc6e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_488760f19b492e325e2ffc4556bd938a);
+        
+    
+            var feature_group_f2c8c3b39c4e5fc50157849e730dba8f = L.featureGroup(
+                {}
+            ).addTo(map_488760f19b492e325e2ffc4556bd938a);
+        
+    
+            var marker_438eab91fef23bfa811b3ebc757847ea = L.marker(
+                [37.56667, -81.48333],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_1e93198cbea55160a742af1ce81d65a7 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_3eebfa3ad105fa948afaedab8b452bb5 = $(`<div id="html_3eebfa3ad105fa948afaedab8b452bb5" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 12-NOV-03 13:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> nan<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> nan<br><br>                <b>Episode Narrative:</b> Rains of 2.5 to 4.75 inches fell from 2200E on the 11th through 1900E on the 12th.  Repetitive showers formed, as dew points of 60 to 65 degrees fed the system from Kentucky.  The heaviest rain rates came toward the end of this prolong period, mainly from 1530E to 1730E, with rates peaking around an inch per hour.  South of the training showers, across Logan and Mingo Counties, the heavy rain was more sudden, the result of the last shot of enhanced rain during the late afternoon.  The heaviest rain totals ran west to east, from Wayne County and southern Cabell County, through northern Lincoln County, central Kanawha County, southern Clay County, and into central Nicholas County.  Branchland's rain total was 4.7 inches.  Hamlin measured 4.4 inches.  The National Weather Service office at Ruthdale had 4.1 inches.  Mount Nebo measured 3.8 inches.  The 3.66 inches at Charleston was the 5th heaviest 24 hour total on record, for any month of the year.   Richwood observed 3.4 inches.  Clendenin and Clay both measured around 3.1 inches.          Severe flooding occurred along streams feeding into the Mud River in Lincoln County, including the Straight Fork.  Homes and businesses around Hamlin were also flooded.  Damage assessment In Lincoln County counted 35 homes destroyed, 80 with major damage, and 80 with minor damage.  The Griffithsville Elementary School was flooded and sustained heavy damage.  It was closed and will not likely reopen.  Duval High School had minor damage.  There were about 20 swift water rescues in the Duval area.  One rescue was an unusual example.  An Army National Guard black hawk helicopter was in the air, practicing night rescues near Parkersburg.  When the request came in for help, the crew raced 65 miles south to Lincoln County and rescued 3 people from a flooded truck.   The Griffithsville Post Office had several feet of water inside.In Kanawha County, one of the hardest hit drainages was Davis Creek, which flows from Kanawha State Forest through Loudendale to South Charleston.  The main branch of Davis Creek, plus its Middle Fork were hit harder, compared to its Trace Fork.  One Loudendale resident said, "It's flooded, but never this bad."  Some homes had 3 feet of water inside.  A 62 year old male drove into the flooded creek around 2000E on the 12th.  Apparently, he had stopped his car for about 5 minutes in the road, since the local fire department had the road barricaded.  Then, it appeared the man was going to turn around in a parking lot, but instead drove between a house and a small store, and into the swollen creek.  His body was recovered the next day, inside the vehicle, about a miles down the stream.  Two South Charleston firefighters rescued a woman along Davis Creek.  One firefighter said, "She was hanging onto a tree limb.  She was hanging on for dear life.  The only thing sticking out of the water was her head and her arm."   Other flooded areas in Kanawha County included Campbells Creek, Georges Creek at Malden, Witcher Creek and Winifrede hollow, plus the Rabol-Broundland-Olcott Roads.  Inside the city limits of Charleston, a woman was rescued after having her body pinned by flood waters against the lip of a culvert.  This occurred along Lick Branch and South Ruffner Road.  The city emergency director described the street as a "rushing river."   In Kanawha County, 44 homes were destroyed, 150 had major damage, and 88 homes had minor damage.   Several private bridges were also destroyed.The crest on the Mud River in Cabell County occurred around 1300E on the 13th, flooding homes and businesses in Milton.  Milton Middle School was damaged.  Damage assessment counted 8 homes destroyed with major damage to 52 and minor damage to 56 dwellings.                     Further east, in Webster and Nicholas Counties, numerous roads were flooded, but damage to homes was less.  Yet, this rain event would set up the town of Richwood and much of this area, for more severe flooding a week later.In Wayne County, most of the damage was in the Dunlow area.  In Logan County, Garrett Fork and the Sharples area flooded.  In Mingo County, the East Fork of Twelvepole Creek saw flooding.  Besides the flood on the Mud River, the Coal and Elk Rivers saw minor flooding.  Crests on the Elk and Coal Rivers would be even higher the following week.This event initiated a federal disaster.  See FEMA disaster #1500.  More counties would be added to the declaration, after the flooding on the 19th into the 20th.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 6.6M<br><br>               </div>`)[0];
+                popup_1e93198cbea55160a742af1ce81d65a7.setContent(html_3eebfa3ad105fa948afaedab8b452bb5);
+            
+        
+
+        marker_438eab91fef23bfa811b3ebc757847ea.bindPopup(popup_1e93198cbea55160a742af1ce81d65a7)
+        ;
+
+        
+    
+    
+            var marker_ae0c8752db958146a6faad06211c8ac0 = L.marker(
+                [38.21667, -86.13333],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_b0d6aaa3da1db26d71ec1e3a461b3907 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_99cc869e787e86a30fcb3640ae7b9275 = $(`<div id="html_99cc869e787e86a30fcb3640ae7b9275" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 04-JAN-05 02:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> nan<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> nan<br><br>                <b>Episode Narrative:</b> All of the snow cover from the historic pre-Christmas 2004 snow storm melted by New Year's Day 2005 as the dew point temperatures rose into the 50s.  Lowland flooding occurred along the East Fork White River in Jackson County.  The White River in southern Indiana rose to bankfull levels.  This was the result of the melting snow cover.With warm air over Indiana, a storm system brought 2 to 4 inches of rain to much of central and southern Indiana from the 1st through the 3rd.  Because of the saturated soil conditions, widespread local flooding occurred in central and southern Indiana.  The major rivers in the state were flooding by the 4th. Another storm system quickly followed from the 4th through the 6th. This storm system tracked across southern Indiana and brought 2 to possibly 5 inches of rain to central and southern Indiana.  Because much of this rain fell as freezing rain just north of Indianapolis, two very significant weather events occurred; a major ice storm and flood.Major flooding resulted along the White, East Fork White and Wabash River in southern Indiana.  Flood levels that had not been seen in 40, 50 or more than 90 years occurred just south of the Indianapolis area.  New record stages were set at the White River at Edwardsport and the Wabash River at Mount Carmel.  The White River at Hazleton approached its record stage.Flooding in southern Indiana was much worse than the January 1991 flood.  Areas affected in the January 1991 flood were affected again and more severely.  These included Shelbyville, Rushville, Seymour, Wheeler Hollow, Bedford, Shoals, Spencer, Elnora, Edwardsport, Petersburg area, Hazleton, East Mount Carmel and New Harmony.  Numerous state roads and local roads flooded by several feet.  Many local agricultural levees were overtopped.As this flood unfolded, cold air behind this storm system shut off the rain but left several inches of snow covering central and northern Indiana on the 7th and 8th.  Flooding fighting in southern Indiana occurred during rather harsh January conditions from the 7th through the 10th.  Milder conditions returned on the 11th.Some of the significant events during this flood include:Columbus, a large city in southern Indiana, had only one access road to I-65 causing long traffic delays.   Sandbagging efforts to save a power substation that served much of Rushville.A flood fight in Shelbyville to keep the Big Blue River from portions of the town.At least 70% of Jackson County was flooded.  Evacuations occurred in Rockford, Shields and Brownstown area.A levee failed along the Eel River in the Jasonville area.  Flood waters rose to within 10 inches of a power box for the Jasonville water system.  Power was shut down and the town lost its water until flood levels receded.Spencer lost wastewater treatment service.  This closed nearly all the restaurants in town.  Flood waters were within 2 ½ blocks of the Owen county courthouse.Flood waters at the Columbus wastewater treatment plant reached so high that employees were evacuated.  The plant was operated by the automated system for 12 hours.Personnel of the Indiana National Guard waged a major flood fight to save the Hazleton levee that protected nearly ½ of the town.  At times the levee partially failed but was reinforced.Personnel of the Indiana National Guard sandbagged at State Road 64 to protect East Mount Carmel, Indiana.  Sandbagging occurred on the Illinois side near Rochester.Potential major problems at the Edwardsport Power Plant on the White River were averted.Coal shipment to a major power plant in Gibson County was threatened by high levels on the Wabash River.  The situation was monitored closely.Local Sandbagging in the Elnora area saved several homes.While major flooding was spreading throughout southern Indiana, central Indiana experienced extensive flooding on the White River from Muncie through Indianapolis and the Wabash River from Lafayette to Vincennes.  Sandbagging was necessary in Anderson and Ravenswood areas.   The warmer temperatures on the 11th began to melt the snow and ice that covered central and northern Indiana.  An additional 1 to 4 inches of rain fell in much of central Indiana late on the 11th.  This caused flash flooding in portions of Delaware, Madison, Tipton and Howard Counties.  The most serious flooding was in the towns of Alexandria and Kokomo.  Significant flooding occurred in Albany and Eaton.  Flooding returned to the White River in central Indiana as a result of the rain on the 11th.   After reaching a crest, the Wabash River from Lafayette to Vincennes began to rise again.  January 12 was the warmest and one of the driest days in the New Year.  Temperatures in central and southern Indiana soared into the 60s.  Mild conditions were short lived.As cold air pushed through Indiana on the 13th, an additional 1 to 3 inches of rain fell in central and southern Indiana.  This rain caused widespread local flooding.  Major flooding developed along the White River in Hamilton and northern Marion Counties.  Flood levels approached those of January 1991 in this area.  Evacuations occurred in the Ravenswood area.  Some homes had their power turned off because of high water levels.Major flooding developed on the Wabash River from Lafayette to Vincennes as a result of the rain on the 13th.  Flood levels in the Lafayette and Covington areas reached their highest levels since July 2003.  Flooding from Montezuma to near Vincennes was the highest since June 1958.As this major flood crest was moving downstream along the Wabash River, flood fighting occurred under very brutal conditions.  Temperatures fell below freezing late on the 14th.  Snow of 1 to 4 inches fell in much of eastern Illinois and central Indiana on the 16th.  Temperatures dropped below zero on the 17th and 18th in the Hutsonville and Vincennes areas.  Temperature moderated to more normal levels by 19th.Areas along the Wabash River most severely flooded included, Montezuma, Clinton, Taylorville and Riverview in Indiana and Darwin, York, and Hutsonville in Illinois.  Flood waters overtopped many local agricultural levels.  Flood waters affected the cemetery at Palestine, Illinois. As the Wabash River approached record levels at Hutsonville, the Island Creek levee across from the Hutsonville Power Plant failed during the late evening on the 17th.  The level of the Wabash River fell 5 inches immediately in the town of Hutsonville.  Daylight revealed the levee breach was 300 to 500 feet wide and covered 5,000 acres of farmland with 7 to 8 feet of flood waters.  This breach damaged State Road 154 between Hutsonville and Grayville.  Now a short 5 mile drive for local residents was a 70 mile one way journey. The breach of the Island Creek levee caused the Wabash River to crest immediately at Hutsonville and very soon afterwards at Riverton.  The river crested at Vincennes within a day after the levee failure.  Water flowing back into the river from the area protected by the Island Creek levee caused another crest at Riverton and Vincennes.  This level was slightly lower than the crest after the breach.Rain on the 11th and 13th fell as the rivers were near crest in the Petersburg, Hazleton and Mount Carmel areas.  The combination of rain and very cold temperatures hindered flood fighting in these areas.  By the 13th the rivers crested at Petersburg, Hazleton, Mount Carmel and New Harmony.  Flood waters would continue to recede for the remainder of January, although at times very slowly. The flood crest at New Harmony was the highest since January 1950.Another crest followed the major flood that had occurred along the White and East Fork White Rivers in much of southern Indiana.  This crest was 2 to 3 feet lower on the White River from Centerton to Edwardsport.  On the East Fork White River this crest was more than 8 feet lower in the Columbus and Bedford areas and 1 ½ feet lower at Seymour.  These crests washed out as they approached Petersburg.  The great flood of January 2005 began to wind down at all locations on the 20th.  Mother Nature had thrown every type of severe winter weather at the residents in the Wabash River Valley. Upwards of 30 inches of snow and 12 inches of water had fallen during the prior 30 days.By the end of January flooding had ended everywhere in the Wabash River Valley except for lowland flooding along portions of the Wabash River.  Millions of dollars in flood damage had occurred since the beginning of winter.  The great flood of January 2005 was the most extensive in areal coverage for Indiana since March 1913 and possibly unprecedented.  At least 4,000 homes and businesses flooded and more than 7,000 people displaced.  One person died while attempting to cross the extensively flooded Wabash River in Warren County.Crests on the major rivers in central Indiana were as high as 15.5 feet above flood stage.<br><br>                <b>Event Narrative:</b> A man attempted to cross a bridge over the swollen Wabash River and was swept to his death.  It was after dark, and water was over the road approaching the bridge.  It is believed that the man crawled through the car window in an attempt to get to safety and was swept away by the strong current.  The search was called off on 12 January to wait until the waters receded, due to the hazardous nature of the search.<br><br>                <b>Damage:</b> 500K<br><br>               </div>`)[0];
+                popup_b0d6aaa3da1db26d71ec1e3a461b3907.setContent(html_99cc869e787e86a30fcb3640ae7b9275);
+            
+        
+
+        marker_ae0c8752db958146a6faad06211c8ac0.bindPopup(popup_b0d6aaa3da1db26d71ec1e3a461b3907)
+        ;
+
+        
+    
+    
+            var marker_368277fb286f15f4f5fb037ba4772d19 = L.marker(
+                [37.56667, -119.86667],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_ae3ffbd12cd431f375cff6f7aacdbdcf = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_3cd0512f697d783de5ca5cf7d8647890 = $(`<div id="html_3cd0512f697d783de5ca5cf7d8647890" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 09-JAN-05 15:00:00<br><br>                                <b>Injuries:</b> 2<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> nan<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> nan<br><br>                <b>Episode Narrative:</b> Two men were rescued from the Tijuana River. Livestock was washed downstream. One vehicle was flooded.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 10K<br><br>               </div>`)[0];
+                popup_ae3ffbd12cd431f375cff6f7aacdbdcf.setContent(html_3cd0512f697d783de5ca5cf7d8647890);
+            
+        
+
+        marker_368277fb286f15f4f5fb037ba4772d19.bindPopup(popup_ae3ffbd12cd431f375cff6f7aacdbdcf)
+        ;
+
+        
+    
+    
+            var marker_969c6ce979697fd49593b2e10dd049fe = L.marker(
+                [40.55, -81.93333],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_c0e4aefc75a98ad12500ea4b9b840959 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_0ddce57a6d47f7418995d6a623deffa8 = $(`<div id="html_0ddce57a6d47f7418995d6a623deffa8" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 05-JAN-05 09:30:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> nan<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> nan<br><br>                <b>Episode Narrative:</b> Separate waves of rain moved along a strong west to east frontal zone in the Ohio Valley, from late on the 3rd into the early morning hours of the 8th.  To the south of the boundary, dew points were in the 50 to 55 degree range.  The heaviest rain amounts were from Perry County on north and east into eastern Ohio and western Pennsylvania.  Preliminary 5 day totals were 5.2 inches for New Lexington, 4.6 inches at McConnelsville, 4.5 inches at Nelsonville, 4.2 inches at McArthur and Beverly, 3.4 inches at Athens, and 2.9 inches at Marietta.  Small stream flooding started during the morning hours on the 5th, across Perry, Athens, Morgan, Vinton, and Washington Counties.  Some of the flooded streams included Jonathan Creek in northern Perry County, plus Monday and Sunday Creeks in southern Perry County and northern Athens County.   Sunday Creek crested at 15.8 feet on the 6th at Glouster, and near 23 feet at Millfield.  On Monday Creek, the gauge at Doanville crested at 19.1 feet on the 6th.  In Perry County, 9 families were evacuated.  The small stream flooding across Vinton County was limited to flooded roads.  Significant river flooding occurred on the Muskingum, the Hocking, and the Ohio River.  The crest on the Hocking River at Athens was 23.7 feet around 1100E on the 7th.  This was the highest level since the 24.65 feet observed on the 25th of May in 1968. It was the highest stage since the river was rechanneled in 1972. The crest level was also the 5th highest on record for Athens.  Communities such as Nelsonville and Chauncey were flooded.  The lowest and most vulnerable sections of Chauncey had water inside dwellings and other buildings.  In Athens, the storm drainage system backup into the business area along East State Street.  Some homes on Blick Avenue were flooded.  West Union Street was also flooded and closed.  Elsewhere in Athens County, the high water along the Ohio River affected Hockingport.  All total, about 73 homes in Athens County had minor damage, 56 homes had major damage, and 11 homes were destroyed.  About a dozen businesses applied for disaster loans.In McConnelsville of Morgan County, the Muskingum River crested at 13.45 feet around 1400E on the 6th.  This was the highest level since the 13.8 feet seen back in March 1964.  Water rescues were performed by the Ohio Department of Natural Resources and the county sheriff department.  An 85 year old woman was rescued from her flooded mobile home along the Muskingum River on the 6th.  She did not want to evacuate earlier and had her pets inside.  When finally rescued, she was sitting on a chair, with water almost up to her knees.  Her feet were swollen.  She never recovered from the hypothermia, and died several days later.   A second crest would occur less than a week later, from additional rain and dam releases.  See the 12th for details.  In Morgan County, around 142 homes had minor damage.  One furniture store in McConnelsville had flood waters inside.     In Washington County, small stream and river damage was less severe than in September 2004.  The Ohio River crested at 41.0 feet at Marietta 2SW during the predawn hours of the 8th.  The crest was 42.4 feet the previous September.  Flood stage is 34 feet.  Downtown Marietta streets and businesses were still flooded, but sandbags protected most 1st floors.  Further down the Ohio River, Racine Lock and Dam crested at 48.9 feet.  The crest at Pomeroy was 50.5 feet around 0000E on the 9th.  Flood stage is 46 feet at Pomeroy.  Back in September 2004 the crest was 51.2 feet.  Water still got into businesses.  All total, Meigs County had 17 homes with minor damage, 2 homes with major damage, and 3 homes destroyed.  Five businesses had major damage and 1 business was destroyed.     The crest near Gallipolis, at the RC Byrd Lock and Dam was 50.3 feet around 1400E on the 9th.  This was just over the 50 foot flood stage.  For the Chesapeake to South Point reach of the river, the Huntington gauge crested at 51.8 feet during the evening hours of the 9th.  This was about 6 inches higher than in September 2004.  Flood stage at Huntington is 50 feet.  Around 0845E on the 6th, just north of the Belleville Lock and Dam, the tugboat Jon Strong was heading up the Ohio River.  After passing through the lock chamber, 9 of the 12 barges came loose in the strong currents.  Three of barges sank under the gates of the dam, while 3 others were forced up against the dam pier houses.  Three other barges went through the structure and were recovered downstream.  Salvage crews did not remove all the damaged barges until the last day of the month.  Since the gates could not be closed, the pool above Belleville Lock and Dam dropped 10 to 15 feet below normal.  River traffic was suspended on the 19th.  River bank slippage occurred around Hockingport during the unusually low levels late in the month.  This caused damage to roads and a few homes. Water levels returned toward normal in early February.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 2M<br><br>               </div>`)[0];
+                popup_c0e4aefc75a98ad12500ea4b9b840959.setContent(html_0ddce57a6d47f7418995d6a623deffa8);
+            
+        
+
+        marker_969c6ce979697fd49593b2e10dd049fe.bindPopup(popup_c0e4aefc75a98ad12500ea4b9b840959)
+        ;
+
+        
+    
+    
+            var marker_3fb6451380d596a9271fbb6f8398f129 = L.marker(
+                [37.56667, -119.86667],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_cf40b0085f7bf14ea791295b417d6215 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_c4cd1bf6d6d172137cc2388f2a510d24 = $(`<div id="html_c4cd1bf6d6d172137cc2388f2a510d24" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 21-FEB-05 15:30:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> nan<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> nan<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> The San Diego River rose above flood stage early in the afternoon on the 21st, crested at 11.46 feet at 5:15 PM that evening, and fell back below flood stage an hour later. The river washed out a low water crossing in the Mission Valley area and caused flooding in the typical trouble spots around the Fashion Valley Mall. A man described as a transient was swept away on the 22nd when he tried to wade across the rain-swollen river. His body was recovered two weeks later.<br><br>                <b>Damage:</b> 75K<br><br>               </div>`)[0];
+                popup_cf40b0085f7bf14ea791295b417d6215.setContent(html_c4cd1bf6d6d172137cc2388f2a510d24);
+            
+        
+
+        marker_3fb6451380d596a9271fbb6f8398f129.bindPopup(popup_cf40b0085f7bf14ea791295b417d6215)
+        ;
+
+        
+    
+    
+            var marker_2ce81d2fb8f254a065a0e1dbd4dbd9f9 = L.marker(
+                [38.96667, -109.66667],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_2a172787c01447779a6961fb0e34c250 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_1f7509398eb5b447399063466cc3b0f9 = $(`<div id="html_1f7509398eb5b447399063466cc3b0f9" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 10-JAN-05 08:00:00<br><br>                                <b>Injuries:</b> 6<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> nan<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> nan<br><br>                <b>Episode Narrative:</b> A stalled storm system just off the southern California coast was able to tap abundant tropical moisture from the central Equatorial Pacific Ocean and dump copious amounts of rain and wet snow on many portions of Utah. The relatively warm air ahead of the storm raised snow levels and rain fell on an already deep snowpack and resulted in the second costliest natural disaster in state history. An estimated $300 million in damage was reported from flooding along the Santa Clara and Virgin Rivers in Washington County. One man was killed in the flooding near Quail Creek Reservior and three people perished in avalanches. The Virgin River water level reached a 25-year high and the Santa Clara River rose above any previously recorded level. 30 homes were destroyed as the Santa Clara changed course and cut through a portion of the community. Approximately 20 more homes were significantly damaged during this record flood event. This storm system also brought heavy and wet snowfall to elevations above 8000 feet. Many avalanches occurred throughout the state following the storm. A large avalanche killed a snowboarder in Ephraim Canyon. East of Mount Pleasant, a slide took the life of a snowmobiler. Some of the higher snowfall and water equivalent totals include: Cedar Breaks 70" and 10.70" water, Kolob-Zion Park 60" and 8.70, Alta 58 and 9.13, Solitude 55 and 9.71, Brian Head 51, Laketown 47 and 3.67, Snowbird 32 and 5.46, Randolph 32 and 2.18, The Canyons 31 and 3.55, Long Valley<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 300M<br><br>               </div>`)[0];
+                popup_2a172787c01447779a6961fb0e34c250.setContent(html_1f7509398eb5b447399063466cc3b0f9);
+            
+        
+
+        marker_2ce81d2fb8f254a065a0e1dbd4dbd9f9.bindPopup(popup_2a172787c01447779a6961fb0e34c250)
+        ;
+
+        
+    
+    
+            var marker_ee78e4f619621e3e8b63952e8a71071a = L.marker(
+                [42.75, -95.6],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_674e747c4829d40d9fd6b52213e9795b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_0d1e65efdd43ed3ba4c18dc47d76fb1b = $(`<div id="html_0d1e65efdd43ed3ba4c18dc47d76fb1b" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 26-JUN-05 05:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> nan<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> nan<br><br>                <b>Episode Narrative:</b> Following the second round of heavy rainfall during the night of the 25th into the morning of the 26th, widespread flooding occurred over parts of northern Iowa.  Reports indicated that most streams were out of their banks and some flooding spread into the mainstem rivers as well.  Numerous highways became flooded with widespread ponding caused by the flood waters.  During the afternoon of the 26th, an 8 year old male drown on a swollen river in Webster County near Fort Dodge when he was lost in the river after the raft he was on capsized.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 100K<br><br>               </div>`)[0];
+                popup_674e747c4829d40d9fd6b52213e9795b.setContent(html_0d1e65efdd43ed3ba4c18dc47d76fb1b);
+            
+        
+
+        marker_ee78e4f619621e3e8b63952e8a71071a.bindPopup(popup_674e747c4829d40d9fd6b52213e9795b)
+        ;
+
+        
+    
+    
+            var marker_5a4fbf3461e78f0e79c36eed30b9a42d = L.marker(
+                [31.8, -106.25],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_239fd9e7e9248a9f4dd45db86254e007 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_b387f311ab601245b8771faee9eba880 = $(`<div id="html_b387f311ab601245b8771faee9eba880" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 10-AUG-05 07:25:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 2<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> nan<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> nan<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> Numerous vehicles were swept into Mountain Creek along highway 16...about 1 mile south of Comanche.  Water rescues were performed...however two bodies were found in the creek.  Also, a couple who lived along the creek lost their home to the flood waters.  Highway 16 was closed between the Comanche and Mills county line.<br><br>                <b>Damage:</b> 50K<br><br>               </div>`)[0];
+                popup_239fd9e7e9248a9f4dd45db86254e007.setContent(html_b387f311ab601245b8771faee9eba880);
+            
+        
+
+        marker_5a4fbf3461e78f0e79c36eed30b9a42d.bindPopup(popup_239fd9e7e9248a9f4dd45db86254e007)
+        ;
+
+        
+    
+    
+            var marker_d024cb1d63257d425c3225f07041ca62 = L.marker(
+                [44.73333, -71.38333],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_4d03864db91ea657f9a1bf5034fd347f = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_c6224ff2e930da97353f9c6c04b6ca90 = $(`<div id="html_c6224ff2e930da97353f9c6c04b6ca90" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 08-OCT-05 21:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 2<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> nan<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> nan<br><br>                <b>Episode Narrative:</b> The interaction between a cold frontal boundary and the remnants of Tropical Storm Tammy resulted in tremendous amount of rainfall throughout most of central and southern New Hampshire. Rainfall ranged from just under 2 inches in far northern New Hampshire to 9 inches at Gilford in Belknap County.  An unofficial report was received of 12.75 inches near Gunstock Ski area. There was a tremendous amount of damage to roads and bridges, and to the infrastructure in general due to flooding of small rivers and streams. Homes and businesses were damaged.  Tragically, two young people lost their lives in the town of Unity in Sullivan County when they attempted to drive over a bridge that had already been washed away.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 3M<br><br>               </div>`)[0];
+                popup_4d03864db91ea657f9a1bf5034fd347f.setContent(html_c6224ff2e930da97353f9c6c04b6ca90);
+            
+        
+
+        marker_d024cb1d63257d425c3225f07041ca62.bindPopup(popup_4d03864db91ea657f9a1bf5034fd347f)
+        ;
+
+        
+    
+    
+            var marker_503f2a43e580a00a15cd1b8ce19b6459 = L.marker(
+                [38.2, -84.2],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_85b554bdb34c237a3132d95efbe99580 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_92cf20a45300aaa543a8a8af2ab95638 = $(`<div id="html_92cf20a45300aaa543a8a8af2ab95638" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 29-AUG-05 06:30:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> nan<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> nan<br><br>                <b>Episode Narrative:</b> Widespread major flooding occurred in the Hopkinsville area in response to 8 to 11 inches of rain in a 36-hour period. One fatality was directly attributed to the flooding in Hopkinsville, where a 10-year-old girl was swept into a culvert while playing in a low-lying area. A total of 142 residences and 38 businesses were affected by flooding. Many of the evacuees were from neighborhoods flooded by the Little River. About a dozen families were sheltered at Red Cross or Salvation Army facilities.The Kentucky National Guard was mobilized to assist Christian County, where the Governor of Kentucky surveyed flood damage. At least a dozen businesses were closed along the main corridor between Fort Campbell and Hopkinsville. A number of people were rescued from their car rooftops on flooded streets. At the Christian County High School, a section of the roof collapsed, destroying a couple of classrooms. Two other school facilities in the county sustained water damage. All schools in the county were closed. Between 40 and 50 roads were closed or had substantial high water on them. The emergency management director reported this flooding was comparable to the 1997 flood. The initial round of very heavy rain during the early morning of the 29th was not directly associated with Tropical Storm Katrina. This round of flooding rains, between 6 and 8 inches, occurred in a narrow east-west band through Hopkinsville. The co-operative observer in Hopkinsville reported 6.47 inches during this initial event. A second heavy rainfall event, directly associated with Katrina, produced an additional 3.45 inches at Hopkinsville less than 24 hours later. In Trigg County, schools were closed.  Over a dozen roads were closed in Trigg County, mainly due to flooding. The Little River in Cadiz rose out of its banks.In Todd County, at least 15 secondary roads were closed, including many roads off of U.S. Highway 68. County schools were closed. The Elk Fork Creek rose out of its banks.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 4.7M<br><br>               </div>`)[0];
+                popup_85b554bdb34c237a3132d95efbe99580.setContent(html_92cf20a45300aaa543a8a8af2ab95638);
+            
+        
+
+        marker_503f2a43e580a00a15cd1b8ce19b6459.bindPopup(popup_85b554bdb34c237a3132d95efbe99580)
+        ;
+
+        
+    
+    
+            var marker_3a8d41e521b38817d2f02c974f577b20 = L.marker(
+                [37.46667, -122.35],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_b86bc7d4e1b16eb4ef031e4d13b0942f = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_0a40e1537c21e3f77d5467dd388c20ee = $(`<div id="html_0a40e1537c21e3f77d5467dd388c20ee" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 31-DEC-05 12:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> nan<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> nan<br><br>                <b>Episode Narrative:</b> A 19 year old woman drowned in Yreka Creek after being swept away during an attempted crossing on foot.  Her body was discovered about a mile downstream the next day.  Estimated total damage in Siskiyou County was 7 million.  79 homes and businesses were damaged.<br><br>                <b>Event Narrative:</b> See fatality narrative<br><br>                <b>Damage:</b> 7M<br><br>               </div>`)[0];
+                popup_b86bc7d4e1b16eb4ef031e4d13b0942f.setContent(html_0a40e1537c21e3f77d5467dd388c20ee);
+            
+        
+
+        marker_3a8d41e521b38817d2f02c974f577b20.bindPopup(popup_b86bc7d4e1b16eb4ef031e4d13b0942f)
+        ;
+
+        
+    
+    
+            var marker_5b1641065530196ce4dc7f0b7f7e7121 = L.marker(
+                [38.56667, -76.58333],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_42a7de9446c27b0a2b946564783f0c1d = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_0fd75d9c63d531e90fb8b799df394af5 = $(`<div id="html_0fd75d9c63d531e90fb8b799df394af5" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 08-OCT-05 13:00:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> nan<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> nan<br><br>                <b>Episode Narrative:</b> The remnants of Tropical Storm Tammy caused widespread heavy rainfall between 3 to 7 inches across the region. Numerous reports of flooded roads were received due to the prolonged rains. Localized areas received close to 12 inches of storm total rainfall, such as the automated gauge at Montebello in Nelson County Virginia, which measured 11.36 inches. Washington National Airport measured 7.34 inches of rain from this event. Sterling NWS measured 7.14 inches. Baltimore/Washington Airport measures 6.72 inches. Dulles Airport measured 6.62 inches. Charlottesville Airport measured 5.50 inches. Martinsburg Airport measured 2.91 inches. Water rises and subsequent areal flooding occurred in many parts of the area.  Water flooded many basements of houses near the flood plain of the Northeast Branch of the Anacostia River. The mayor of Anacostia reported the flooding could have stemmed from the failure of a county-operated pumping station. Roads were closed due to flooding on Jones Falls. Several roads were flooded and closed across Anne Arundel County due to high water. A water rescue was performed in Ellicott City. 10 roads were flooded and closed across the Damascus area. One water rescue occurred in the Damascus area. A trained weather spotter reported the northwest portion of Branch Park flooded near Colesville. 30 people had to be evacuated from their homes and taken out of flooded cars. As much as 6 feet of water swamped roads in the Darlington area, reported by newspaper. Flooded and closed roads were reported in the Perry Hall area of suburban Baltimore. Some power outages were also noted due to the heavy rainfall.<br><br>                <b>Event Narrative:</b> 10 roads were flooded and closed across the Damascus area. One water rescue occurred. A trained weather spotter also reported the northwest portion of Branch Park flooded near Colesville.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_42a7de9446c27b0a2b946564783f0c1d.setContent(html_0fd75d9c63d531e90fb8b799df394af5);
+            
+        
+
+        marker_5b1641065530196ce4dc7f0b7f7e7121.bindPopup(popup_42a7de9446c27b0a2b946564783f0c1d)
+        ;
+
+        
+    
+    
+            var marker_ef3d10a04d335152e97830d8bca83603 = L.marker(
+                [41.78333, -72.9],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_03a61cced79785500b64798d2654803a = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_87c5ff343730ce39f39bafa339c67558 = $(`<div id="html_87c5ff343730ce39f39bafa339c67558" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 15-OCT-05 07:09:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> nan<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> nan<br><br>                <b>Episode Narrative:</b> A low pressure system interacted with a plume of tropical moisture as the low slowly moved parallel to the Long Island and south Massachusetts coasts, resulting in excessive rain and flooding across north central and northeast Connecticut.  Between approximately 4 and 8.5 inches of rain fell across the region.  The county of Hartford was the hardest hit by this flood event, with much of the damage concentrated in the town of West Hartford.In Hartford county, most of the damages were confined to basement flooding, with over 1 foot of water reported in these flooded basements.  One home was destroyed as a result of a basement wall collapse.  In addition, Interstate 91 in Windsor developed a sink hole during this flood event.In Tolland, a campground was flooded out from the excessive rainfall.  In Stafford, the Connecticut Water Company Reservoir number three dam failed around 3 AM EST.  In Union, a dam failed, resulting in a 30 foot breach, which produced flooding and washed out Bradway Road.This flood event directly resulted in two fatalities in northern Connecticut.  One fatality resulted when a women slipped and fell into the raging flood waters along the Natchagu River in Chaplin as she was watching the rapids.  An elderly man was swept away and killed by flood waters when he attempted to leave his truck, which was stranded in flood waters from Roaring Brook in Stafford.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 500K<br><br>               </div>`)[0];
+                popup_03a61cced79785500b64798d2654803a.setContent(html_87c5ff343730ce39f39bafa339c67558);
+            
+        
+
+        marker_ef3d10a04d335152e97830d8bca83603.bindPopup(popup_03a61cced79785500b64798d2654803a)
+        ;
+
+        
+    
+    
+            var marker_18daaa059adba9242ad7a765d84f9ea7 = L.marker(
+                [38.98333, -85.9],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_a729300d05c321929de00e4daca4d9ba = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_25989df7daa86b010188fd7bbeaaf0d3 = $(`<div id="html_25989df7daa86b010188fd7bbeaaf0d3" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 10-MAR-06 00:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> ROCKFORD<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> ROCKFORD<br><br>                <b>Episode Narrative:</b> Several bouts of heavy precipitation brought significant flooding to the East Fork White River in south central Indiana.  One man was killed when he drove into a flooded road in Jackson County, while another was killed when he fell from a boat on a swollen tributary of the East Fork.  Crests along the East Fork White were as high as 14 feet above flood stage.  Damage amounts are estimated.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 100K<br><br>               </div>`)[0];
+                popup_a729300d05c321929de00e4daca4d9ba.setContent(html_25989df7daa86b010188fd7bbeaaf0d3);
+            
+        
+
+        marker_18daaa059adba9242ad7a765d84f9ea7.bindPopup(popup_a729300d05c321929de00e4daca4d9ba)
+        ;
+
+        
+    
+    
+            var marker_dba8957516400c96e1fbbf99f31f5cb0 = L.marker(
+                [38.86667, -86.48333],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_c6fa29d0013128c69d3ecaea0768d6a6 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_55520b3a8a6a19ccf5eb7b9af4852683 = $(`<div id="html_55520b3a8a6a19ccf5eb7b9af4852683" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 12-MAR-06 02:30:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> BEDFORD<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> BEDFORD<br><br>                <b>Episode Narrative:</b> Several bouts of heavy precipitation brought significant flooding to the East Fork White River in south central Indiana.  One man was killed when he drove into a flooded road in Jackson County, while another was killed when he fell from a boat on a swollen tributary of the East Fork.  Crests along the East Fork White were as high as 14 feet above flood stage.  Damage amounts are estimated.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 100K<br><br>               </div>`)[0];
+                popup_c6fa29d0013128c69d3ecaea0768d6a6.setContent(html_55520b3a8a6a19ccf5eb7b9af4852683);
+            
+        
+
+        marker_dba8957516400c96e1fbbf99f31f5cb0.bindPopup(popup_c6fa29d0013128c69d3ecaea0768d6a6)
+        ;
+
+        
+    
+    
+            var marker_c272e08c357fad73b520dc424a7ee277 = L.marker(
+                [39.08333, -122.78333],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_aa9fa704c3e60ffcde89df2685386f12 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_beb8ff92ae955db7fbe3cdf64b0e7232 = $(`<div id="html_beb8ff92ae955db7fbe3cdf64b0e7232" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 01-JAN-06 00:00:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> COUNTYWIDE<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> COUNTYWIDE<br><br>                <b>Episode Narrative:</b> A series of warm winter storms brought heavy rain, mudslides, flooding, and high winds to Northern California.  - Levee overtopping, breaching, and river flooding occurred along the Feather and Sacramento mainstem rivers as well as along numerous smaller rivers, creeks, and streams.  Several urban areas had significant street flooding.  The Sacramento weir was opened for the first time since 1997 with twenty gates opened.  - Transportation throughout the area was difficult during the course of the storms as airports were closed due to the high winds and major road closures resulted from flooding and mudslides.  Interstate 80...the main artery between Sacramento and the San Francisco Bay area...was closed near Fairfield in Solano County for several hours due to severe flooding.  Additionally, Interstate 80 eastbound between Sacramento and Reno, NV, was closed for more than a day due to a massive mudslide, as was both directions of U.S. Highway 50 between Sacramento and South Lake Tahoe.- The primary weather impacts were due to flooding.  Snow levels during this period of precipitation were high...around 7000 to 8000 feet along much of the Sierra Nevada mountain range.  - Three deaths occurred due to these storms.  A Solano County man was killed by a falling tree, a Lake County man drowned while fishing during the storm, and a Stanislaus County woman died while crossing a flooding stream on foot.- Counties declared in need of federal disaster assistance include: Alpine, Amador, Butte, Colusa, El Dorado, Lake, Nevada, Placer, Plumas, Sacramento, San Joaquin, Shasta, Solano, Sutter, Yolo, and Yuba.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 1M<br><br>               </div>`)[0];
+                popup_aa9fa704c3e60ffcde89df2685386f12.setContent(html_beb8ff92ae955db7fbe3cdf64b0e7232);
+            
+        
+
+        marker_c272e08c357fad73b520dc424a7ee277.bindPopup(popup_aa9fa704c3e60ffcde89df2685386f12)
+        ;
+
+        
+    
+    
+            var marker_0d688d3b810f1c8764150a3f23d2a99e = L.marker(
+                [37.58333, -121.16667],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_8fe3300030349c656cc988f9478b53ac = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_852e43bb90c6ab731110315b62936a6f = $(`<div id="html_852e43bb90c6ab731110315b62936a6f" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 01-JAN-06 00:00:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> COUNTYWIDE<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> COUNTYWIDE<br><br>                <b>Episode Narrative:</b> A series of warm winter storms brought heavy rain, mudslides, flooding, and high winds to Northern California.  - Levee overtopping, breaching, and river flooding occurred along the Feather and Sacramento mainstem rivers as well as along numerous smaller rivers, creeks, and streams.  Several urban areas had significant street flooding.  The Sacramento weir was opened for the first time since 1997 with twenty gates opened.  - Transportation throughout the area was difficult during the course of the storms as airports were closed due to the high winds and major road closures resulted from flooding and mudslides.  Interstate 80...the main artery between Sacramento and the San Francisco Bay area...was closed near Fairfield in Solano County for several hours due to severe flooding.  Additionally, Interstate 80 eastbound between Sacramento and Reno, NV, was closed for more than a day due to a massive mudslide, as was both directions of U.S. Highway 50 between Sacramento and South Lake Tahoe.- The primary weather impacts were due to flooding.  Snow levels during this period of precipitation were high...around 7000 to 8000 feet along much of the Sierra Nevada mountain range.  - Three deaths occurred due to these storms.  A Solano County man was killed by a falling tree, a Lake County man drowned while fishing during the storm, and a Stanislaus County woman died while crossing a flooding stream on foot.- Counties declared in need of federal disaster assistance include: Alpine, Amador, Butte, Colusa, El Dorado, Lake, Nevada, Placer, Plumas, Sacramento, San Joaquin, Shasta, Solano, Sutter, Yolo, and Yuba.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 100K<br><br>               </div>`)[0];
+                popup_8fe3300030349c656cc988f9478b53ac.setContent(html_852e43bb90c6ab731110315b62936a6f);
+            
+        
+
+        marker_0d688d3b810f1c8764150a3f23d2a99e.bindPopup(popup_8fe3300030349c656cc988f9478b53ac)
+        ;
+
+        
+    
+    
+            var marker_2b2c8359a984c688e244ce7e307fbda4 = L.marker(
+                [38.35, -121.95],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_07b8e37791a087743d821d9eac427b04 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_36b357e0f6724a6b50ab9e79aeab85d5 = $(`<div id="html_36b357e0f6724a6b50ab9e79aeab85d5" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 01-JAN-06 00:00:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> COUNTYWIDE<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> COUNTYWIDE<br><br>                <b>Episode Narrative:</b> A series of warm winter storms brought heavy rain, mudslides, flooding, and high winds to Northern California.  - Levee overtopping, breaching, and river flooding occurred along the Feather and Sacramento mainstem rivers as well as along numerous smaller rivers, creeks, and streams.  Several urban areas had significant street flooding.  The Sacramento weir was opened for the first time since 1997 with twenty gates opened.  - Transportation throughout the area was difficult during the course of the storms as airports were closed due to the high winds and major road closures resulted from flooding and mudslides.  Interstate 80...the main artery between Sacramento and the San Francisco Bay area...was closed near Fairfield in Solano County for several hours due to severe flooding.  Additionally, Interstate 80 eastbound between Sacramento and Reno, NV, was closed for more than a day due to a massive mudslide, as was both directions of U.S. Highway 50 between Sacramento and South Lake Tahoe.- The primary weather impacts were due to flooding.  Snow levels during this period of precipitation were high...around 7000 to 8000 feet along much of the Sierra Nevada mountain range.  - Three deaths occurred due to these storms.  A Solano County man was killed by a falling tree, a Lake County man drowned while fishing during the storm, and a Stanislaus County woman died while crossing a flooding stream on foot.- Counties declared in need of federal disaster assistance include: Alpine, Amador, Butte, Colusa, El Dorado, Lake, Nevada, Placer, Plumas, Sacramento, San Joaquin, Shasta, Solano, Sutter, Yolo, and Yuba.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 15M<br><br>               </div>`)[0];
+                popup_07b8e37791a087743d821d9eac427b04.setContent(html_36b357e0f6724a6b50ab9e79aeab85d5);
+            
+        
+
+        marker_2b2c8359a984c688e244ce7e307fbda4.bindPopup(popup_07b8e37791a087743d821d9eac427b04)
+        ;
+
+        
+    
+    
+            var marker_433e93df76e6410bff24650953d84f95 = L.marker(
+                [41.46667, -72.95],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_16795d0c34aa4b3308039d0988d9d558 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_6291504d118a084c00b191716fbd0ef0 = $(`<div id="html_6291504d118a084c00b191716fbd0ef0" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 23-APR-06 14:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> COUNTYWIDE<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> COUNTYWIDE<br><br>                <b>Episode Narrative:</b> As a low pressure system over the Great Lakes moved slowly east during Saturday, April 22nd, another low developed over Southeast Virginia and moved slowly north toward the region on Sunday.  Synoptic scale ascent over a cool moist layer of air caused by high pressure northeast of New England, caused heavy rain, which resulted in flooding of urban areas, rivers, small streams, and creeks.Amateur radio operators reported several streets closed, homes flooded, along with some evacuations in Norwalk at 3 pm EDT.  They also reported road closures and homes flooded through Trumbull at 5:55 pm EDT.  Trained spotters reported the Still River flooding over its' banks in Brookfield at 6 pm EDT.  They also reported small creeks flooded in Southbury at 7 pm EDT.A 71-year-old woman died around 7 pm EDT in Fairfield when she stepped off her backyard retaining wall into the river.  She was swept into the river by a fast moving current.Storm total rainfall ranged from 3 to 6 inches across Fairfield and New Haven Counties.  Specific rainfall amounts for:Fairfield County - Bridgeport:  5.66 inchesDarien:       5.10 inchesDanbury:    3.75 inchesBrookfield:  3.40 inchesNew Haven County -West Haven:  5.20 inchesNew Haven:   4.34 inchesNaugatuck:    3.95 inchesSouthbury:     3.48 inches<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_16795d0c34aa4b3308039d0988d9d558.setContent(html_6291504d118a084c00b191716fbd0ef0);
+            
+        
+
+        marker_433e93df76e6410bff24650953d84f95.bindPopup(popup_16795d0c34aa4b3308039d0988d9d558)
+        ;
+
+        
+    
+    
+            var marker_2b8abc2cb897d226a3222eebf8ca5e05 = L.marker(
+                [36.37, -92.23],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_ce445192f7517898a727799ed8d5052c = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_33f8204068a6800bd37a7bdf115b4e20 = $(`<div id="html_33f8204068a6800bd37a7bdf115b4e20" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 15-NOV-06 18:00:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> N<br><br>                <b>Begin Location:</b> HENDERSON<br><br>                <b>End Azimuth:</b> N<br><br>                <b>End Location:</b> HENDERSON<br><br>                <b>Episode Narrative:</b> Scattered severe thunderstorms produced wind damage and localized flash flooding over parts of Central and Eastern Arkansas on 11/15.<br><br>                <b>Event Narrative:</b> Several county roads in the area remained flooded from heavy rainfall earlier in the day.  A man had to be rescued from his pickup truck after he drove into the rising water along County Road 48.  He was taken to a local hospital and was later released after suffering hypothermia.<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_ce445192f7517898a727799ed8d5052c.setContent(html_33f8204068a6800bd37a7bdf115b4e20);
+            
+        
+
+        marker_2b8abc2cb897d226a3222eebf8ca5e05.bindPopup(popup_ce445192f7517898a727799ed8d5052c)
+        ;
+
+        
+    
+    
+            var marker_744dbf80bd31ff0a9c7f928caa4f6276 = L.marker(
+                [46.62, -121.67],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_b7b21f26729ca4099e27d0aee4412f08 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_e74af71ced416ada0659f69a96605c6b = $(`<div id="html_e74af71ced416ada0659f69a96605c6b" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 04-NOV-06 17:16:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 2<br><br>                <b>Begin Azimuth:</b> N<br><br>                <b>Begin Location:</b> PACKWOOD<br><br>                <b>End Azimuth:</b> N<br><br>                <b>End Location:</b> RANDLE<br><br>                <b>Episode Narrative:</b> A strong, warm and very wet Pacific weather system brought copious amounts of rainfall to Washington from November 2 through 7, with subsequent major flooding that extended through November 11.  This storm fueled in part from sub-tropical moisture associated with former western Pacific typhoon Cimaron, produced rain amounts of between 10 to 38 inches in the Cascades and Olympics and 4 to 10 inches in western Washington lowlands during this period. |Floods occurred at 34 forecast points on 25 rivers.  There were 22 locations with major flooding or greater.  There were 20 record floods.|Widespread and excessive urban and small stream flooding also occurred.|11 counties were declared disaster areas.  A tally had 104 homes destroyed, 206 homes with major damage, and 572 received minor damage.<br><br>                <b>Event Narrative:</b> Record flooding occurred on the Cowlitz, Nooksack, Puyallup, Nisqually, |Skykomish, Stillaguamish, Carbon, Snoqualmie, and Bogachiel.  Major flooding occurred on the Tolt, Snohomish, Skokomish, Skagit, and White rivers.  Other rivers flooding were the Satsop, Cedar, Wynoochee, Elwha, Deschutes, Dungeness, Skookumchuck, and Chehalis.<br><br>                <b>Damage:</b> 8.80M<br><br>               </div>`)[0];
+                popup_b7b21f26729ca4099e27d0aee4412f08.setContent(html_e74af71ced416ada0659f69a96605c6b);
+            
+        
+
+        marker_744dbf80bd31ff0a9c7f928caa4f6276.bindPopup(popup_b7b21f26729ca4099e27d0aee4412f08)
+        ;
+
+        
+    
+    
+            var marker_3280c0a26b38df442acf1c2a55679df4 = L.marker(
+                [39.12, -86.98],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_3f06cf91246cd85d93d3e8d9222ff61f = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_32b12b692dff836d5dd950dbaf95d7e9 = $(`<div id="html_32b12b692dff836d5dd950dbaf95d7e9" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 01-JAN-07 00:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> N<br><br>                <b>Begin Location:</b> WORTHINGTON<br><br>                <b>End Azimuth:</b> N<br><br>                <b>End Location:</b> WORTHINGTON<br><br>                <b>Episode Narrative:</b> Heavy rains in late December and January caused prolonged high water along the lower White River.<br><br>                <b>Event Narrative:</b> The White River in Greene County flooded for much of January.  Crests were as high as 8.9 feet above flood stage.  A man was killed near Worthington when he lost control of his car in high water and attempted to wade through the frigid water to safety.<br><br>                <b>Damage:</b> 10.00K<br><br>               </div>`)[0];
+                popup_3f06cf91246cd85d93d3e8d9222ff61f.setContent(html_32b12b692dff836d5dd950dbaf95d7e9);
+            
+        
+
+        marker_3280c0a26b38df442acf1c2a55679df4.bindPopup(popup_3f06cf91246cd85d93d3e8d9222ff61f)
+        ;
+
+        
+    
+    
+            var marker_3786c42eed8926de5e3b7972abb65fb8 = L.marker(
+                [39.1143, -86.42],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_61d2ccc574b1468af64a77480f568520 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_843956d04f7430411cea6c60de6ab07b = $(`<div id="html_843956d04f7430411cea6c60de6ab07b" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 28-JAN-07 00:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> S<br><br>                <b>Begin Location:</b> UNIONVILLE<br><br>                <b>End Azimuth:</b> S<br><br>                <b>End Location:</b> UNIONVILLE<br><br>                <b>Episode Narrative:</b> Heavy rain flooded Lake Monroe.  A man drove into flooded roads near Lake Monroe after apparently becoming disoriented and was killed.<br><br>                <b>Event Narrative:</b> Lake Monroe flooded due to January rains.  A man was killed when he drove into flooded local roads.<br><br>                <b>Damage:</b> 10.00K<br><br>               </div>`)[0];
+                popup_61d2ccc574b1468af64a77480f568520.setContent(html_843956d04f7430411cea6c60de6ab07b);
+            
+        
+
+        marker_3786c42eed8926de5e3b7972abb65fb8.bindPopup(popup_61d2ccc574b1468af64a77480f568520)
+        ;
+
+        
+    
+    
+            var marker_abc0fd7f28a364dfc3818d4bc8f65bbd = L.marker(
+                [36.7125, -88.4193],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_df6a3c105e2d6fa2dfabede90cdabc54 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_77ee3c64e525024646970bc7d8d915ae = $(`<div id="html_77ee3c64e525024646970bc7d8d915ae" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 15-DEC-07 07:00:00<br><br>                                <b>Injuries:</b> 4<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> SW<br><br>                <b>Begin Location:</b> COPELAND<br><br>                <b>End Azimuth:</b> ENE<br><br>                <b>End Location:</b> HARRIS GROVE<br><br>                <b>Episode Narrative:</b> Persistent widespread moderate rain produced one to three inches over a ten-hour period. This rainfall occurred over ground that was very moist due to rainfall earlier in the month. Since the ground was unable to absorb much water, the rainfall either pooled in low-lying areas or ran off quickly into streams and creeks. The rain occurred ahead of a warm front that extended northeast from low pressure over Louisiana.<br><br>                <b>Event Narrative:</b> Rescue personnel were called to assist an SUV that was trapped in floodwaters at the Clarks River bridge on Martins Chapel Road. As the rescue personnel arrived in their own SUV, their own vehicle was swept down the river and overturned. Everybody was eventually rescued without any serious injuries. The four occupants of both vehicles were taken to a local hospital for treatment. Elsewhere in the county, water was over a few roads.<br><br>                <b>Damage:</b> 10.00K<br><br>               </div>`)[0];
+                popup_df6a3c105e2d6fa2dfabede90cdabc54.setContent(html_77ee3c64e525024646970bc7d8d915ae);
+            
+        
+
+        marker_abc0fd7f28a364dfc3818d4bc8f65bbd.bindPopup(popup_df6a3c105e2d6fa2dfabede90cdabc54)
+        ;
+
+        
+    
+    
+            var marker_794d6956f36fe0cb8fdfed33c51ef67c = L.marker(
+                [38.77, -86.1742],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_b0293f27743c50b02862cc00b4d0cd1a = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_74a44bbf19ce6a3381b32664804a8beb = $(`<div id="html_74a44bbf19ce6a3381b32664804a8beb" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 17-JAN-07 00:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> W<br><br>                <b>Begin Location:</b> MILLPORT<br><br>                <b>End Azimuth:</b> W<br><br>                <b>End Location:</b> MILLPORT<br><br>                <b>Episode Narrative:</b> Recent rains have brought high levels to many southern Indiana Rivers.<br><br>                <b>Event Narrative:</b> Recent heavy rains brought the East Fork of the White River above flood Stage. A man drowned around 8 pm Thursday evening January 18th after attempting to drive south from Jackson County into Washington County across a water covered bridge 1 mile east of Sparksville. His car was found on January 20th, and his body was discovered on January 21st in 3 feet of water on the Washington County side of the White River.<br><br>                <b>Damage:</b> 15.00K<br><br>               </div>`)[0];
+                popup_b0293f27743c50b02862cc00b4d0cd1a.setContent(html_74a44bbf19ce6a3381b32664804a8beb);
+            
+        
+
+        marker_794d6956f36fe0cb8fdfed33c51ef67c.bindPopup(popup_b0293f27743c50b02862cc00b4d0cd1a)
+        ;
+
+        
+    
+    
+            var marker_5ba2267801c2bf4aa5599f2e928287e9 = L.marker(
+                [45.4751, -123.1248],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_215803a140a9cb5a010125e15ea2c8ce = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_1d3c1cdc58e22a5135a32a656f4af3b9 = $(`<div id="html_1d3c1cdc58e22a5135a32a656f4af3b9" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 03-DEC-07 11:15:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> SW<br><br>                <b>Begin Location:</b> DILLEY<br><br>                <b>End Azimuth:</b> NNE<br><br>                <b>End Location:</b> DILLEY<br><br>                <b>Episode Narrative:</b> Two very powerful storms with origins in the Tropics brought hazardous weather to the Pacific Northwest. The entire forecast area experienced heavy rainfall for an extended period of time. As an example of the extreme accumulations, over fourteen inches of rain fell at Lees Camp in the north Coast Range in a period of about 60 hours. This abnormally long period of consistently heavy rainfall led to widespread flooding, with the worst hit areas in the Coast Range and areas draining from the Coast Range to the Pacific Ocean. Five rivers in northwest Oregon surpassed major flood stages, fueling the extensive flood damage across the region.<br><br>                <b>Event Narrative:</b> The Tualatin River near Dilley flooded, causing flood damage to homes in the area and leaving some roads impassable. Old Hwy. 47 and Hwy. 47 were closed temporarily due to combined flooding of a couple creeks with the Tualatin River. Near the area, a 54 year old male drown in Hedges Creek, a tributary of the Tualatin River. NOTE: Damage estimates are for the entire county of Washington.<br><br>                <b>Damage:</b> 2.30M<br><br>               </div>`)[0];
+                popup_215803a140a9cb5a010125e15ea2c8ce.setContent(html_1d3c1cdc58e22a5135a32a656f4af3b9);
+            
+        
+
+        marker_5ba2267801c2bf4aa5599f2e928287e9.bindPopup(popup_215803a140a9cb5a010125e15ea2c8ce)
+        ;
+
+        
+    
+    
+            var marker_2046e02bc0e55ea78f5702615e34b8ff = L.marker(
+                [47.399, -123.15],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_ca6efb11236820bb99886f9206e30934 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_cec60b3ece10de6586f4d42d89dc9158 = $(`<div id="html_cec60b3ece10de6586f4d42d89dc9158" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 03-DEC-07 03:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> N<br><br>                <b>Begin Location:</b> POTLATCH<br><br>                <b>End Azimuth:</b> W<br><br>                <b>End Location:</b> POTLATCH<br><br>                <b>Episode Narrative:</b> Record flooding occurred on the Chehalis, Skokomish, and Elwha Rivers.  In addition to the record flooding, major flooding occurred on the Bogachiel River.  Flooding also occurred on the Nooksack, Skagit, Stillaguamish, SF Stillaguamish, Snohomish, Skykomish, Snoqualmie, Puyallup, Deschutes, Nisqually, Skookumchuck, Dungeness Rivers and Issaquah Creek. Significant and damaging urban and small stream flooding occurred in Snohomish, King, Lewis, Thurston, Mason, and Kitsap counties, as 3 to 8 inches of rain fell over the area with the exception of 10 to 20 inches in the Willapa Hills and southern Olympic mountain areas.  At least 130 people had to be rescued by helicopter. Two men died as a result of river flooding - one near Winlock in Lewis county and another along the Tahuya river in Mason county. A landslide hit a house and buried a man in his sleep near Hoodsport in Mason county.||These events were part of a significant deep Pacific storm system offshore the also initially generated lowland snow in western Washington and later created strong winds in primarily the coastal region and avalanches in the Cascades.<br><br>                <b>Event Narrative:</b> The Skokomish at Potlatch reach a record flood stage of 18.12 feet.  Two bridges were washed away, one over the Tahuya River and one over Finch creek.  All schools in the county were closed monday.  Several roads were closed and a few people were evacuated from their homes. A man was swept away in the Tahuya river.<br><br>                <b>Damage:</b> 12.00K<br><br>               </div>`)[0];
+                popup_ca6efb11236820bb99886f9206e30934.setContent(html_cec60b3ece10de6586f4d42d89dc9158);
+            
+        
+
+        marker_2046e02bc0e55ea78f5702615e34b8ff.bindPopup(popup_ca6efb11236820bb99886f9206e30934)
+        ;
+
+        
+    
+    
+            var marker_d6a80f962e314b9c80c44462e96f2d57 = L.marker(
+                [46.63, -123.27],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_bf0fe6205a67eea760ae50ac97f5fc59 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_7d6a68e68ac443772517e7ae505dcc61 = $(`<div id="html_7d6a68e68ac443772517e7ae505dcc61" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 02-DEC-07 23:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> SW<br><br>                <b>Begin Location:</b> DOTY<br><br>                <b>End Azimuth:</b> NNW<br><br>                <b>End Location:</b> CENTRALIA<br><br>                <b>Episode Narrative:</b> Record flooding occurred on the Chehalis, Skokomish, and Elwha Rivers.  In addition to the record flooding, major flooding occurred on the Bogachiel River.  Flooding also occurred on the Nooksack, Skagit, Stillaguamish, SF Stillaguamish, Snohomish, Skykomish, Snoqualmie, Puyallup, Deschutes, Nisqually, Skookumchuck, Dungeness Rivers and Issaquah Creek. Significant and damaging urban and small stream flooding occurred in Snohomish, King, Lewis, Thurston, Mason, and Kitsap counties, as 3 to 8 inches of rain fell over the area with the exception of 10 to 20 inches in the Willapa Hills and southern Olympic mountain areas.  At least 130 people had to be rescued by helicopter. Two men died as a result of river flooding - one near Winlock in Lewis county and another along the Tahuya river in Mason county. A landslide hit a house and buried a man in his sleep near Hoodsport in Mason county.||These events were part of a significant deep Pacific storm system offshore the also initially generated lowland snow in western Washington and later created strong winds in primarily the coastal region and avalanches in the Cascades.<br><br>                <b>Event Narrative:</b> The Chehalis river at Centralia reached a record flood stage of 74.78 feet.  An 81-year old man disappeared along a stream near Winlock. More than 450 homes were damaged outside of the cities of Chehalis and Centralia.  About 65 homes were destroyed, while just over 200 had major damage.  Over 1800 farm animals died.  A 20 mile stretch of Interstate-5 was closed for 3 days as parts of the interstate were under as much as 10 feet of water as well as the major north-south rail line.  In Centralia about 350 homes were damaged or destroyed.  About 1100 people used shelters.  Many schools were closed for a week.  Some communities had no fresh water.  More than 20 square blocks near downtown Centralia were under water.<br><br>                <b>Damage:</b> 50.00M<br><br>               </div>`)[0];
+                popup_bf0fe6205a67eea760ae50ac97f5fc59.setContent(html_7d6a68e68ac443772517e7ae505dcc61);
+            
+        
+
+        marker_d6a80f962e314b9c80c44462e96f2d57.bindPopup(popup_bf0fe6205a67eea760ae50ac97f5fc59)
+        ;
+
+        
+    
+    
+            var marker_70ff18b4de6943b45d0976853d3243b2 = L.marker(
+                [40.57, -74.3],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_7b4289db7f14534733b82008858e3448 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_ca314e7e2df8ff7d4bf18954d1af3c25 = $(`<div id="html_ca314e7e2df8ff7d4bf18954d1af3c25" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 15-APR-07 09:30:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> N<br><br>                <b>Begin Location:</b> WOODBRIDGE<br><br>                <b>End Azimuth:</b> N<br><br>                <b>End Location:</b> NEW BRUNSWICK<br><br>                <b>Episode Narrative:</b> An intense nor'easter brought heavy rain and flooding to New Jersey that started on the 15th. The worst flooding occurred along the Raritan and Passaic River Basins. It was the worst flooding in the Raritan Basin since Hurricane Floyd in 1999. Bound Brook and Manville were once again hit hard as were communities on the other side of the Raritan River in Middlesex County. Along the Passaic Basin, Lincoln Park also was hit hard. The nor'easter also brought strong to high winds as well as some snow to the state on the 16th. Numerous streams and rivers flooded, but the flooding along the Delaware River was minimal.  |Statewide damage was estimated at $180 million dollars. It was the second worst rain storm (not related to a hurricane) in the state's history. Acting Governor Richard J. Codey declared a state of emergency on the 16th. About 5,000 people were evacuated in 11 of the state's 21 counties. At one time over 70 major roadways and interstates were closed including New Jersey State Routes 20, 23, 38, 46, 70 and 73 as well as U.S. Route 30 and Interstates 80 and 380. There were over 700 traffic accidents indirectly caused by the flooding and heavy rain. Three people in the state drowned. The strong winds caused about 120,000 homes and businesses in the state to lose power. Power was not completely restored until the 18th. The combination of the snow, wind (power outages) and flooding caused many school districts to either cancel classes or have delayed openings on the 16th. Even Rutgers University was closed on the 16th and 17th. In the Raritan Basin, school closings lasted into the week of April 23rd. The nor'easter was so nasty that even the Internal Revenue Service extended the tax deadline for 48 hours in affected areas. The heavy and flooding rains was expected to delay the spring planting on farms. Garden center and nursery business which was already slow because of the unseasonably cold weather was dealt another set-back. Twelve counties in the state were declared federal disaster areas and included Burlington, Camden, Gloucester, Mercer, Middlesex, Morris and Somerset Counties.   |Rain began falling throughout the area during the late evening on the 14th. It started briefly as snow over some of the higher terrain of Susse County. The rain fell at its heaviest from about 3 a.m. EDT on the 15th to about 3 a.m. EDT on the 16th. As the upper air disturbance moved across New Jersey, the rain did change to snow for a couple of hours around sunrise on the 16th and accumulated about an inch or two on grassy areas in western New Jersey. The steady precipitation ended during the afternoon and early evening on the 16th. Event precipitation totals averaged 3 to 6 inches. Event snowfall totals were an inch or two in most areas, mainly on grassy areas. |The strongest winds occurred as the nor'easter pulled northeast of the region on the 16th from the early morning into the afternoon. The combination of the heavy rain, even some snow and the winds helped knock down numerous trees and power lines. Peak wind gusts averaged between 40 and 60 mph.|The nor'easter low pressure system initially formed in the southern Rockies on the 12th and moved to Arkansas on the morning of the 14th. At 8 p.m. EDT on the 14th, there were two low pressure systems, one in Kentucky and the other in western Alabama. The southern low pressure system became the predominate one overnight and at 8 a.m. EDT on the 15th, it (996 millibar low) was located in western North Carolina. As the 15th continued, it moved northeast and intensified rapidly. At 2 p.m. EDT the nor'easter (989 millibars) was near Raleigh, North Carolina. At 8 p.m. EDT, the nor'easter was a 979 millibar low pressure system near Virginia Beach, Virginia. Another low pressure system formed on its warm front during the afternoon over Chesapeake Bay and at 8 p.m. EDT it (982 millibars) was over extreme southwest New Jersey. The lows consolidated into one again overnight and a very intense 973 millibar low pressure system was located over Monmouth County, New Jersey at 2 a.m. EDT on the 16th. At 8 a.m. EDT on the 16th the nor'easter was down to 968 millibars and located over New York City. That was a drop in central pressure of 28 millibars in 24 hours which qualified it as a meteorological bomb (a drop in central pressure of at least 24 millibars in 24 hours) low pressure system. The nor'easter bottomed at a pressure of about 966 millibars (28.53 inches) at 11 a.m. EDT just south of Long Island, New York. To put into prospective how low the pressure was with this nor'easter, that central pressure is near the border of the pressure defined category 2 and category 3 hurricane once used on the Saffir-Simpson Hurricane Scale. As the 16th continued, the nor'easter weakened and meandered across southwest New England and the New York and New Jersey coastal waters. By 2 a.m. EDT on the 17th, the nor'easter's central pressure rose to 988 millibars and a second storm formed on the triple point of its fronts south of Nova Scotia. This became the main low pressure system. The low pressure system then slowly moved southeast over the next couple of days. The heaviest precipitation fell as the low pressure system was rapidly intensifying on the 15th into the early part of the 16th. The strongest winds ceased after the low pressure system started to fill on the afternoon of the 16th.<br><br>                <b>Event Narrative:</b> In Middlesex County, nearly every municipality suffered flood damage or had roads closed due to flooding. Many major roads were flooded including U.S. Routes 1 and 9 and New Jersey State Routes 18 and 27. Nearly 1,000 people were evacuated and 129 homes suffered severe damage. A 52-year-old man drowned in Woodbridge after he drove his vehicle into a flooded underpass (Leesville Avenue). The three other family members in the car were able to be saved. Many sewage treatment plants were overwhelmed and raw sewage backed into police stations and basements of homes. |In Carteret Borough, 25 roads were closed. In Woodbridge Township, about 300 people were evacuated. The Queens Gardens Apartment Complex and the Ideal Mobile Home were evacuated. Flooding occurred along both the Woodbridge Creek and the Rahway River. The worst flooding occurred in the Avenel section of the township. In Edison Township, twelve units of the Evergreen Apartments were evacuated. A train track bed washed away, even a food pantry was flooded. In South Plainfield Borough, five homes were evacuated. There were about a half dozen vehicular water rescues. A retaining wall collapsed behind a Sears store on Oaktree Road. |In Middlesex Borough, homes on Cap Lane, 7th Street, Rock Lane, Weiss Drive and residents of the Park Brook Gardens Apartment were evacuated. About 300 homes were damaged by the flooding. In Dunellen Borough, people were evacuated from homes on Mountaiview Terrace, Orange and Front Streets. About 30 homes were damaged. In Piscataway Township, about 300 people were evacuated and 8 roadways were closed. The Bridge for the New Market Pond collapsed. The flooding's epicenter was around River Road. The Mayflower, Birchview and Rivercrest Apartments were evacuated. |In New Brunswick, major traffic headaches occurred because of the Raritan River flooding of New Jersey State Route 18. The Interchange 9 exit was closed on the New Jersey Turnpike. Rutgers University cancelled classes on both the 16th and 17th. In Sayreville Borough, residents along Weber Avenue and near the Old Bridge section near the South River were evacuated. In South River Borough, evacuations occurred around the Causeway Bridge and Water Street. About 75 homes were flooded. In Milltown Borough, a flooded substation caused 7,000 people to lose power. The borough's post office suffered extensive flood damage. The Lawrence Brook flooded.|In East Brunswick, evacuations occurred on their side of Old Bridge near the South River. In South Brunswick, limited evacuations occurred at the Oakdale Mobile Home near U.S. Route 1. Flood waters tore away chunks of U.S. Route 1. About 50 dogs were rescued from a flooded kennel. Eighteen roads were closed and thirty-six homes were flooded. In Monroe Township, nine families were evacuated from the Mill Lake Manor section. Fifteen roadways were closed. In Cranbury Township, Brainard Lake overflowed. In Plainsboro Township, so many roads were flooded that the township was practically an island until the 17th.|The Raritan River at Bound Brook (Somerset County) was above its 28 foot flood stage from 644 p.m. EDT on the 15th through 350 p.m. on the 17th. It crested at 38.38 feet at 1245 p.m. EDT on the 16th.  It was the 2nd highest crest on record, second only to the crest from Hurricane Floyd on September 17th, 1999. The Bound Brook at Middlesex was above its 9 foot flood stage from 655 p.m. EDT on the 15th through 717 p.m. EDT on the 16th.  It crested at 12.1 feet at 315 a.m. EDT on the 16th.|Precipitation totals included 7.01 inches in Deans and 5.63 inches in Metuchen.|<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_7b4289db7f14534733b82008858e3448.setContent(html_ca314e7e2df8ff7d4bf18954d1af3c25);
+            
+        
+
+        marker_70ff18b4de6943b45d0976853d3243b2.bindPopup(popup_7b4289db7f14534733b82008858e3448)
+        ;
+
+        
+    
+    
+            var marker_a1432ea9b06f9fc97c4f43c7361afaf8 = L.marker(
+                [32.23, -97.75],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_f63c0215b4264bef13a4ed0ce66591bd = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_d020eeb586ae43a71fa67a3c3a1d6a88 = $(`<div id="html_d020eeb586ae43a71fa67a3c3a1d6a88" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 29-MAY-07 16:30:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 2<br><br>                <b>Begin Azimuth:</b> N<br><br>                <b>Begin Location:</b> GLEN ROSE<br><br>                <b>End Azimuth:</b> N<br><br>                <b>End Location:</b> GLEN ROSE<br><br>                <b>Episode Narrative:</b> An upper level low pressure system over the west combined with ample moisture over north Texas.  Storms trained over the same areas, creating flash flooding.<br><br>                <b>Event Narrative:</b> A sixteen-year-old girl was pulled under by strong flood waters after her and her friends went swimming in the swollen Paluxy River.  The girl's body was found early Friday morning.  A game warden drowned while searching for her body after the search boat capsized.<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_f63c0215b4264bef13a4ed0ce66591bd.setContent(html_d020eeb586ae43a71fa67a3c3a1d6a88);
+            
+        
+
+        marker_a1432ea9b06f9fc97c4f43c7361afaf8.bindPopup(popup_f63c0215b4264bef13a4ed0ce66591bd)
+        ;
+
+        
+    
+    
+            var marker_121af32dfffaed2e98af52faa9c0c4ec = L.marker(
+                [40.82, -74.12],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_21aa42099d312bdf26024c0e102b9ce8 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_13654114a8af9ea2201b70dcfadbe80f = $(`<div id="html_13654114a8af9ea2201b70dcfadbe80f" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 15-APR-07 09:52:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> N<br><br>                <b>Begin Location:</b> RUTHERFORD<br><br>                <b>End Azimuth:</b> N<br><br>                <b>End Location:</b> RUTHERFORD<br><br>                <b>Episode Narrative:</b> A Nor���Easter occurred during Sunday and Monday, April 15th and 16th.  It brought heavy rain that caused widespread and significant river, stream, and urban flooding of low lying and poor drainage areas.  Significant river flooding lasted through April 23rd.|Flooding resulted in 2 deaths and in millions of dollars in property damage.  Police found a 79 year old man next to his car on a flooded street in Belleville.  A 43 year old woman was found in her flooded car when it was pulled from the Ramapo River in Mahwah.  Cost estimates of property damage ranged up to $19 million dollars, as provided by the New Jersey State Office of Emergency Management.|Storm Total Rainfall amounts ranged from 2.16 inches at Canoe Brook to 8.08 inches at Garrett Mountain:|Bergen County rainfall ranged from 4.60 inches in Woodcliff Lake to 8.04 inches at Lodi.|Essex County rainfall ranged from 4.56 inches at the Orange Reservoir to 7.36 inches at Verona.  At Newark Airport, 6.63 inches was measured.|Hudson County rainfall ranged from 7.31 inches at Jersey City to 7.92 inches at Harrison.|Passaic County rainfall ranged from 4.04 inches at Wayne to 8.08 inches at Garrett Mountain.|Union County rainfall ranged from 2.16 inches at Canoe Brook to 7.31 inches at Cranford.|River Flood Observations include:|In Bergen County -- |The Saddle River at Lodi rose to its' flood stage of 6 feet at 1:40 pm on April 15th, crested at 11.6 feet at 4:15 pm on April 16th, then fell below flood stage at 1:15 am on April 17th.|The Ramapo River at Mahwah rose to its' flood stage of 8.0 feet at 10:15 pm on April 15th, crested at 10.99 feet at 1 pm on April 16th, then fell below flood stage at midnight on April 18th.|In Passaic County, the Passaic River at Little Falls did not fall below flood stage until 2:30 am on April 23rd.|Urban Flood Observations include:|Bergen County - Street flooding was reported along Route 17 in Rutherford between Union Ave. and Highland Cross streets.  A road collapsed onto cars in Union City.  A land slide damaged a house near Hughes Street and Farnham Avenue in Lodi.|Hudson County - Street flooding was reported along Passaic Ave., which was closed near Railroad Bridge.|Union County - Street flooding was reported along Route 1 south bound near Lawrence Street.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_21aa42099d312bdf26024c0e102b9ce8.setContent(html_13654114a8af9ea2201b70dcfadbe80f);
+            
+        
+
+        marker_121af32dfffaed2e98af52faa9c0c4ec.bindPopup(popup_21aa42099d312bdf26024c0e102b9ce8)
+        ;
+
+        
+    
+    
+            var marker_dc516ec54bebc9f3551d244782656b9b = L.marker(
+                [32.73, -97.12],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_b35761575f01fdb1f2a84769e03b0751 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_08bb57c638e84aa63530565512451939 = $(`<div id="html_08bb57c638e84aa63530565512451939" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 02-JUL-07 13:30:00<br><br>                                <b>Injuries:</b> 3<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> N<br><br>                <b>Begin Location:</b> ARLINGTON<br><br>                <b>End Azimuth:</b> N<br><br>                <b>End Location:</b> ARLINGTON<br><br>                <b>Episode Narrative:</b> Upper level energy combined with high moisture to create several rounds of showers and thunderstorms.  This resulted in flooding as rain fell on already saturated grounds.<br><br>                <b>Event Narrative:</b> A high water rescue was required for three children who had been playing in Johnson Creek and were swept away.  The children were treated for minor injuries.<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_b35761575f01fdb1f2a84769e03b0751.setContent(html_08bb57c638e84aa63530565512451939);
+            
+        
+
+        marker_dc516ec54bebc9f3551d244782656b9b.bindPopup(popup_b35761575f01fdb1f2a84769e03b0751)
+        ;
+
+        
+    
+    
+            var marker_b0e53de5d14978c67febcba94fe760ab = L.marker(
+                [43.47, -70.72],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_ac00546f70e62905debef7164476719d = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_4870e38df0fb0410ae447c58a66ec8fd = $(`<div id="html_4870e38df0fb0410ae447c58a66ec8fd" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 16-APR-07 07:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 2<br><br>                <b>Begin Azimuth:</b> N<br><br>                <b>Begin Location:</b> ALFRED<br><br>                <b>End Azimuth:</b> N<br><br>                <b>End Location:</b> ALFRED<br><br>                <b>Episode Narrative:</b> An area of low pressure over the southeastern United States on the morning of Sunday, April 15th, rapidly intensified as it slowly moved north to near New York City by the morning of Monday, April 16th. This intense low in combination with high pressure over eastern Canada produced Overview: An area of low pressure intensified rapidly as it moved slowly from the southeastern United States on the morning of Sunday, April 15th to near New York City by the morning of Monday, April 16th.  The intense low over New York City in combination with high pressure over eastern Canada produced a very intense pressure gradient across the area which caused strong east to northeast winds to develop across the region.  Over land, the strong winds downed numerous trees.  The downed trees caused widespread power outages, especially near the coast, and numerous road closures.  Over the marine areas, the strong winds caused a storm surge and large ocean waves of up to 30 feet to develop.  The combination of astronomical high tides, storm surge, and large waves contributed to coastal flooding in coastal areas of the state and severe coastal erosion in areas south of Portland.|The storm also brought heavy rain to the region which, when combined with snow melt, produced widespread flooding across much of the region.  The flooding of small rivers and streams was worst in southern and coastal areas and led to numerous road closures.   In the mountains, the rain was preceded by heavy snow.  Flooding was minor on most mainstem rivers, however, in southern Maine, the Presumpscot River reached near record levels. |The intense low drifted very slowly eastward from Monday morning through Friday morning as it gradually weakened.  During this time, the pressure gradient slowly relaxed, the winds gradually diminished, and the seas slowly subsided.  However, rain continued into Tuesday across the region and each high tide during the period brought a reoccurrence of coastal flooding and erosion to the area.  Power outages persisted, and stream and river flooding continued across the region during this period.  Many roads remained closed.|On Friday, April 20, high pressure built eastward from the Great Lakes ending the influence of the Atlantic storm.  |  |Wind: The pressure gradient associated with the storm brought high winds to the region.  The damage observed in the hardest hit areas was typical of wind gusts of 60 to 80 mph.  While most observing sites reported winds below this range, topography, elevation, and exposure were likely factors in determining the amount of wind damage any location experienced.  In addition, the heavy rain brought strong wind gusts to the ground level and contributed to the sporadic nature of the heaviest wind damage.  In addition to the meteorological factors, damage from the wind was exacerbated because of the heavy rain that accompanied the wind and the soft, wet ground caused by the spring thaw.|The wind knocked over numerous trees and branches throughout the region and caused numerous and prolonged power outages throughout the region.| |Coastal Flooding/Storm Surge/Waves:  The coastal storm hit during a period of very high (and very low) astronomical tides.  In addition to the astronomical tides, the prolonged period of strong northeast winds caused a prolonged storm surge along the coastline.  Also during this period, the strong winds caused large and battering waves along the coast.  The storm tides and large waves caused significant flooding and coastal erosion. |In Portland, flood level is 12 feet.  During the storm, storm tides reached or exceeded the 12 foot flood level during 7 tidal cycles.  In addition, due to the large waves, coastal erosion occurred throughout the week of April 15th to 20th when the Portland gauge was above or near the 12 foot flood level.  Communication was lost with NOAA���s Portland Weather Buoy shortly after 6 am Monday when it was reporting 31 foot seas.|Precipitation:  Rain developed across the southern part of the state early Sunday afternoon, April 15th and spread northward.  The rain became heavy during the afternoon and overnight.  By Monday morning, 3 to 7 inches of rain had fallen in York County with rainfall amounts decreasing to 1 to 4 inches to the north and east.    In the mountains of Maine, 2 to 7 inches of snow fell by Monday morning.  Although the heaviest precipitation fell from Sunday afternoon into Monday afternoon, precipitation persisted into Tuesday.  Rainfall in Southern Maine was near the 100 year recurrence interval at Sanford and Eliot.|Flooding:  The heavy rain combined with snow melt to cause flooding of small rivers and streams in much of southern and central Maine.   The worst flooding occurred on the smaller rivers in York County.  Damage to infrastructure was severe (roads, bridges, waste water treatment plants, public buildings). Homes and businesses were also damaged. In York County, two people were killed when they attempted to cross a flooded road on foot and were swepted away. The crest on the Presumpscot River was just below the crest recorded during Hurricane Bob in August of 1991.<br><br>                <b>Event Narrative:</b> Flooding and damages were countywide.<br><br>                <b>Damage:</b> 25.00M<br><br>               </div>`)[0];
+                popup_ac00546f70e62905debef7164476719d.setContent(html_4870e38df0fb0410ae447c58a66ec8fd);
+            
+        
+
+        marker_b0e53de5d14978c67febcba94fe760ab.bindPopup(popup_ac00546f70e62905debef7164476719d)
+        ;
+
+        
+    
+    
+            var marker_b7a8c8ee7c9db8a2124bf4fe3715d790 = L.marker(
+                [42.48, -73.8],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_b61f7851d049404680fd59c94a972f5f = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_9c00b092067739c9885d69739b103273 = $(`<div id="html_9c00b092067739c9885d69739b103273" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 16-APR-07 06:54:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> N<br><br>                <b>Begin Location:</b> COEYMANS<br><br>                <b>End Azimuth:</b> N<br><br>                <b>End Location:</b> COEYMANS<br><br>                <b>Episode Narrative:</b> Low pressure developed over the lower Mississippi Valley on Saturday April 14th, and then moved northeast while intensifying, reaching the southern Appalachians by Sunday morning, April 15th, and then just south of western Long Island by Monday morning, April 16th. This low became very intense, with a central barometric pressure falling below 970 millibars upon reaching just south of Long Island Monday morning. The low then headed off the New England coast by Tuesday morning.|This intense coastal storm spread heavy precipitation across the lower and mid Hudson Valley region of New York, starting on Sunday, and persisting into late Monday. Initially, the precipitation fell as a mixture of wet snow, sleet and rain, with snow and sleet more prevalent across the higher elevations. The precipitation changed to plain rain by late Sunday afternoon into Monday.  |Liquid equivalent precipitation totals from this storm ranged from 3 to 8 inches.  This led to widespread flooding across the lower and mid Hudson Valley region from late Sunday into Monday evening.<br><br>                <b>Event Narrative:</b> Heavy rain led to widespread flooding of small streams and creeks across the county, which began during the morning hours of Monday, April 16th, and persisted into late Monday evening on the 16th.|Widespread flooding led to numerous road closures, including Miller Road off Route 9W in Coeymans, Route 32 in New Scotland between Lagrange Lane and Winne Lane, and Creble Road between Elm Avenue and South Albany Road in Bethlehem Center.  In addition, evacuations occurred along Coeymans Creek.|Furthermore, a fatality and injury occurred as a brother and sister, ages 14 and 15, respectively, canoed into the rain swollen Basic Creek in Westerlo when the canoe tipped over around 17:00 EST.  The female drowned, being swept away by strong currents within the creek. She was pronounced dead at Albany Medical Center at 21:02 EST on the 16th.  The male was able to reach the shore.<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_b61f7851d049404680fd59c94a972f5f.setContent(html_9c00b092067739c9885d69739b103273);
+            
+        
+
+        marker_b7a8c8ee7c9db8a2124bf4fe3715d790.bindPopup(popup_b61f7851d049404680fd59c94a972f5f)
+        ;
+
+        
+    
+    
+            var marker_bcc3c06190cf0236f36fd4c91e1b4853 = L.marker(
+                [40.88, -74.28],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_9ee0ebc02b11ad573cc972ba9e412ffc = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_29239eaa96f6fa257e5ba4a53ee69be3 = $(`<div id="html_29239eaa96f6fa257e5ba4a53ee69be3" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 15-APR-07 10:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> N<br><br>                <b>Begin Location:</b> (CDW)ESX CO ARPT CAL<br><br>                <b>End Azimuth:</b> N<br><br>                <b>End Location:</b> (CDW)ESX CO ARPT CAL<br><br>                <b>Episode Narrative:</b> A Nor���Easter occurred during Sunday and Monday, April 15th and 16th.  It brought heavy rain that caused widespread and significant river, stream, and urban flooding of low lying and poor drainage areas.  Significant river flooding lasted through April 23rd.|Flooding resulted in 2 deaths and in millions of dollars in property damage.  Police found a 79 year old man next to his car on a flooded street in Belleville.  A 43 year old woman was found in her flooded car when it was pulled from the Ramapo River in Mahwah.  Cost estimates of property damage ranged up to $19 million dollars, as provided by the New Jersey State Office of Emergency Management.|Storm Total Rainfall amounts ranged from 2.16 inches at Canoe Brook to 8.08 inches at Garrett Mountain:|Bergen County rainfall ranged from 4.60 inches in Woodcliff Lake to 8.04 inches at Lodi.|Essex County rainfall ranged from 4.56 inches at the Orange Reservoir to 7.36 inches at Verona.  At Newark Airport, 6.63 inches was measured.|Hudson County rainfall ranged from 7.31 inches at Jersey City to 7.92 inches at Harrison.|Passaic County rainfall ranged from 4.04 inches at Wayne to 8.08 inches at Garrett Mountain.|Union County rainfall ranged from 2.16 inches at Canoe Brook to 7.31 inches at Cranford.|River Flood Observations include:|In Bergen County -- |The Saddle River at Lodi rose to its' flood stage of 6 feet at 1:40 pm on April 15th, crested at 11.6 feet at 4:15 pm on April 16th, then fell below flood stage at 1:15 am on April 17th.|The Ramapo River at Mahwah rose to its' flood stage of 8.0 feet at 10:15 pm on April 15th, crested at 10.99 feet at 1 pm on April 16th, then fell below flood stage at midnight on April 18th.|In Passaic County, the Passaic River at Little Falls did not fall below flood stage until 2:30 am on April 23rd.|Urban Flood Observations include:|Bergen County - Street flooding was reported along Route 17 in Rutherford between Union Ave. and Highland Cross streets.  A road collapsed onto cars in Union City.  A land slide damaged a house near Hughes Street and Farnham Avenue in Lodi.|Hudson County - Street flooding was reported along Passaic Ave., which was closed near Railroad Bridge.|Union County - Street flooding was reported along Route 1 south bound near Lawrence Street.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 4.00M<br><br>               </div>`)[0];
+                popup_9ee0ebc02b11ad573cc972ba9e412ffc.setContent(html_29239eaa96f6fa257e5ba4a53ee69be3);
+            
+        
+
+        marker_bcc3c06190cf0236f36fd4c91e1b4853.bindPopup(popup_9ee0ebc02b11ad573cc972ba9e412ffc)
+        ;
+
+        
+    
+    
+            var marker_d3bef1f76398275a7c28959d81db5db3 = L.marker(
+                [31.1, -97.7],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_17a4e1995b4f0ca32c7afe788203cc99 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_abba19533bc0283b0be033f74b72882f = $(`<div id="html_abba19533bc0283b0be033f74b72882f" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 04-JUL-07 22:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> N<br><br>                <b>Begin Location:</b> FT HOOD AAF<br><br>                <b>End Azimuth:</b> N<br><br>                <b>End Location:</b> FT HOOD AAF<br><br>                <b>Episode Narrative:</b> An upper level low pressure system situated in west Texas interacted with high moisture across the region.  This resulted in more instances of flooding as rain fell on already saturated grounds and full reservoirs.<br><br>                <b>Event Narrative:</b> A civilian worker's body was found in Cowhouse Creek downstream from where his vehicle was pulled from the water.  The man had gone missing after a fireworks show.  At the time, Cowhouse Creek was over five feet above flood stage.<br><br>                <b>Damage:</b> 10.00K<br><br>               </div>`)[0];
+                popup_17a4e1995b4f0ca32c7afe788203cc99.setContent(html_abba19533bc0283b0be033f74b72882f);
+            
+        
+
+        marker_d3bef1f76398275a7c28959d81db5db3.bindPopup(popup_17a4e1995b4f0ca32c7afe788203cc99)
+        ;
+
+        
+    
+    
+            var marker_cf8780659cb6998fd5855bcf9ebae838 = L.marker(
+                [38.4607, -82.0908],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_8432554326fce516d70f5624936e4c6b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_36c211221f90414f749c7e4d3f02018b = $(`<div id="html_36c211221f90414f749c7e4d3f02018b" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 10-DEC-07 00:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> NE<br><br>                <b>Begin Location:</b> MILTON<br><br>                <b>End Azimuth:</b> SW<br><br>                <b>End Location:</b> CULLODEN<br><br>                <b>Episode Narrative:</b> Several periods of rain occurred from the 7th into the 10th.  A strong frontal zone existed on the 9th into the 10th with surface dew points in the 55 to 60 degree range south of the front.  Embedded heavier showers moved across Wayne, Cabell, and Putnam Counties from 2300E on the 9th to 0100E on the 10th.  A spotter in Hurricane measured 0.75 inches in 30 minutes.  Rains over a 12 to 18 hour period were on the order of 1.5 to 2.25 inches.  Johns Branch near Milton flooded roads.  Some of the flooding was caused by debris and leaves collecting in many of the culverts.  Around 0020E on the 10th, a 20 year old woman stalled her car on the adjacent road.  She got out of the vehicle and was later found about a quarter mile away, washed up against a culvert. She still had a pulse.  However, she was later pronounced dead at a local hospital. ||Other flooding occurred along Fudges Creek around Ona of Cabell County.  In Wayne County, Krout Creek flooded Spring Valley Road.<br><br>                <b>Event Narrative:</b> nan<br><br>                <b>Damage:</b> 30.00K<br><br>               </div>`)[0];
+                popup_8432554326fce516d70f5624936e4c6b.setContent(html_36c211221f90414f749c7e4d3f02018b);
+            
+        
+
+        marker_cf8780659cb6998fd5855bcf9ebae838.bindPopup(popup_8432554326fce516d70f5624936e4c6b)
+        ;
+
+        
+    
+    
+            var marker_c82ea427a302859f7fa0895a9c414b80 = L.marker(
+                [45.7, -123.75],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_2775fda901e004a3db70286ed2dfc80a = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_0d05f5e4b8b2dfd4a6a7d20dd27aa5fa = $(`<div id="html_0d05f5e4b8b2dfd4a6a7d20dd27aa5fa" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 03-DEC-07 00:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> S<br><br>                <b>Begin Location:</b> BATTERSON<br><br>                <b>End Azimuth:</b> SSW<br><br>                <b>End Location:</b> BATTERSON<br><br>                <b>Episode Narrative:</b> Two very powerful storms with origins in the Tropics brought hazardous weather to the Pacific Northwest. The entire forecast area experienced heavy rainfall for an extended period of time. As an example of the extreme accumulations, over fourteen inches of rain fell at Lees Camp in the north Coast Range in a period of about 60 hours. This abnormally long period of consistently heavy rainfall led to widespread flooding, with the worst hit areas in the Coast Range and areas draining from the Coast Range to the Pacific Ocean. Five rivers in northwest Oregon surpassed major flood stages, fueling the extensive flood damage across the region.<br><br>                <b>Event Narrative:</b> The Nehalem River at Foss reached major flood levels. There was widespread flooding and damage in the city of Nehalem, and a trailer park was evacuated. Also along the Nehalem River, a 54-year old woman drove her truck into flooded waters and was swept away.  The body was never found, and the woman was presumed dead.<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_2775fda901e004a3db70286ed2dfc80a.setContent(html_0d05f5e4b8b2dfd4a6a7d20dd27aa5fa);
+            
+        
+
+        marker_c82ea427a302859f7fa0895a9c414b80.bindPopup(popup_2775fda901e004a3db70286ed2dfc80a)
+        ;
+
+        
+    
+    
+            var marker_fe6e545b1e74cd81c836455ebb2ea321 = L.marker(
+                [37.92, -90.57],
+                {}
+            ).addTo(feature_group_f2c8c3b39c4e5fc50157849e730dba8f);
+        
+    
+        var popup_6259f28e528484c33ce387c7a5e125dc = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_9e4c5990be3e1f8f0aafcd6282746241 = $(`<div id="html_9e4c5990be3e1f8f0aafcd6282746241" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flood<br><br>                <b>Date: </b> 13-JAN-07 03:00:00<br><br>                                <b>Injuries:</b> 0<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> N<br><br>                <b>Begin Location:</b> BONNE TERRE<br><br>                <b>End Azimuth:</b> N<br><br>                <b>End Location:</b> FARMINGTON<br><br>                <b>Episode Narrative:</b> General flooding occurred across parts of Southeast Missouri due to 1 to 3 inches of rain. Small creeks and streams flooded and many low-water crossings became impassable. One man was killed when trying to drive through a low-water crossing in St. Francois County.<br><br>                <b>Event Narrative:</b> Several inches of rain caused flooding of small creeks and streams and low-water crossings across much of St. Francois County. A 71 year-old man was killed near Bonne Terre when he tried to cross a low-water crossing on Cedar Run Road through Terre Blue Creek.<br><br>                <b>Damage:</b> 0.00K<br><br>               </div>`)[0];
+                popup_6259f28e528484c33ce387c7a5e125dc.setContent(html_9e4c5990be3e1f8f0aafcd6282746241);
+            
+        
+
+        marker_fe6e545b1e74cd81c836455ebb2ea321.bindPopup(popup_6259f28e528484c33ce387c7a5e125dc)
+        ;
+
+        
+    
+    
+            var layer_control_11618a117c8b9024ee40114141871bfd = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_a6ebae9f53f508f359f649e7c68fcc6e,
+                },
+                overlays :  {
+                    "Flood" : feature_group_f2c8c3b39c4e5fc50157849e730dba8f,
+                },
+            };
+            L.control.layers(
+                layer_control_11618a117c8b9024ee40114141871bfd.base_layers,
+                layer_control_11618a117c8b9024ee40114141871bfd.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_488760f19b492e325e2ffc4556bd938a);
+        
+</script>
+</html>

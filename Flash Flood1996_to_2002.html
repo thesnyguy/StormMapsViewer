@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0dce784d75372ad5339ec8bc9a059f84 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0dce784d75372ad5339ec8bc9a059f84" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0dce784d75372ad5339ec8bc9a059f84 = L.map(
+                "map_0dce784d75372ad5339ec8bc9a059f84",
+                {
+                    center: [38.0, -97.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b7071afb66f4a0aceaac20b34421601d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0dce784d75372ad5339ec8bc9a059f84);
+        
+    
+            var feature_group_603bc137f0b1ce9546241204aadda351 = L.featureGroup(
+                {}
+            ).addTo(map_0dce784d75372ad5339ec8bc9a059f84);
+        
+    
+            var marker_83045c4169fbebffadcbaebe8152a2bc = L.marker(
+                [34.65, -97.93333],
+                {}
+            ).addTo(feature_group_603bc137f0b1ce9546241204aadda351);
+        
+    
+        var popup_f2e4a52b67091fb97bda9fa02cc87184 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_e8f0ebf4634e5402d1ef93229ba1061c = $(`<div id="html_e8f0ebf4634e5402d1ef93229ba1061c" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flash Flood<br><br>                <b>Date: </b> 04-MAY-01 17:00:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> ELK CITY<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> ELK CITY<br><br>                <b>Episode Narrative:</b> Numerous thunderstorms formed across southwest Oklahoma the afternoon of the 4th and spread northeastward. Three tornadoes were confirmed, along with many reports of severe winds.<br><br>                <b>Event Narrative:</b> Several cars stalled in high water, and a young boy was swept into a drainage channel but pulled to safety.<br><br>                <b>Damage:</b> 30K<br><br>               </div>`)[0];
+                popup_f2e4a52b67091fb97bda9fa02cc87184.setContent(html_e8f0ebf4634e5402d1ef93229ba1061c);
+            
+        
+
+        marker_83045c4169fbebffadcbaebe8152a2bc.bindPopup(popup_f2e4a52b67091fb97bda9fa02cc87184)
+        ;
+
+        
+    
+    
+            var marker_31938f500fa03c814c0252b5a6de1706 = L.marker(
+                [29.71667, -100.08333],
+                {}
+            ).addTo(feature_group_603bc137f0b1ce9546241204aadda351);
+        
+    
+        var popup_17eafb2767b43fab5af248ceb0707d99 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_d0b361b13766d78636a7adbf34ac19da = $(`<div id="html_d0b361b13766d78636a7adbf34ac19da" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flash Flood<br><br>                <b>Date: </b> 15-NOV-01 04:30:00<br><br>                                <b>Injuries:</b> 5<br><br>                <b>Deaths:</b> 1<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> COUNTYWIDE<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> COUNTYWIDE<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> Rainfall redeveloped on the morning of the 15th over the Edward Plateau and western Hill Country.  In addition to the accumulations on the evening of the 14th, general 3 to 4 inch totals fell across Edwards County, bringing total amounts since the 14th to as much as 10 to 12 inches southeast of Rocksprings.  Maximum amounts of up to 18 inches were reported near Barksdale in the southeast part of the county along the Real County line. A 22-year old woman drowned when the car she was riding in was swept off a low-water crossing across SH55 into Hackberry Creek. The driver of the vehicle was also washed into the creek.  Both exited the vehicle and were clinging to tree branches as rescuers attempted to reach them.  The young woman was pregnant and unable to maintain her hold.  She was swept into the flood waters and drowned.  The driver was rescued.  Two men drove a pickup truck into the flooded low water crossing only a few minutes later but were rescued.<br><br>                <b>Damage:</b> 80K<br><br>               </div>`)[0];
+                popup_17eafb2767b43fab5af248ceb0707d99.setContent(html_d0b361b13766d78636a7adbf34ac19da);
+            
+        
+
+        marker_31938f500fa03c814c0252b5a6de1706.bindPopup(popup_17eafb2767b43fab5af248ceb0707d99)
+        ;
+
+        
+    
+    
+            var marker_874c2c459eba5d29fb6cf21555db79a2 = L.marker(
+                [29.73333, -99.98333],
+                {}
+            ).addTo(feature_group_603bc137f0b1ce9546241204aadda351);
+        
+    
+        var popup_86e400b314d3c4ed0119caa9830fcc0e = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_db6f6eaea29da61478860e6ed668c6a3 = $(`<div id="html_db6f6eaea29da61478860e6ed668c6a3" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flash Flood<br><br>                <b>Date: </b> 15-NOV-01 05:00:00<br><br>                                <b>Injuries:</b> 5<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> COUNTYWIDE<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> COUNTYWIDE<br><br>                <b>Episode Narrative:</b> nan<br><br>                <b>Event Narrative:</b> Rainfall redeveloped over Bandera County in the early morning hours, with totals since the previous night approaching 5 inches in the western part of the county around 7 am.  Flash flooding developed just before sunrise and continued into the early afternoon.  Road closures were widespread, with most of the damage to bridges and roads.  Emergency officials noted that in spite of the widespread flooding and road closures across the county, only a few rescues were required.  Apparently that the public stayed out of vehicles and very safe.<br><br>                <b>Damage:</b> 50K<br><br>               </div>`)[0];
+                popup_86e400b314d3c4ed0119caa9830fcc0e.setContent(html_db6f6eaea29da61478860e6ed668c6a3);
+            
+        
+
+        marker_874c2c459eba5d29fb6cf21555db79a2.bindPopup(popup_86e400b314d3c4ed0119caa9830fcc0e)
+        ;
+
+        
+    
+    
+            var marker_f314f1e84ffb66cffcad6805a3b0d557 = L.marker(
+                [32.21667, -99.8],
+                {}
+            ).addTo(feature_group_603bc137f0b1ce9546241204aadda351);
+        
+    
+        var popup_5b74ea17e14bf1d1914624dc83f9dc0a = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_1d257f3dc4284e1783866ada50937f59 = $(`<div id="html_1d257f3dc4284e1783866ada50937f59" style="width: 100.0%; height: 100.0%;"><b>Event Type:</b> Flash Flood<br><br>                <b>Date: </b> 18-SEP-01 23:00:00<br><br>                                <b>Injuries:</b> 1<br><br>                <b>Deaths:</b> 0<br><br>                <b>Begin Azimuth:</b> nan<br><br>                <b>Begin Location:</b> SAN ANGELO<br><br>                <b>End Azimuth:</b> nan<br><br>                <b>End Location:</b> SAN ANGELO<br><br>                <b>Episode Narrative:</b> Scattered severe thunderstorms moved southeast across the Big Country, Concho Valley, and the Heartland during the evening hours of the 18th. One man caught in flood waters in San Angelo suffered minor injuries, while minor damage was reported in San Angelo and near Lowake in Concho County.<br><br>                <b>Event Narrative:</b> A man caught in his vehicle in high water suffered minor injuries before he could be rescued. The man hung onto a guide wire for 20 minutes before police and fire personnel could finally wade out to reach him.<br><br>                <b>Damage:</b> nan<br><br>               </div>`)[0];
+                popup_5b74ea17e14bf1d1914624dc83f9dc0a.setContent(html_1d257f3dc4284e1783866ada50937f59);
+            
+        
+
+        marker_f314f1e84ffb66cffcad6805a3b0d557.bindPopup(popup_5b74ea17e14bf1d1914624dc83f9dc0a)
+        ;
+
+        
+    
+    
+            var layer_control_f84c8396827be32aeec194c41b16ba45 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_b7071afb66f4a0aceaac20b34421601d,
+                },
+                overlays :  {
+                    "Flash Flood" : feature_group_603bc137f0b1ce9546241204aadda351,
+                },
+            };
+            L.control.layers(
+                layer_control_f84c8396827be32aeec194c41b16ba45.base_layers,
+                layer_control_f84c8396827be32aeec194c41b16ba45.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_0dce784d75372ad5339ec8bc9a059f84);
+        
+</script>
+</html>
